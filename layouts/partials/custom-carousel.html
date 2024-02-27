@@ -1,0 +1,64 @@
+<section id="latest-blog" class="padding-large pt-0" style="padding-bottom: 59px;">
+    <div class="container-lg">
+        <div class="row mb-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h1 class="display-3">Articles & Podcasts</h1>
+                <p class="lead">Curated insights and thoughts.</p>
+            </div>
+        </div>
+        <div id="blogCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <!-- Dynamic Carousel Indicators -->
+            <div class="carousel-indicators">
+                {{ $posts := .Site.RegularPages }}
+                {{ range $index, $element := (seq 0 3 (sub (len $posts) 1)) }}
+                <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active" aria-current="true"{{ end }}></button>
+                {{ end }}
+            </div>
+
+            <div class="carousel-inner">
+                {{ range $i, $e := (seq 0 3 (sub (len $posts) 1)) }}
+                <div class="carousel-item {{ if eq $i 0 }}active{{ end }}">
+                    <div class="row gy-4 justify-content-center">
+                        {{ range $j, $e := (seq $i (add $i 2)) }}
+                        {{ if lt $j (len $posts) }}
+                        {{ $post := index $posts $j }}
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                {{ with $post.Params.image }}
+                                <img class="card-img-top w-100 fit-cover" style="height:200px;" src="{{ . | absURL }}" alt="{{ $post.Title }}">
+                                {{ else }}
+                                <img class="card-img-top w-100 fit-cover" style="height:200px;" src="/path/to/backup/image.jpg" alt="Default Image">
+                                {{ end }}
+                                <div class="card-body p-4">
+                                    <p class="text-primary card-text mb-0">{{ range $post.Params.tags }}{{ . }} {{ end }}</p>
+                                    <h4 class="card-title">{{ $post.Title }}</h4>
+                                    <p class="card-text">{{ $post.Summary | truncate 150 }}</p>
+                                    <a href="{{ $post.RelPermalink }}" class="btn btn-primary">Read More</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Category: {{ range $post.Params.categories }}{{ . }} {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    #blogCarousel .carousel-indicators {
+        bottom: -80px;
+    }
+    #blogCarousel .carousel-indicators button {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        /* Additional styling for the indicators */
+    }
+
+</style>

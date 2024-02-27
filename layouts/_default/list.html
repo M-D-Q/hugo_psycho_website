@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ if eq .Kind "section" }}
+    {{ range .Pages }}
+      <article>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Date.Format "January 2, 2006" }}</p>
+        <p>Categories: {{ range .Params.categories }}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}</p>
+        {{ .Summary }}
+      </article>
+    {{ end }}
+  {{ else }}
+    {{ .Content }}
+  {{ end }}
+{{ end }}

@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ printf "%s | %s" .Title .Site.Title }}{{ end }}</title>
+
+<!-- Fichiers CSS externes -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus&display=swap">
+
+<!-- Fichiers CSS locaux -->
+<link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/bs-theme-overrides.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/aos.min.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/animate.min.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/aos.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/date-time-picker-component.min.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/Articles-Cards-images.css" | relURL }}">
+
+<!-- Fichiers JS (si nécessaire, ajoutez vos fichiers JS de la même manière) -->
