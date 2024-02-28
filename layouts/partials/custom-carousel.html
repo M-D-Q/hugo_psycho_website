@@ -27,7 +27,7 @@
                                 {{ with $post.Params.image }}
                                 <img class="card-img-top w-100 fit-cover" style="height:200px;" src="{{ . | absURL }}" alt="{{ $post.Title }}">
                                 {{ else }}
-                                <img class="card-img-top w-100 fit-cover" style="height:200px;" src="/path/to/backup/image.jpg" alt="Default Image">
+                                <img class="card-img-top w-100 fit-cover" style="height:200px;" src="/img/cbt-1.webp" alt="Default Image">
                                 {{ end }}
                                 <div class="card-body p-4">
                                     <p class="text-primary card-text mb-0">{{ range $post.Params.tags }}{{ . }} {{ end }}</p>
