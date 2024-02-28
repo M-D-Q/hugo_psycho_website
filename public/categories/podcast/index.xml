@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Podcast on Olessia Psychologue</title>
+    <link>https://example.org/categories/podcast/</link>
+    <description>Recent content in Podcast on Olessia Psychologue</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/categories/podcast/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Beauty of Podcasts</title>
+      <link>https://example.org/posts/first_podcast/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/first_podcast/</guid>
+      <description>+++ My podcasts is the best thing ebver on earth !! !!&#xA;Yeahhhhhhh&#xA;oarrrrrreezz yipeeeee</description>
+    </item>
+    <item>
+      <title>The Beauty of Podcastsddddddddddddddddddddddd</title>
+      <link>https://example.org/posts/first_podcast-copy/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/first_podcast-copy/</guid>
+      <description>+++ My podcasts is the best thing ebver on earth !! !!&#xA;Yeahhhhhhh&#xA;oarrrrrreezz yipeeeee</description>
+    </item>
+  </channel>
+</rss>
