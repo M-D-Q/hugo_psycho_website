@@ -38,8 +38,7 @@ collections:
       - label: 'audio'
         name: 'audio'
         widget: 'file'
-        media_library:
-          media_folder: /static/audio
+        media_folder: /static/audio
       - label: 'Tags'
         name: 'tags'
         widget: 'list'
