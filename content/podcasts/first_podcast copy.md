@@ -1,5 +1,5 @@
 ---
-title: "The Beauty of Podcastsddddddddddddddddddddddd"
+title: "The Beauty of Podcasting"
 date: 2024-02-01
 subtitle: "Exploring tazddazda us."
 categories: ["Podcasts"]

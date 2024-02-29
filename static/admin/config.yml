@@ -35,7 +35,11 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'audio', name: 'audio', widget: 'file' }
+      - label: 'audio'
+        name: 'audio'
+        widget: 'file'
+        media_library:
+          media_folder: /static/audio
       - label: 'Tags'
         name: 'tags'
         widget: 'list'
