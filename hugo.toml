@@ -1,3 +1,5 @@
 baseURL = 'https://olessia-psycho.netlify.app/'
 languageCode = 'en-us'
 title = 'Olessia Psychologue'
+category = "categories"
+tag = "tags"

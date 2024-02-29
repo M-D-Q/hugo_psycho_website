@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format ":date_long" }}
+<!-- Hero Section -->
+<br>
+<br>
+
+<section class="text-center hero-section-podcast">
+    <div class="container">
+        <h1 class="display-3">{{ .Title }}</h1>
+        <p class="lead">{{ .Params.subtitle }}</p>
+        <!-- Publication Date -->
+        <time datetime="{{ $dateMachine }}" class="podcast-date">{{ $dateHuman }}</time>
+    </div>
+</section>
+
+<!-- Podcast Player and Summary -->
+<div class="container my-5">
+    <article>
+        <!-- Podcast Audio Player -->
+        {{ if .Params.audio }}
+            <div class="podcast-player">
+                <audio controls>
+                    <source src="{{ .Params.audio }}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        {{ end }}
+
+        <!-- Podcast Description/Transcript -->
+        <div class="podcast-description">
+            {{ .Content }}
+        </div>
+    </article>
+
+    <!-- Tags -->
+    {{ if .Params.tags }}
+        <div class="tags">
+            {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        </div>
+    {{ end }}
+    
+    <!-- Additional sections like Subscribe on Platforms can be added here -->
+</div>
+
+<!-- Comment Section for Podcasts -->
+<div class="container">
+    <!-- Integration code for comments goes here, tailored for podcasts -->
+</div>
+
+{{ end }}

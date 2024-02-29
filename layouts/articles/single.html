@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format ":date_long" }}
+<!-- Hero Section -->
+<br>
+<br>
+
+<section class="text-center hero-section-article">
+    <div class="container">
+        <h1 class="display-3">{{ .Title }}</h1>
+        <p class="lead">{{ .Params.subtitle }}</p>
+        <!-- Publication Date -->
+        <time datetime="{{ $dateMachine }}" class="article-date">{{ $dateHuman }}</time>
+    </div>
+</section>
+
+<!-- Article Content -->
+<div class="container my-5">
+    <article>
+        {{ .Content }}
+    </article>
+
+    <!-- Tags -->
+    {{ if .Params.tags }}
+        <div class="tags">
+            {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        </div>
+    {{ end }}
+    
+    <!-- Additional sections like Related Articles can be added here -->
+</div>
+
+<!-- Comment Section for Articles -->
+<div class="container">
+    <!-- Integration code for comments goes here, tailored for articles -->
+</div>
+
+{{ end }}

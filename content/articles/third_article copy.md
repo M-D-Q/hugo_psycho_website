@@ -1,8 +1,8 @@
 ---
-title: "THIRD is shit"
+title: "THIRD is shitddddddddddddddddddddddddddddddddd"
 date: 2024-02-01
 subtitle: "Exploring tazdazzadazdhe wonders of my azd around us."
-categories: ["Article"]
+categories: ["Articles"]
 tags: ["Nature", "Stuff"]
 ---
 

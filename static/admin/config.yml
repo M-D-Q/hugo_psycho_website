@@ -4,9 +4,9 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+  - name: 'articles'
+    label: 'Article'
+    folder: 'content/articles'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
@@ -16,3 +16,28 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        default: []
+        field: { label: 'Tag', name: 'tag', widget: 'string' }
+
+        
+  - name: 'podcasts'
+    label: 'Podcast'
+    folder: 'content/podcasts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'audio', name: 'audio', widget: 'file' }
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        default: []
+        field: { label: 'Tag', name: 'tag', widget: 'string' }

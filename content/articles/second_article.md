@@ -2,7 +2,7 @@
 title: "The BeautySECOND of Nature is shit"
 date: 2024-02-01
 subtitle: "Exploring the wonders of my ass around us."
-categories: ["Article"]
+categories: ["Articles"]
 tags: ["Nature", "Inspiration"]
 ---
 
