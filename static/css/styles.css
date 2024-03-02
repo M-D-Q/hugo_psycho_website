@@ -192,3 +192,21 @@
 .unique-carousel-slide {
   display: block;
 }
+
+
+
+h1 {
+  font-size: 2.5rem; /* Default size for large screens */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem; /* Even smaller size for phones */
+  }
+}
