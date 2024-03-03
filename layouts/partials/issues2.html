@@ -1,23 +1,25 @@
 <section id="issues2">
     <div class="container" style="padding-bottom: 50px;margin-bottom: 50px;">
-        <h1 class="display-3 text-center my-3" style="padding-bottom: 43px;">Issues I Will Take Care of</h1>
+        <h1 class="display-3 text-center my-3" style="padding-bottom: 0px;">Issues I Will Take Care of</h1>
 
 
         <!-- Original Nav Pills and Tab Content (hidden on mobile) -->
 
-        <div class="d-flex justify-content-center d-none d-md-block" style="margin-top: 39px;">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item me-2" role="presentation"> <!-- Added margin between items -->
-                    <button class="nav-link btn btn-outline-primary fs-3 fw-lighter rounded-3 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">My Self</button>
+        <div class="d-none d-md-flex justify-content-center" style="width: 100%; margin-top: 0px;">
+            <ul class="nav nav-pills mb-3" id="centered-pills" role="tablist" style="justify-content: center;">
+                <li class="nav-item me-2" role="presentation">
+                    <button class="nav-link btn btn-outline-primary fs-3 fw-lighter rounded-3 active" id="centered-pills-home" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">My Self</button>
                 </li>
                 <li class="nav-item me-2" role="presentation">
-                    <button class="nav-link btn btn-outline-primary fs-3 fw-lighter rounded-3" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">My Relations</button>
+                    <button class="nav-link btn btn-outline-primary fs-3 fw-lighter rounded-3" id="centered-pills-profile" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">My Relations</button>
                 </li>
-                <li class="nav-item" role="presentation"> <!-- No right margin for the last item -->
-                    <button class="nav-link btn btn-outline-primary fs-3 fw-lighter rounded-3" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">My Career</button>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link btn btn-outline-primary fs-3 fw-lighter rounded-3" id="centered-pills-contact" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">My Career</button>
                 </li>
             </ul>
         </div>
+        
+        
         
 
 
@@ -50,9 +52,7 @@
                         <div class="col-md-6 d-xl-flex justify-content-xl-center align-items-xl-center issue-image" style="background: url('img/depression1.webp') center / cover no-repeat;border-radius: 13px;"></div>
                     </div>
                 </div>
-            </div>
-
-        ...</div>
+            </div></div>
 
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
         
@@ -128,14 +128,22 @@
             </div>
         </div>
     </div>
-    <div class="card text-white mb-4"><img class="card-img-top w-100 d-block card-img" src="img/depression1.webp" alt="Depression" style="width: 150px; height: 150px;"/>
-        <div class="d-flex flex-column justify-content-end align-items-center card-img-overlay p-2 custom-overlay">
-            <h5 class="card-title">Panick Attacks</h5><button class="btn btn-primary" type="button" data-bs-target="#panic-modal" data-bs-toggle="modal">+</button>
+    <div class="card text-white mb-4">
+        <div class="image-container" style="width: auto; height: 250px; position: relative;">
+            <img class="card-img-top d-block card-img" src="img/featured-item6.jpg" alt="Depression" style="width: 100%; height: 100%; object-fit: cover;" />
+            <div class="d-flex flex-column justify-content-end align-items-center card-img-overlay p-2 custom-overlay" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
+                <h5 class="card-title">Depression</h5>
+                <button class="btn btn-primary" type="button" data-bs-target="#depression-modal" data-bs-toggle="modal">+</button>
+            </div>
         </div>
     </div>
-    <div class="card text-white mb-5"><img class="card-img-top w-90 d-block card-img" src="img/featured-item6.jpg" alt="Depression" style="width: 150px; height: 150px;"/>
-        <div class="d-flex flex-column justify-content-end align-items-center card-img-overlay p-2 custom-overlay">
-            <h5 class="card-title">Anxiety</h5><button class="btn btn-primary" type="button" data-bs-target="#anxiety-modal" data-bs-toggle="modal">+</button>
+    <div class="card text-white mb-4">
+        <div class="image-container" style="width: auto; height: 250px; position: relative;">
+            <img class="card-img-top d-block card-img" src="img/featured-item6.jpg" alt="Depression" style="width: 100%; height: 100%; object-fit: cover;" />
+            <div class="d-flex flex-column justify-content-end align-items-center card-img-overlay p-2 custom-overlay" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
+                <h5 class="card-title">Depression</h5>
+                <button class="btn btn-primary" type="button" data-bs-target="#depression-modal" data-bs-toggle="modal">+</button>
+            </div>
         </div>
     </div>
 </div>
