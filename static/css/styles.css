@@ -213,3 +213,20 @@ h1 {
     font-size: 1.5rem; /* Even smaller size for phones */
   }
 }
+
+.gradient-text {
+  background: linear-gradient(45deg, #ff0099, #493240, #f3f315);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Hide the original text color */
+  animation: rainbow-animation 5s ease-in-out infinite;
+  display: inline; /* Adjust display property if needed */
+  line-height: 1.2; /* Adjust line-height to prevent clipping */
+  background-size: 200% auto; /* Increase background size for noticeable movement */
+}
+
+@keyframes rainbow-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
