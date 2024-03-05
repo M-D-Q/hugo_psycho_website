@@ -1,4 +1,4 @@
-<section id="latest-blog" class="padding-large pt-0 d-none d-md-block" style="padding-bottom: 59px;">
+<section id="latest-blog" class="padding-large pt-0 d-md-none" style="padding-bottom: 59px;">
     <div class="container-lg">
         <div class="row mb-5">
             <div class="col-md-8 col-xl-6 text-center mx-auto">
@@ -6,23 +6,20 @@
                 <p class="lead">Curated insights and thoughts.</p>
             </div>
         </div>
-        <div id="blogCarouselDesktop" class="carousel slide carousel-dark" data-bs-ride="carousel">
+        <div id="blogCarouselMobile" class="carousel slide carousel-dark" data-bs-ride="carousel">
             <!-- Dynamic Carousel Indicators -->
             <div class="carousel-indicators">
                 {{ $posts := .Site.RegularPages }}
-                {{ range $index, $element := (seq 0 3 (sub (len $posts) 1)) }}
-                <button type="button" data-bs-target="#blogCarouselDesktop" data-bs-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active" aria-current="true"{{ end }}></button>
+                {{ range $index, $element := $posts }}
+                <button type="button" data-bs-target="#blogCarouselMobile" data-bs-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active" aria-current="true"{{ end }}></button>
                 {{ end }}
             </div>
 
             <div class="carousel-inner">
-                {{ range $i, $e := (seq 0 3 (sub (len $posts) 1)) }}
-                <div class="carousel-item {{ if eq $i 0 }}active{{ end }}">
+                {{ range $index, $post := $posts }}
+                <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
                     <div class="row gy-4 justify-content-center">
-                        {{ range $j, $e := (seq $i (add $i 2)) }}
-                        {{ if lt $j (len $posts) }}
-                        {{ $post := index $posts $j }}
-                        <div class="col-12 col-md-4">
+                        <div class="col-12">
                             <div class="card">
                                 {{ with $post.Params.image }}
                                 <img class="card-img-top w-100" style="height:200px;" src="{{ . | absURL }}" alt="{{ $post.Title }}">
@@ -43,8 +40,6 @@
                                 </div>
                             </div>
                         </div>
-                        {{ end }}
-                        {{ end }}
                     </div>
                 </div>
                 {{ end }}
@@ -55,22 +50,28 @@
 
 
 <style>
+    #blogCarouselMobile {
+    padding-left: 50px;
+    padding-right: 50px;
+    }
 
-    #blogCarouselDesktop .carousel-indicators {
+
+    #blogCarouselMobile .carousel-indicators {
         bottom: -80px;
     }
-    #blogCarouselDesktop .carousel-indicators button {
+    #blogCarouselMobile .carousel-indicators button {
         width: 15px;
         height: 15px;
         border-radius: 50%;
         /* Additional styling for the indicators */
+
+        
     }
-    /* Pour controler le cover, c'est dans le styles.css card-img-top */
-    .card-img-top {
-  object-fit: cover;
+    #blogCarouselMobile .card-img-top {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
 }
-    #blogCarouselDesktop {
-    padding-left: 111px;
-    padding-right: 111px;
-    }
+
 </style>
