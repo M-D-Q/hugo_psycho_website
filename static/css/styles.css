@@ -230,3 +230,9 @@ h1 {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+@media (max-width: 768px) { /* Adjust the max-width as needed for your mobile breakpoint */
+  * {
+    outline: 1px solid red !important; /* Adds a red outline to every element */
+  }
+}
