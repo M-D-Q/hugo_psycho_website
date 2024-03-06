@@ -1,6 +1,6 @@
 
 {{ define "main" }}
-    <section id="intro" class="padding-large position-relative overflow-hidden ps-xxl- pt-xxl- pe-xxl-" style="width: 100%;height: 1109px;background: url('img/photo_2022-01-29_19-06-50%20(2).jpg') center / cover no-repeat;padding-left: 56px;padding-right: 59px;padding-bottom: 124px;padding-top: 162px;margin-top: 0px;margin-bottom: 114px;margin-right: -1px;border-radius: 25px;border-top-left-radius: 0;border-top-right-radius: 0;border-bottom-left-radius: 13px;border-bottom-right-radius: 13px;">
+    <section id="intro" class="padding-large position-relative ps-xxl- pt-xxl- pe-xxl-" style="width: 100%;height: 1109px;background: url('img/photo_2022-01-29_19-06-50%20(2).jpg') center / cover no-repeat;padding-left: 56px;padding-right: 59px;padding-bottom: 124px;padding-top: 162px;margin-top: 0px;margin-bottom: 114px;margin-right: -1px;border-radius: 25px;border-top-left-radius: 0;border-top-right-radius: 0;border-bottom-left-radius: 13px;border-bottom-right-radius: 13px;">
         <div class="container-xl">
             <div class="row justify-content-between justify-content-lg-between">
                 <div class="col-md-12 col-lg-6 d-flex align-items-center">
@@ -90,7 +90,7 @@
             </div>
         </div>
     </section>
-    <div class="modal fade" role="dialog" tabindex="-1" id="about-me-modal">
+    <div class="modal fade overflow-hidden" role="dialog" tabindex="-1" id="about-me-modal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -107,8 +107,10 @@
 
 
 
-    {{ partial "carousel-2.html" . }}
-    <section id="FAQ" class="faq-section py-5">
+    
+
+
+    <section id="FAQ" class="faq-section py-5 overflow-hidden">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 d-xl-flex align-items-xl-center"><img class="img-fluid" src="img/photo_debout_livre.jpg" alt="Context Image" style="border-radius: 13px;"></div>
@@ -158,7 +160,7 @@
         </div>
     </section>
 
-
+    {{ partial "carousel-2.html" . }}
     {{ partial "custom-carousel.html" . }}
 
 
@@ -167,7 +169,7 @@
 
     {{ partial "pricing.html" . }}
 
-    <section id="contact-me" class="contact-methods py-5">
+    <section id="contact-me" class="contact-methods py-5 overflow-hidden">
         <div class="container text-center">
             <h1 class="gradient-text display-3 mb-4" >Connect with Me</h1>
             <br><br><br>
