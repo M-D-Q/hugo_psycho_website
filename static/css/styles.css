@@ -211,12 +211,12 @@ h1 {
 }
 
 .gradient-text {
-  background: linear-gradient(45deg, #ff0099, #493240, #f3f315);
+  background: linear-gradient(45deg, #c025ab, #dc72c8, #a222a2);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; /* Hide the original text color */
-  animation: rainbow-animation 5s ease-in-out infinite;
-  display: inline; /* Adjust display property if needed */
+  animation: rainbow-animation 2s ease-in-out infinite;
+  display: inline; /* Ensures the gradient applies to text only */
   line-height: 1.2; /* Adjust line-height to prevent clipping */
   background-size: 200% auto; /* Increase background size for noticeable movement */
 }
@@ -226,6 +226,40 @@ h1 {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+.gradient-text:hover, .gradient-text:focus {
+  background: linear-gradient(45deg, #ff0099, #83259F);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Ensure the text remains invisible to show the gradient */
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+  background: linear-gradient(45deg, #a855f7, #d4aaff); /* Purple gradient */
+  color: #fff; /* White color for the arrows */
+  border-radius: 50%; /* Circular shape */
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8; /* Slightly transparent for a sleeker look */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 20px; /* Adjust the arrow size */
+}
+
+/* If the buttons don't already contain arrow icons, you might need to add them */
+.swiper-button-prev::after { content: '←'; }
+.swiper-button-next::after { content: '→'; }
+
 
 body {
   overflow-x: hidden;

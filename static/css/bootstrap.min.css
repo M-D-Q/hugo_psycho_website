@@ -383,11 +383,7 @@ h1.light, h2.light, h3.light, h4.light, h5.light {
   color: var(--light-color);
 }
 
-.btn-primary:hover {
-  color: var(--light-color);
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
-}
+
 .btn-secondary {
   color: var(--light-color);
   background-color: var(--secondary-color);
@@ -413,6 +409,14 @@ h1.light, h2.light, h3.light, h4.light, h5.light {
 .btn-right {
   text-align: right;
   display: block;
+}
+
+.btn.btn-primary {
+  opacity: 0.8; /* Slightly transparent for a sleeker look */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+.btn.btn-primary:hover {
+  opacity: 1; /* Fully opaque on hover */
 }
 
 /*----------------------------------------------*/
