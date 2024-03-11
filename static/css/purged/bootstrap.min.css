@@ -1,0 +1,333 @@
+
+
+/*--------------------------------------------------------------
+This is main CSS file that contains custom style rules used in this template
+--------------------------------------------------------------*/
+
+    
+/*--------------------------------------------------------------
+/** 1. VARIABLES
+--------------------------------------------------------------*/
+:root {
+  --bs-primary: #9459ce;
+  --bs-primary-rgb: 148,89,206;
+  --bs-primary-text-emphasis: #3B2452;
+  --bs-primary-bg-subtle: #EADEF5;
+  --bs-primary-border-subtle: #D4BDEB;
+  --bs-secondary: #6f6090;
+  --bs-secondary-rgb: 111,96,144;
+  --bs-secondary-text-emphasis: #2C263A;
+  --bs-secondary-bg-subtle: #E2DFE9;
+  --bs-secondary-border-subtle: #C5BFD3;
+  --bs-success: #2d5685;
+  --bs-success-rgb: 45,86,133;
+  --bs-success-text-emphasis: #122235;
+  --bs-success-bg-subtle: #D5DDE7;
+  --bs-success-border-subtle: #ABBBCE;
+  --bs-info: #783e3e;
+  --bs-info-rgb: 120,62,62;
+  --bs-info-text-emphasis: #301919;
+  --bs-info-bg-subtle: #E4D8D8;
+  --bs-info-border-subtle: #C9B2B2;
+  --bs-warning: #30294c;
+  --bs-warning-rgb: 48,41,76;
+  --bs-warning-text-emphasis: #13101E;
+  --bs-warning-bg-subtle: #D6D4DB;
+  --bs-warning-border-subtle: #ACA9B7;
+  --bs-danger: #17467e;
+  --bs-danger-rgb: 23,70,126;
+  --bs-danger-text-emphasis: #091C32;
+  --bs-danger-bg-subtle: #D1DAE5;
+  --bs-danger-border-subtle: #A2B5CB;
+  --bs-dark: #d53fed;
+  --bs-dark-rgb: 213,63,237;
+  --bs-dark-text-emphasis: #55195F;
+  --bs-dark-bg-subtle: #F7D9FB;
+  --bs-dark-border-subtle: #EEB2F8;
+  --bs-body-font-family: Marcellus, serif;
+  --bs-link-color: #5c1f59;
+  --bs-link-color-rgb: 92,31,89;
+  --bs-link-hover-color: #de30d7;
+  --bs-link-hover-color-rgb: 222,48,215;
+}
+
+/* on mobile devices below 600px
+ */
+@media screen and (max-width: 600px) {
+    :root {
+        --header-height : 100px;
+        --header-height-min   : 80px;
+    }
+}
+
+/* Fonts */
+:root {
+    --body-font           : "Jost", sans-serif;
+    --heading-font        : "Marcellus", serif;
+}
+
+
+/*----------------------------------------------*/
+/* 2 GENERAL TYPOGRAPHY */
+/*----------------------------------------------*/
+
+/* 2.1 General Styles
+/*----------------------------------------------*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--body-font);
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--accent-color);
+  margin: 0;
+}
+a {
+  color: var(--dark-gray-colo);
+  text-decoration: none;
+  transition: 0.3s color ease-out;
+}
+a.light {
+  color: var(--light-color);
+}
+a.stretched-link {
+  color: var(--primary-color);
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+p.light {
+  color: var(--light-color);
+}
+ul.light li {
+  color: var(--light-color);
+}
+span.light {
+  color: var(--light-color);
+}
+svg.light {
+  color: var(--light-color);
+}
+svg.light:hover {
+  color: var(--primary-color);
+}
+b, strong {
+  font-weight: bold;
+}
+
+/* 2.2 Background Color
+/*----------------------------------------------*/
+.bg-light {
+    background: var(--light-color) !important;
+}
+.bg-primary {
+    background: var(--primary-color) !important;
+}
+.bg-secondary {
+    background: var(--secondary-color) !important;
+}
+
+/* 2.3 Text Color
+/*----------------------------------------------*/
+.text-primary {
+  color: var(--primary-color) !important;
+}
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+/* 2.4 Border Radius
+/*----------------------------------------------*/
+.border-rounded-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.border-rounded-bottom {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.border-rounded-20 {
+  border-radius: 20px;
+}
+
+/* 2.5 Section
+/*----------------------------------------------*/
+
+/* - Section Padding
+--------------------------------------------------------------*/
+.padding-small {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.padding-large {
+  padding-top: 7em;
+  padding-bottom: 7em;
+}
+
+/* - Section Margin
+--------------------------------------------------------------*/
+
+/* - Section Title
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    line-height: 1;
+}
+h1.light, h2.light, h3.light, h4.light, h5.light {
+    color: var(--light-color);
+}
+
+/* - Section width
+--------------------------------------------------------------*/
+.container-lg {
+    max-width: 1760px;
+}
+
+/*--------------------------------------------------------------
+/** 2.5 Buttons
+--------------------------------------------------------------*/
+/* - Button Sizes
+------------------------------------------------------------- */
+.btn.btn-small {
+  padding: 0.8em 2.7em;
+  font-size: 0.85em;
+}
+
+/* - Button Shapes
+------------------------------------------------------------- */
+.btn.btn-pill,
+.btn.btn-pill::after {
+  border-radius: 2em;
+}
+/* button outline */
+
+/* - Buttons Color Scheme
+------------------------------------------------------------- */
+.btn.btn-light {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border: none;
+  transition: 0.5s ease-in-out;
+}
+.btn.btn-light:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+/* - Buttons Aligns
+------------------------------------------------------------- */
+
+.btn.btn-primary {
+  opacity: 0.8; /* Slightly transparent for a sleeker look */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+.btn.btn-primary:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+/*----------------------------------------------*/
+/* 3 CONTENT ELEMENTS */
+/*----------------------------------------------*/
+
+/* 3.1 Text Animation
+------------------------------------------------------------- */
+.text-fading {
+  animation-name: fade-in;
+  animation-duration: 7s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 3.2 Image Hover Effect
+------------------------------------------------------------- */
+/* hover */
+
+/* 3.2 Navigation Sticky 
+------------------------------------------------------------- */
+
+/*----------------------------------------------*/
+/* 4 SITE STRUCTURE */
+/*----------------------------------------------*/
+
+/* 4.1 Header
+------------------------------------------------------------- */
+
+
+/* 4.2 Intro
+------------------------------------------------------------- */
+.banner-content h1.banner-title {
+  font-size: 4.3em;
+  animation: fade-in 1s;
+  animation-duration: 7s;
+}
+.banner-content p {
+  font-size: 1.3em;
+  width: 80%;
+}
+
+@media (max-width: 991px) {
+  .feature-area .image-holder {
+    display: none;
+ }
+}
+
+@media (max-width: 681px) {
+  .banner-content h1.banner-title {
+    font-size: 3em;
+ }
+ .banner-content p {
+    font-size: 1.1em;
+    width: 80%;
+  }
+}
+
+
+/* 4.3 About Us
+------------------------------------------------------------- */
+#about q {
+  font-size: 1.3em;
+  display: block;
+}
+
+/* 4.4 
+------------------------------------------------------------- */
+
+/* 4.5 Video
+------------------------------------------------------------- */
+
+/* 4.7 Subscribe
+------------------------------------------------------------- */
+
+/* 4.8 Price Table
+------------------------------------------------------------- */
+
+/* 4.9 Testimonial
+------------------------------------------------------------- */
+
+/* 4.10 Footer
+------------------------------------------------------------- */
+#footer .footer-image {
+  right: 0;
+  bottom: 0;
+}
+#footer .footer-image img {
+  mix-blend-mode: luminosity;
+}
+#footer ul.menu-list {
+  border-top: 1px solid rgba(255,255,255,0.5);
+}

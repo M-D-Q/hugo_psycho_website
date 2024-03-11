@@ -10,14 +10,18 @@
 <script src="{{ "js/plugins.js" | absURL }}"></script>
 <script src="{{ "js/scripts.js" | absURL }}"></script>
 
-<!-- Inline Script -->
 <script>
     var swiper = new Swiper('.featured-swiper', {
         loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+
+        // Replace the navigation configuration with pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, // Makes the dots clickable
+            dynamicBullets: true, // Optional: For a more dynamic effect
         },
-        // Add other options as needed
+
+        // Optionally, you can completely remove the 'navigation' configuration
+        // If you prefer to keep the HTML markup clean, you might also want to remove the related navigation buttons from the HTML
     });
 </script>

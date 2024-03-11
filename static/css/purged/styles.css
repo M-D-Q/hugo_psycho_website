@@ -1,0 +1,193 @@
+.card .custom-overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover .custom-overlay {
+  display: flex !important;
+}
+
+.testimonial-item {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.testimonial-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-item:hover .testimonial-overlay {
+  opacity: 1;
+}
+
+.testimonial-text {
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.bg-light {
+  background: var(--bs-primary-bg-subtle) !important;
+}
+
+@media (max-width: 991px) {
+  .feature-area .image-holder {
+    display: none;
+  }
+}
+
+:root {
+  --bs-primary: #9459ce;
+  --bs-primary-rgb: 148,89,206;
+  --bs-primary-text-emphasis: #3B2452;
+  --bs-primary-bg-subtle: #EADEF5;
+  --bs-primary-border-subtle: #D4BDEB;
+  --bs-secondary: #6f6090;
+  --bs-secondary-rgb: 111,96,144;
+  --bs-secondary-text-emphasis: #2C263A;
+  --bs-secondary-bg-subtle: #E2DFE9;
+  --bs-secondary-border-subtle: #C5BFD3;
+  --bs-success: #2d5685;
+  --bs-success-rgb: 45,86,133;
+  --bs-success-text-emphasis: #122235;
+  --bs-success-bg-subtle: #D5DDE7;
+  --bs-success-border-subtle: #ABBBCE;
+  --bs-info: #783e3e;
+  --bs-info-rgb: 120,62,62;
+  --bs-info-text-emphasis: #301919;
+  --bs-info-bg-subtle: #E4D8D8;
+  --bs-info-border-subtle: #C9B2B2;
+  --bs-warning: #30294c;
+  --bs-warning-rgb: 48,41,76;
+  --bs-warning-text-emphasis: #13101E;
+  --bs-warning-bg-subtle: #D6D4DB;
+  --bs-warning-border-subtle: #ACA9B7;
+  --bs-danger: #17467e;
+  --bs-danger-rgb: 23,70,126;
+  --bs-danger-text-emphasis: #091C32;
+  --bs-danger-bg-subtle: #D1DAE5;
+  --bs-danger-border-subtle: #A2B5CB;
+  --bs-dark: #d53fed;
+  --bs-dark-rgb: 213,63,237;
+  --bs-dark-text-emphasis: #55195F;
+  --bs-dark-bg-subtle: #F7D9FB;
+  --bs-dark-border-subtle: #EEB2F8;
+  --bs-body-font-family: Marcellus, serif;
+  --bs-link-color: #5c1f59;
+  --bs-link-color-rgb: 92,31,89;
+  --bs-link-hover-color: #de30d7;
+  --bs-link-hover-color-rgb: 222,48,215;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: var(--bs-nav-pills-link-active-color);
+  background-color: #8f33b6;
+}
+
+/* Custom styles for carousel indicators */
+
+/* Custom styles for carousel controls */
+
+/* Custom styles for carousel indicators */
+
+.hero-section-article {
+  margin-top: 75px; /* Adjust the value as per your design needs */
+}
+
+/* Custom styles for the carousel and filter buttons */
+/* Unique styles for the redesigned carousel */
+
+/* Ensure slides are displayed correctly after filtering */
+
+
+
+h1 {
+  font-size: 2.5rem; /* Default size for large screens */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem; /* Even smaller size for phones */
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #c025ab, #dc72c8, #a222a2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Hide the original text color */
+  animation: rainbow-animation 2s ease-in-out infinite;
+  display: inline; /* Ensures the gradient applies to text only */
+  line-height: 1.2; /* Adjust line-height to prevent clipping */
+  background-size: 200% auto; /* Increase background size for noticeable movement */
+}
+
+@keyframes rainbow-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-text:hover, .gradient-text:focus {
+  background: linear-gradient(45deg, #ff0099, #83259F);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Ensure the text remains invisible to show the gradient */
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+  background: linear-gradient(45deg, #a855f7, #d4aaff); /* Purple gradient */
+  color: #fff; /* White color for the arrows */
+  border-radius: 50%; /* Circular shape */
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8; /* Slightly transparent for a sleeker look */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 20px; /* Adjust the arrow size */
+}
+
+/* If the buttons don't already contain arrow icons, you might need to add them */
+.swiper-button-prev::after { content: '←'; }
+.swiper-button-next::after { content: '→'; }
+
+
+body {
+  overflow-x: hidden;
+}
