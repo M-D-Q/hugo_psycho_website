@@ -1,13 +1,16 @@
 
 {{ define "main" }}
-<section id="intro" class="padding-large position-relative photo-section">
-        <div class="container-xl">
-            <div class="row justify-content-between">
-                <div class="col-md-12 col-lg-6 d-flex align-items-center">
-                    <div class="banner-content pb-5" style="margin-left: -16px;">
-                        <h1 class="banner-title mb-4 text-fading" style="padding-right: 0px;font-size: 64.8px;margin-left: -43px;padding-left: 13px;">Change Your Life By <span class="gradient-text">Psychology</span></h1>
-                        <p style="background: var(--bs-primary-bg-subtle);border-radius: 13px;padding-top: 9px;padding-bottom: 9px;padding-left: 14px;padding-right: 14px;">Psychology is very nice to become nice</p>
-                        <a class="btn btn-primary text-uppercase btn-small btn-pill" role="button" data-bss-hover-animate="pulse" style="text-align: center; margin-top:25px" href="#contact-me">BOOK a SESSION</a>
+<section id="intro" >
+        <div class="container">
+            <div class="align-items-center"> 
+                <div class="row conteneur-intro">
+                
+                <div class="col-md-12 col-lg-8">
+                    <div class="banner-content ">
+                        <h1 class="banner-title text-fading">Змініть своє життя</h1>
+                <h1 class="banner-subtitle text-fading"> <span class="gradient-text">Психологією</span></h1>
+                        <p class="psychology-text">Психологія - це дуже приємно стати <span class="typed-text"></span><span class="cursor">|</span></p>
+                        <div class="text-center"><a class="btn btn-primary text-uppercase btn-small btn-pill" role="button" data-bss-hover-animate="pulse" href="#contact-me">Забронюйте сеанс</a></div>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
@@ -16,42 +19,42 @@
                             <div class="swiper-wrapper"  >
                                 <div class="swiper-slide " >
                                     <div class="image-holder"><img class="img-fluid border-rounded-top" src="img/featured-item1.webp" alt="Understand Yourself"></div>
-                                    <div class="text-center bg-light feat-content p-5 miaou" style="border-radius:13px" >
+                                    <div class="text-center bg-light feat-content p-5 miaou" >
                                         <h4>Self-Understanding</h4>
                                         <p class="fs-6 fw-light">Engaging in psychotherapy can lead to greater self-awareness, helping you understand your thoughts, emotions, and behaviors. This self-knowledge is a critical step towards personal growth and well-being.</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image-holder"><img class="img-fluid border-rounded-top" src="img/featured-item2.webp" alt="Repair your relations"></div>
-                                    <div class="text-center bg-light feat-content p-5 " style="border-radius:13px" >
+                                    <div class="text-center bg-light feat-content p-5 " >
                                         <h3>Improved Relationships</h3>
                                         <p class="fs-6 fw-light">Psychotherapy provides tools and insights to improve communication and relationships. By addressing and resolving conflicts, you can foster healthier and more fulfilling connections with others.</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image-holder"><img class="img-fluid border-rounded-top" src="img/featured-item3.webp" alt="Be relaxed at all times"></div>
-                                    <div class="text-center bg-light feat-content p-5 " style="border-radius:13px">
+                                    <div class="text-center bg-light feat-content p-5 ">
                                         <h3>Stress Reduction</h3>
                                         <p class="fs-6 fw-light">Learn effective coping strategies to manage and reduce stress. Psychotherapy helps you navigate life's pressures in healthier ways, promoting a sense of calm and balance.</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image-holder"><img class="img-fluid border-rounded-top" src="img/featured-item4.webp" alt="Let nothing bother you"></div>
-                                    <div class="text-center bg-light feat-content p-5 " style="border-radius:13px">
+                                    <div class="text-center bg-light feat-content p-5 ">
                                         <h3>Emotional Resilience</h3>
                                         <p class="fs-6 fw-light">Building emotional resilience is a key benefit of psychotherapy. It equips you with the ability to handle life's ups and downs, leading to a more adaptable and robust emotional state.</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image-holder"><img class="img-fluid border-rounded-top" src="img/featured-item5.webp" alt="Understand the world better"></div>
-                                    <div class="text-center bg-light feat-content p-5 " style="border-radius:13px">
+                                    <div class="text-center bg-light feat-content p-5 ">
                                         <h3>Better Decision-Making</h3>
                                         <p class="fs-6 fw-light">With a clearer understanding of yourself and your situation, psychotherapy can enhance your decision-making capabilities, leading to choices that align more closely with your values and goals.</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="image-holder"><img class="img-fluid border-rounded-top" src="img/featured-item6.webp" alt="Repair your soul"></div>
-                                    <div class="text-center bg-light feat-content p-5 " style="border-radius:13px">
+                                    <div class="text-center bg-light feat-content p-5 ">
                                         <h3>Overcoming Trauma</h3>
                                         <p class="fs-6 fw-light">Psychotherapy provides a safe space to process and heal from past traumas. It's an avenue to work through painful experiences and start the journey towards healing and recovery.</p>
                                     </div>
@@ -66,7 +69,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div></div>
+            
         </div>
     </section>
 
@@ -107,55 +111,8 @@
     {{ partial "methods.html" . }}
 <section class="transition-first-to-second"></section> <!-- Transition from first to second background -->
 
-    <section id="FAQ" class="faq-section py-5 second-background standard-section-margins">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 d-xl-flex align-items-xl-center"><img class="img-fluid" src="img/photo_debout_livre.webp" alt="Context Image" style="border-radius: 13px;"></div>
-                <div class="col-md-8 d-xxl-flex flex-column justify-content-xxl-start align-items-xxl-center">
-                    <h1 class="display-3" style="padding-bottom: 31px;text-align: left;">Frequently Asked Questions</h1>
-                    <p>This section contains answers to commonly asked questions about our psychotherapy services.</p>
-                    <div class="accordion" role="tablist" id="faqAccordion">
-                        <div class="accordion-item" style="max-width:600px;">
-                            <h2 class="accordion-header" role="tab" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What is individual psychotherapy and how can it help me?</button></h2>
-                            <div class="accordion-collapse collapse show item-1 show" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingOne" id="collapseOne">
-                                <div class="accordion-body"><span>Individual psychotherapy involves one-on-one sessions with a therapist, focusing on your personal issues and concerns. It can help you understand your feelings, thoughts, and behaviors, providing strategies to cope with specific challenges, improve relationships, and enhance overall well-being.</span></div>
-                            </div>
-                        </div>
-                        <div class="accordion-item" style="max-width:600px;">
-                            <h2 class="accordion-header" role="tab" id="headingTwo"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How long does each therapy session last?</button></h2>
-                            <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingTwo" id="collapseTwo">
-                                <div class="accordion-body"><span>Each therapy session typically lasts between 45 to 60 minutes. The length can vary based on the type of therapy and the individual's needs.</span></div>
-                            </div>
-                        </div>
-                        <div class="accordion-item" style="max-width:600px;">
-                            <h2 class="accordion-header" role="tab" id="headingThree"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What can I expect during my first therapy session?</button></h2>
-                            <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingThree" id="collapseThree">
-                                <div class="accordion-body"><span>In your first session, the therapist will typically discuss your personal history, the reasons you're seeking therapy, and your goals for treatment. It's a chance for you to get to know your therapist and decide if their approach feels right for you.</span></div>
-                            </div>
-                        </div>
-                        <div class="accordion-item" style="max-width:600px;">
-                            <h2 class="accordion-header" role="tab" id="headingFour"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Is everything I say in therapy confidential?</button></h2>
-                            <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingFour" id="collapseFour">
-                                <div class="accordion-body"><span>Yes, all discussions in therapy are confidential and protected by client-therapist privilege. There are some exceptions, such as when there's a risk of harm to yourself or others, which your therapist will explain in your first session.</span></div>
-                            </div>
-                        </div>
-                        <div class="accordion-item" style="max-width:600px;">
-                            <h2 class="accordion-header" role="tab" id="headingFive"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">How do I know if I need therapy?</button></h2>
-                            <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingFive" id="collapseFive">
-                                <div class="accordion-body"><span>Considering therapy can be a step if you're feeling overwhelmed, facing persistent sadness, anxiety, or if you're dealing with significant life changes or challenges. Therapy can provide support, strategies for coping, and a space to explore your thoughts and feelings.</span></div>
-                            </div>
-                        </div>
-                        <div class="accordion-item" style="max-width:600px;">
-                            <h2 class="accordion-header" role="tab" id="headingSix"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Do you offer online therapy sessions?</button></h2>
-                            <div class="accordion-collapse collapse item-6" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingSix" id="collapseSix">
-                                <div class="accordion-body"><span>Yes, we offer online therapy sessions to provide flexibility and convenience. These sessions are conducted via secure video conferencing platforms, ensuring confidentiality and accessibility.</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+{{ partial "faq.html" . }}
+
     <section class="transition-second-to-first"></section> <!-- Transition from second back to first background -->
 
 

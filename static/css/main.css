@@ -1996,11 +1996,22 @@ h1.light, h2.light, h3.light, h4.light, h5.light {
   width: 80%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 990px) {
   .feature-area .image-holder {
     display: none;
  }
+ .feat-content {
+  border-radius:13px
+ }
 }
+@media (min-width: 990px) {
+ .feat-content {
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+ }
+}
+
+
 
 @media (max-width: 681px) {
   .banner-content h1.banner-title {
@@ -2295,17 +2306,83 @@ section {
 #intro {
   width: 100%;
   height: auto; /* Make height responsive */
-  background: url('../img/photo_2022-01-29_19-06-50%20(2).jpg') top / cover no-repeat;
+  background: url('../img/photo_2022-01-29_19-06-50%20(2).webp') top / cover no-repeat;
   padding-top: 200px ; /* Top Right Bottom */
-  margin-top: 0;
   margin-bottom: 50px;
 }
 
+
+#intro .conteneur-intro {
+  padding : 1em
+ }
+
+
+#intro .banner-title {
+  font-size: 60px;
+}
+
+#intro .banner-subtitle {
+  font-size: 60px;
+}
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #intro {
-    padding: 5em 3em; /* Adjust padding for smaller screens */
+    width: 100%;
+    height: auto; /* Make height responsive */
+    background: url('../img/photo_2022-01-29_19-06-50 (2)-righted.jpg') top / cover no-repeat;
   }
+  
+
+   #intro .conteneur-intro {
+    padding-top : 0em;
+   }
+  
+  #intro .banner-title {
+    font-size: 2.1em;
+    margin-bottom:0px;
+  }
+  #intro .banner-subtitle {
+    font-size: 4em;
+    margin-bottom:60px;
+  }
+
+  .banner-title span {
+    margin-top:66px;
+  }
+
+  .banner-content p, .banner-content a {
+    text-align: center; /* Center align paragraph and button */
+    width: auto
+  }
+
+  #intro .btn-primary {
+    display: inline-block; /* Prevent the button from stretching full width */
+    align-self : center;
+    margin-bottom: 3em;
+}
+  .banner-content a {
+    margin: 25px auto 0; /* Center the button with auto margins and add some top margin */
+  }
+}
+
+.psychology-text {
+  background: var(--bs-primary-bg-subtle);
+  border-radius: 13px;
+  padding: 9px 14px;
+  /* Add other styles as needed */
+}
+
+.typed-text {
+  font-style: italic; /* Make text italic */
+  white-space: nowrap; /* Keeps the content on a single line */
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 :root {
