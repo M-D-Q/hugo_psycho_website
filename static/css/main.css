@@ -2454,3 +2454,7 @@ body {
   overflow-x: hidden;
   background-color: rgba(245, 245, 245, 0.53); /* Your original light color */
 }
+
+.section {
+  overflow : hidden
+}
