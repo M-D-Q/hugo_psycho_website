@@ -1,11 +1,13 @@
-<section id="latest-blog" class="padding-large pt-0 d-none d-md-block" style="padding-bottom: 59px;">
+<section id="latest-blog" class="padding-large pt-0 d-none d-md-block first-background" style="padding-bottom: 59px;">
     <div class="container-lg">
         <div class="row mb-5">
             <div class="col-md-8 col-xl-6 text-center mx-auto">
-                <h1 class="display-3">
-                    <a href="/categories/articles/" class="gradient-text" data-bss-hover-animate="pulse">Articles</a> & 
-                    <a href="/categories/podcasts/" class="gradient-text" data-bss-hover-animate="pulse">Podcasts</a>
+                <h1 class="display-3 links-container">
+                    <div data-bss-hover-animate="pulse"> <a href="/categories/articles/" class="gradient-text">Articles</a> </div>
+                    <span>&</span>
+                    <div data-bss-hover-animate="pulse"> <a href="/categories/podcasts/" class="gradient-text">Podcasts</a></div>
                   </h1>
+                  
                 <p class="lead">Curated insights and thoughts.</p>
             </div>
         </div>
@@ -69,11 +71,17 @@
         /* Additional styling for the indicators */
     }
     /* Pour controler le cover, c'est dans le styles.css card-img-top */
-    .card-img-top {
+    #blogCarouselDesktop .card-img-top {
   object-fit: cover;
 }
     #blogCarouselDesktop {
     padding-left: 111px;
     padding-right: 111px;
     }
+
+    #blogCarouselDesktop .carousel-indicators button {
+        background-color: var(--bs-primary);
+    }
+
+
 </style>
