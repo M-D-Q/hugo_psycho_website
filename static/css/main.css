@@ -2220,9 +2220,49 @@ h1 {
   }
 }
 
+@media (max-width: 768px) {
+
+  #about .kek {
+    margin-top: 2em
+  }
+  #about .image-holder {
+    height:455px;
+    width:100%;
+    background: url('../img/photo_debout_livre.webp') top / cover no-repeat;
+    border-radius: 13px;
+  }
+
+}
+
+@media (min-width : 768px) and (max-width: 991px) {
+
+  #about .kek {
+    margin-top: 2em
+  }
+  #about .image-holder {
+    min-height:600px;
+    background: url('../img/photo_debout_livre.webp') top / cover no-repeat;
+    border-radius: 13px;
+  }
+   #about .miaou {
+    padding-right: 100px;
+    padding-left: 100px;
+     }
+}
+
+@media (min-width: 991px) {
 
 
-
+  #about .image-holder {
+    min-height:700px;
+    width:90%;
+    background: url('../img/photo_debout_livre.webp') top / cover no-repeat;
+    border-radius: 13px;
+  }
+   #about .miaou {
+    padding-left: 15px;
+     }
+}
 
 
 /* Style for all pagination dots */
@@ -2294,6 +2334,11 @@ h1 {
   background: linear-gradient(to bottom, #eadef574 0%, rgba(245, 245, 245, 0.53) 100%);
 }
 
+.transition-header-to-first {
+  height: 2em;
+  background: linear-gradient(to bottom, #eadef5e5 0%, rgba(245, 245, 245, 0.53) 100%);
+}
+
 
 #intro {
   width: 100%;
@@ -2310,11 +2355,19 @@ h1 {
 
 
 #intro .banner-title {
-  font-size: 60px;
+  font-size: 3em;
 }
 
 #intro .banner-subtitle {
-  font-size: 60px;
+  font-size: 4em;
+  margin-bottom:2em;
+  margin-left:1em
+}
+
+#intro .btn-primary {
+  display: inline-block; /* Prevent the button from stretching full width */
+  align-self : center;
+  margin-bottom: 3em;
 }
 /* Responsive adjustments */
 @media (min-width: 540px) and (max-width: 991px) {
@@ -2329,15 +2382,15 @@ h1 {
     padding-top : 0.2em;
    }
   
-  #intro .banner-title {
-    font-size: auto;
-    margin-bottom:0px;
+   #intro .banner-title {
+    font-size: 2em;
   }
+  
   #intro .banner-subtitle {
-    font-size: auto;
-    margin-bottom:60px;
+    font-size: 3em;
+    margin-bottom:2em;
+    margin-left:0em
   }
-
   .banner-title span {
     margin-top:66px;
   }
@@ -2396,6 +2449,70 @@ h1 {
     margin: 25px auto 0; /* Center the button with auto margins and add some top margin */
   }
 }
+
+
+
+
+#contact-me .contact-icon {
+  height: 150px;
+  padding: 0px
+}
+#contact-me .icon {
+  height: 150px;
+  padding: 25px;
+}
+
+#contact-me .gmail-icon {
+  height: 150px;
+  padding: 25px;
+}
+:root {
+  --padding-y: 1rem;
+  --icon-size-desktop: 95%; /* Adjust based on preference */
+  --icon-size-mobile: 75%; /* Adjust based on preference for mobile */
+}
+
+#contact-me1 .contact-methods {
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
+#contact-me1 .contact-title {
+  padding-bottom: 2rem; /* Increased padding for better separation */
+}
+
+#contact-me1 .contact-icon a {
+  display: inline-flex; /* Center the icons */
+  justify-content: center;
+  width: var(--icon-size-desktop);
+  height: var(--icon-size-desktop);
+  margin: 0 auto; /* Center horizontally */
+}
+
+#contact-me1 .contact-icon img {
+  max-width: 66%; /* Limit the width to 100% of its container */
+  height: auto; /* Adjust the height automatically to maintain the aspect ratio */
+  padding:10px;
+}
+
+@media (max-width: 767px) {
+  #contact-me1 .contact-icon {
+    flex: 0 0 50%; /* Adjust icon container size on smaller screens */
+    max-width: 50%;
+    margin-bottom: 1rem; /* Increase spacing on smaller screens */
+    padding:10px;
+
+  }
+
+  #contact-me1 .contact-icon a {
+    width: var(--icon-size-mobile); /* Adjust icon size on smaller screens */
+    height: auto;
+  }
+}
+
+
+
+
 
 
 @media (min-width: 540px) {
@@ -2499,7 +2616,7 @@ h1 {
 /* Base styles */
 body {
   overflow-x: hidden;
-  background-color: rgba(245, 245, 245, 0.53); /* Your original light color */
+  background-color: rgba(245, 245, 245, 1); /* Your original light color */
 }
 
 .section {
