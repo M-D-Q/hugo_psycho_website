@@ -2317,7 +2317,7 @@ h1 {
   font-size: 60px;
 }
 /* Responsive adjustments */
-@media (max-width: 991px) {
+@media (min-width: 540px) and (max-width: 991px) {
   #intro {
     width: 100%;
     height: auto; /* Make height responsive */
@@ -2357,6 +2357,53 @@ h1 {
   }
 }
 
+@media (max-width: 540px) {
+  #intro {
+    width: 100%;
+    height: auto; /* Make height responsive */
+    background: url('../img/screenshot1.jpg') top no-repeat;
+  }
+  
+  .hide-on-small {
+    display: none;
+}
+
+  #intro .conteneur-intro {
+    padding-top : 5em;
+   }
+  
+  .banner-title {
+    font-size: 2rem;
+    margin-bottom:0px;
+  }
+  .banner-subtitle {
+    font-size: 3rem;
+    margin-bottom:0px;
+  }
+
+
+  .banner-content p, .banner-content a {
+    text-align: center; /* Center align paragraph and button */
+    width: auto
+  }
+
+  #intro .btn-primary {
+    display: inline-block; /* Prevent the button from stretching full width */
+    align-self : center;
+    margin-bottom: 3em;
+}
+  .banner-content a {
+    margin: 25px auto 0; /* Center the button with auto margins and add some top margin */
+  }
+}
+
+
+@media (min-width: 540px) {
+  .hide-on-big {
+    display: none;
+} /* WAIT A BIT, WHEN YOU HAVE BETTER AND TRANSPARENT BACKGROUND PHOTOS FOR THE HERO SECTION YOU CAN REMOVE THE CLASS FROM THE TRANSITIONNER SECTION */
+  
+}
 .psychology-text {
   background: var(--bs-primary-bg-subtle);
   border-radius: 13px;
