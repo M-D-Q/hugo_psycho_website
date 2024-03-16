@@ -1996,6 +1996,10 @@ h1.light, h2.light, h3.light, h4.light, h5.light {
   width: 80%;
 }
 
+
+.feature-area .image-holder {
+  display: none;
+}
 @media (max-width: 990px) {
   .feature-area .image-holder {
     display: none;
@@ -2006,8 +2010,10 @@ h1.light, h2.light, h3.light, h4.light, h5.light {
 }
 @media (min-width: 990px) {
  .feat-content {
-  border-bottom-left-radius: 13px;
-  border-bottom-right-radius: 13px;
+  /*border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;*/
+  border-radius:13px
+
  }
 }
 
@@ -2343,7 +2349,7 @@ h1 {
 #intro {
   width: 100%;
   height: auto; /* Make height responsive */
-  background: url('../img/photo_2022-01-29_19-06-50%20(2).webp') top / cover no-repeat;
+  background: url('../img/background-2.png') top / contain no-repeat;
   padding-top: 200px ; /* Top Right Bottom */
   margin-bottom: 50px;
 }
@@ -2460,16 +2466,29 @@ h1 {
 #contact-me .icon {
   height: 150px;
   padding: 25px;
+  opacity: 0.8;
 }
 
 #contact-me .gmail-icon {
-  height: 150px;
+  height: 130px;
   padding: 25px;
+  margin-top:10px;
+  opacity: 0.7;
+}
+
+#contact-me .gmail-icon:hover {
+  opacity: 0.9;
+}
+#contact-me .icon:hover {
+  opacity: 1;
 }
 :root {
   --padding-y: 1rem;
   --icon-size-desktop: 95%; /* Adjust based on preference */
   --icon-size-mobile: 75%; /* Adjust based on preference for mobile */
+}
+#contact-me1 {
+  display: none
 }
 
 #contact-me1 .contact-methods {
