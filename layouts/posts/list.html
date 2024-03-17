@@ -1,25 +1,233 @@
+
 {{ define "main" }}
+
 <div class="container mt-5">
     <h1 class="mb-4 text-center">Blog Posts</h1>
-    <div class="row">
-        {{ range .Paginator.Pages }}
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-                {{ with .Params.image }}
-                <img src="{{ . | absURL }}" class="card-img-top" alt="{{ $.Title }}">
+
+    <!-- Category Nav Pills -->
+    <ul class="nav nav-pills justify-content-center mb-4">
+        <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#all">All</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#articles">Articles</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#podcasts">Podcasts</button>
+        </li>
+    </ul>
+
+    <!-- Category Content Panes -->
+    <div class="tab-content">
+        <!-- "All" Content Pane -->
+        <!-- "All" Content Pane -->
+<div class="tab-pane fade show active" id="all">
+    <p>Now showing all posts</p>
+    <!-- Tag Nav Pills for All Posts -->
+    <ul class="nav nav-pills justify-content-center mb-3">
+        <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#all-all-tags">All Tags</button>
+        </li>
+        {{ $allPosts := .Site.RegularPages }}
+        {{ $allTags := slice }}
+        {{ range $allPosts }}
+            {{ range .Params.tags }}
+                {{ if not (in $allTags .) }}
+                    {{ $allTags = $allTags | append . }}
                 {{ end }}
-                <div class="card-body">
-                    <h5 class="card-title">{{ .Title }}</h5>
-                    <p class="card-text">{{ .Summary }}</p>
-                    <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
+            {{ end }}
+        {{ end }}
+        {{ range $allTags }}
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#all-{{ . | urlize }}">{{ . }}</button>
+        </li>
+        {{ end }}
+    </ul>
+
+    <!-- Tag Content Panes for All Posts -->
+    <div class="tab-content">
+        <!-- "All Tags" Pane -->
+        <div class="tab-pane fade show active" id="all-all-tags">
+            <div class="row">
+                {{ range $allPosts }}
+                <!-- Card structure for displaying posts -->
+                <div class="col-md-4 mb-4">
+                    <!-- Post card -->
+                    <div class="card">
+                        <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ .Title }}</h5>
+                            <p class="card-text">{{ .Summary }}</p>
+                            <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Published on {{ .Date.Format "January 2, 2006" }}</small>
+                {{ end }}
+            </div>
+        </div>
+
+        <!-- Individual Tag Panes for All Posts -->
+        {{ range $allTags }}
+        <div class="tab-pane fade" id="all-{{ . | urlize }}">
+            <div class="row">
+                {{ range where $allPosts "Params.tags" "intersect" (slice .) }}
+                <!-- Card structure for displaying posts with this tag -->
+                <div class="col-md-4 mb-4">
+                    <!-- Post card -->
+                    <div class="card">
+                        <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ .Title }}</h5>
+                            <p class="card-text">{{ .Summary }}</p>
+                            <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+                        </div>
+                    </div>
                 </div>
+                {{ end }}
             </div>
         </div>
         {{ end }}
     </div>
-    {{ partial "pagination.html" . }}
+</div>
+
+<!-- "Articles" Content Pane -->
+<div class="tab-pane fade" id="articles">
+    <p>Now showing all articles</p>
+    <!-- Tag Nav Pills for Articles -->
+    <ul class="nav nav-pills justify-content-center mb-3">
+        <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#articles-all-tags">All Tags</button>
+        </li>
+        {{ $articles := where .Site.RegularPages "Params.categories" "intersect" (slice "Articles") }}
+        {{ $tags := slice }}
+        {{ range $articles }}
+            {{ range .Params.tags }}
+                {{ if not (in $tags .) }}
+                    {{ $tags = $tags | append . }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        {{ range $tags }}
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#articles-{{ . | urlize }}">{{ . }}</button>
+        </li>
+        {{ end }}
+    </ul>
+
+    <!-- Tag Content Panes for Articles -->
+    <div class="tab-content">
+        <!-- "All Tags" Pane -->
+        <div class="tab-pane fade show active" id="articles-all-tags">
+            <div class="row">
+                {{ range $articles }}
+                <!-- Card structure for displaying articles -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ .Title }}</h5>
+                            <p class="card-text">{{ .Summary }}</p>
+                            <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+
+        <!-- Individual Tag Panes for Articles -->
+        {{ range $tags }}
+        <div class="tab-pane fade" id="articles-{{ . | urlize }}">
+            <div class="row">
+                {{ range where $articles "Params.tags" "intersect" (slice .) }}
+                <!-- Card structure for displaying articles with this tag -->
+                <div class="col-md-4 mb-4">
+                    <!-- Article card -->
+                    <div class="card">
+                        <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ .Title }}</h5>
+                            <p class="card-text">{{ .Summary }}</p>
+                            <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+
+<!-- "Podcasts" Content Pane -->
+<div class="tab-pane fade" id="podcasts">
+    <p>Now showing all podcasts</p>
+    <!-- Tag Nav Pills for Podcasts -->
+    <ul class="nav nav-pills justify-content-center mb-3">
+        <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#podcasts-all-tags">All Tags</button>
+        </li>
+        {{ $podcasts := where .Site.RegularPages "Params.categories" "intersect" (slice "Podcasts") }}
+        {{ $podcastTags := slice }}
+        {{ range $podcasts }}
+            {{ range .Params.tags }}
+                {{ if not (in $podcastTags .) }}
+                    {{ $podcastTags = $podcastTags | append . }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        {{ range $podcastTags }}
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#podcasts-{{ . | urlize }}">{{ . }}</button>
+        </li>
+        {{ end }}
+    </ul>
+
+    <!-- Tag Content Panes for Podcasts -->
+    <div class="tab-content">
+        <!-- "All Tags" Pane -->
+        <div class="tab-pane fade show active" id="podcasts-all-tags">
+            <div class="row">
+                {{ range $podcasts }}
+                <!-- Card structure for displaying podcasts -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ .Title }}</h5>
+                            <p class="card-text">{{ .Summary }}</p>
+                            <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+
+        <!-- Individual Tag Panes for Podcasts -->
+        {{ range $podcastTags }}
+        <div class="tab-pane fade" id="podcasts-{{ . | urlize }}">
+            <div class="row">
+                {{ range where $podcasts "Params.tags" "intersect" (slice .) }}
+                <!-- Card structure for displaying podcasts with this tag -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ .Title }}</h5>
+                            <p class="card-text">{{ .Summary }}</p>
+                            <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+    </div>
 </div>
 {{ end }}
