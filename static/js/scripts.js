@@ -45,3 +45,32 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() {
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+
+function copyToClipboard() {
+  var copyText = document.getElementById("helpText");
+  var successMessage = document.getElementById("copySuccess");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+
+  // Show the success message
+  successMessage.style.display = "block";
+  successMessage.style.opacity = "1";
+
+  // Fade out the success message after 2 seconds
+  setTimeout(function() {
+      var fadeEffect = setInterval(function () {
+          if (!successMessage.style.opacity) {
+              successMessage.style.opacity = "1";
+          }
+          if (successMessage.style.opacity > "0") {
+              successMessage.style.opacity -= "0.1";
+          } else {
+              clearInterval(fadeEffect);
+              successMessage.style.display = "none";
+          }
+      }, 100);
+  }, 2000);
+}

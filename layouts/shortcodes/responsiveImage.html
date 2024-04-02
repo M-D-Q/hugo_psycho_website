@@ -1,0 +1,16 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $image := resources.Get $src }}
+{{ $sizes := "100vw" }}  <!-- This assumes the image takes full width on smaller screens and adjusts based on your layout needs -->
+{{ $srcset := slice }}
+
+<!-- Define different sizes for various breakpoints -->
+{{ $resolutions := dict "320" "480w" "480" "720w" "800" "1200w" }}
+{{ range $width, $size := $resolutions }}
+    {{ $resize := printf "%sx webp" $width }}
+    {{ $optimizedImage := $image.Resize $resize }}
+    {{ $srcsetData := printf "%s %s" $optimizedImage.RelPermalink $size }}
+    {{ $srcset = $srcset | append $srcsetData }}
+{{ end }}
+
+<img src="{{ ($image.Resize "800x webp").RelPermalink }}" alt="{{ $alt }}" srcset="{{ delimit $srcset ", " }}" sizes="{{ $sizes }}">

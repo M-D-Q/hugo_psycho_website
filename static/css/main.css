@@ -2349,7 +2349,7 @@ h1 {
 #intro {
   width: 100%;
   height: auto; /* Make height responsive */
-  background: url('../img/background-2.png') top / contain no-repeat;
+  background: url('../img/hero-bg_opti_max.png') top / contain no-repeat;
   padding-top: 200px ; /* Top Right Bottom */
   margin-bottom: 50px;
 }
@@ -2376,11 +2376,13 @@ h1 {
   margin-bottom: 3em;
 }
 /* Responsive adjustments */
+
+
 @media (min-width: 540px) and (max-width: 991px) {
   #intro {
     width: 100%;
     height: auto; /* Make height responsive */
-    background: url('../img/photo_2022-01-29_19-06-50 (2)-righted.jpg') top / cover no-repeat;
+    background: url('../img/hero-bg_opti_med_right.png') top no-repeat;
   }
   
 
@@ -2420,7 +2422,7 @@ h1 {
   #intro {
     width: 100%;
     height: auto; /* Make height responsive */
-    background: url('../img/screenshot1.jpg') top no-repeat;
+    background: url('../img/hero-bg_opti_small.png') top no-repeat;
   }
   
   .hide-on-small {

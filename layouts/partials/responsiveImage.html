@@ -1,0 +1,21 @@
+{{ $src := .src }}
+{{ $alt := .alt }}
+{{ $class := .class }}
+{{ $style := .style }}
+
+{{ $image := resources.Get $src }}
+
+{{ if $image }}
+    {{ $srcset := slice }}
+    {{ range $width, $descriptor := (dict "320" "320w" "480" "480w" "800" "800w") }}
+        {{ $resize := printf "%sx webp" $width }}
+        {{ $optimizedImage := $image.Resize $resize }}
+        {{ $srcsetData := printf "%s %s" $optimizedImage.RelPermalink $descriptor }}
+        {{ $srcset = $srcset | append $srcsetData }}
+    {{ end }}
+
+    <img src="{{ ($image.Resize "800x webp").RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}" style="{{ $style | safeCSS }}" srcset="{{ delimit $srcset ", " }}" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px">
+    {{ else }}
+    <!-- Fallback Image or Error Message -->
+    <img src="/path/to/fallback/image.jpg" alt="Fallback or error image" class="{{ $class }}" style="{{ $style | safeCSS }}">
+{{ end }}

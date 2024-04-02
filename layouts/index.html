@@ -150,8 +150,34 @@
                 <div class="col-6 col-md-3 mb-3 contact-icon" data-aos="flip-down" data-aos-delay="200" data-bss-hover-animate="pulse"><a href="https://www.instagram.com" target="_blank"><img class="icon" src="img/Instagram_purple.svg" alt="Instagram"></a></div>
 
             </div>
+        
+        <!-- Trigger Button for Collapse -->
+        <a class="btn btn-primary btn-pill" style="margin-top:20px" data-bs-toggle="collapse" href="#collapseHelpText" role="button" aria-expanded="false" aria-controls="collapseHelpText">
+            Need Help Writing a Message?
+        </a>
+
+        <!-- Collapsible Help Text Section -->
+        <div class="collapse mt-3" id="collapseHelpText">
+            <div class="card card-body" style="background-color: #f8f9fa;">
+                <textarea id="helpText" class="form-control" style="height: 200px; font-family: monospace; white-space: pre-wrap;">Dear [Psychotherapist's Name],
+
+I am reaching out to seek assistance for [your issue/problem]. I have been feeling [your feelings] and believe that I could benefit from professional support. 
+
+It would be great if we could schedule a session to discuss this further. 
+
+Looking forward to your response.
+
+Best regards,
+[Your Name]</textarea>
+
+                <button class="btn btn-primary btn-pil align-self-center " style="width: auto; margin-top:15px" onclick="copyToClipboard()">Copy to Clipboard</button>
+
+
+                <div id="copySuccess" style="display:none; color: green; margin-top: 10px;">Text copied successfully!</div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
     <section class="transition-second-to-first"></section> <!-- Transition from second back to first background -->
 
 
@@ -165,8 +191,31 @@
                 <div class="col-6 col-md-3 mb-3 contact-icon" data-aos="flip-down" data-aos-delay="150" data-bss-hover-animate="pulse"><a href="https://mail.google.com" target="_blank"><img class="img-fluid" src="img/Gmail_icon_(2020).svg" alt="Gmail"></a></div>
                 <div class="col-6 col-md-3 mb-3 contact-icon " data-aos="flip-down" data-aos-delay="200" data-bss-hover-animate="pulse"><a href="https://www.instagram.com" target="_blank"><img class="img-fluid" src="img/Instagram_logo_2016.svg" alt="Instagram"></a></div>
             </div>
+
+            
+        <!-- Trigger Button for Collapse -->
+        <a class="btn btn-info mt-3" data-bs-toggle="collapse" href="#collapseHelpText" role="button" aria-expanded="false" aria-controls="collapseHelpText">
+            Need Help Writing a Message?
+        </a>
+
+        <!-- Collapsible Help Text Section -->
+        <div class="collapse mt-3" id="collapseHelpText">
+            <div class="card card-body" style="background-color: #f8f9fa;">
+                <pre style="white-space: pre-wrap; word-wrap: break-word;">Dear [Psychotherapist's Name],
+
+I am reaching out to seek assistance for [your issue/problem]. I have been feeling [your feelings] and believe that I could benefit from professional support. 
+
+It would be great if we could schedule a session to discuss this further. 
+
+Looking forward to your response.
+
+Best regards,
+[Your Name]</pre>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
     
 
 
