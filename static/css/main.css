@@ -2634,6 +2634,30 @@ h1 {
   padding: 0 10px; /* Add some padding around the '&' if needed */
 }
 
+
+
+
+.phone-mockup {
+  background-image: url('../img/phone1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px; /* Adjust based on your mockup size */
+  height: 600px; /* Adjust based on your mockup size */
+  
+  /* Center the swiper (carousel) in the mockup screen area */
+  .swiper {
+      width: 90%; /* Adjust to fit the screen area of the mockup */
+      height: 80%; /* Adjust to fit the screen area of the mockup */
+      margin: auto;
+      position: relative;
+      top: 15%; /* Adjust to align with the top of the screen area */
+  }
+}
+
+
+
+
 /* Base styles */
 body {
   overflow-x: hidden;
@@ -2642,4 +2666,4 @@ body {
 
 .section {
   overflow : hidden
-}
+} 

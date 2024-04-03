@@ -9,7 +9,7 @@ document.querySelectorAll('.therapy-btn').forEach(button => {
 
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
-const textArray = ["милим", "superskim", "barsukom", "PIVA SHO ROBYSH"]; // Add more words as needed
+const textArray = ["вільним", "в гармонії", "зрілим","собою","спокійним ","впевненим","в здорових стосунках","реалізованим","у прийнятті","відповідальним"]; // Add more words as needed
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000; // Delay between words
@@ -74,3 +74,12 @@ function copyToClipboard() {
       }, 100);
   }, 2000);
 }
+
+
+var myPhoneSwiper = new Swiper('.myPhoneSwiper', {
+  loop: true,
+  pagination: {
+      el: '.swiper-pagination',
+  },
+  // other Swiper parameters as needed
+});
