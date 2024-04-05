@@ -76,10 +76,36 @@ function copyToClipboard() {
 }
 
 
-var myPhoneSwiper = new Swiper('.myPhoneSwiper', {
+var myMockupSwiper = new Swiper('.myMockupSwiper', {
   loop: true,
-  pagination: {
-      el: '.swiper-pagination',
+  effect: 'fade', // Use the fade effect for smoother transitions
+  fadeEffect: {
+      crossFade: true
   },
-  // other Swiper parameters as needed
+  speed: 600, // Adjust the speed of the fade effect
+  pagination: {
+      el: '.swiper-phone-pagination',
+  },
+
+  on: {
+    slideChange: function () {
+        var activeSlide = this.slides[this.activeIndex];
+        var title = activeSlide.getAttribute('data-title');
+        var description = activeSlide.getAttribute('data-description');
+
+        document.getElementById('infoTitle').textContent = title;
+        document.getElementById('infoDescription').textContent = description;
+    }
+}
+});
+
+
+document.querySelectorAll('.myMockupSwiper .swiper-slide img').forEach(item => {
+  item.addEventListener('click', event => {
+    const imageSrc = event.currentTarget.src; // Get the src of the clicked image
+    const modalImage = document.getElementById('modalImage'); // Get the modal image element
+    modalImage.src = imageSrc; // Set the modal image src to the clicked image src
+    const imageModal = new bootstrap.Modal(document.getElementById('imageModal')); // Initialize the modal
+    imageModal.show(); // Show the modal
+  });
 });

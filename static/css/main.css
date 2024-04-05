@@ -2636,26 +2636,18 @@ h1 {
 
 
 
-
-.phone-mockup {
-  background-image: url('../img/phone1.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 300px; /* Adjust based on your mockup size */
-  height: 600px; /* Adjust based on your mockup size */
-  
-  /* Center the swiper (carousel) in the mockup screen area */
-  .swiper {
-      width: 90%; /* Adjust to fit the screen area of the mockup */
-      height: 80%; /* Adjust to fit the screen area of the mockup */
-      margin: auto;
-      position: relative;
-      top: 15%; /* Adjust to align with the top of the screen area */
-  }
+.phone-mockup .swiper-slide img {
+  width: auto; /* Let images be their natural width */
+  max-width: 100%; /* Ensure images are not larger than the container */
+  max-height: 80vh; /* Limit the height of the images */
+  object-fit: contain; /* Preserve aspect ratio while fitting to the container */
+  margin: auto; /* Center images within the slide */
 }
 
-
+.swiper-phone-pagination {
+  text-align: center; /* Center the pagination dots */
+  width: 100%;
+}
 
 
 /* Base styles */

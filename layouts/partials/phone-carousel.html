@@ -1,17 +1,65 @@
-<div class="phone-mockup">
-    <!-- Swiper -->
-    <div class="swiper myPhoneSwiper">
-        <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide">
-                <img src="your-image-path-1.jpg" alt="Slide 1" />
+
+
+
+
+
+
+
+<div class="container-fluid py-4">
+    <div class="row">
+
+
+        <!-- Column for Carousel -->
+        <div class="col-12 col-md-7">
+            <div class="phone-mockup text-center">
+                <!-- Swiper Carousel (Your existing carousel setup) -->
+                <div class="swiper myMockupSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide with the first mockup -->
+                        <div class="swiper-slide" data-title="Title 1" data-description="This is the description for Item 1">
+                            {{ partial "responsiveImage.html" (dict "src" "images/iphone12-screen1.png" "alt" "Testimonail screen from Margaret Johnson, PHD" "class" "phone-bg") }}
+                        </div>
+    
+                        <!-- Slide with the second mockup -->
+                        <div class="swiper-slide" data-title="Title 2" data-description="This is the description for Item 2">
+                            {{ partial "responsiveImage.html" (dict "src" "images/iphone12-screen2.png" "alt" "Testimonial screen from John Visse, PHD" "class" "phone-bg") }}
+                        </div>
+    
+                                <!-- Slide with the third mockup -->
+                        <div class="swiper-slide" data-title="Title 3" data-description="This is the description for Item 3">
+                            {{ partial "responsiveImage.html" (dict "src" "images/iphone12-screen3.png" "alt" "Testimonial screen from Vincent McDoom, Associate Teach at Berkeley" "class" "phone-bg") }}
+                        </div>
+                
+    
+                
+                    </div>
+                    <!-- Optional: Add pagination -->
+                    <div class="swiper-phone-pagination"></div>
+                </div>
             </div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide">
-                <img src="your-image-path-2.jpg" alt="Slide 2" />
-            </div>
-            <!-- Add more slides as needed -->
         </div>
-        <div class="swiper-pagination"></div>
+
+                <!-- Column for Information -->
+                <div class="col-12 col-md-5">
+                    <div id="carouselInfo" class="carousel-info">
+                        <!-- Dynamic Content based on the active carousel item will be displayed here -->
+                        <h2 id="infoTitle">Item Title</h2>
+                        <p id="infoDescription">Description of the active carousel item.</p>
+                    </div>
+                </div>
     </div>
 </div>
+
+
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="" id="modalImage" class="img-fluid" alt="Screenshot"> <!-- Image src will be set dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
