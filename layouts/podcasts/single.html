@@ -6,47 +6,101 @@
 <br>
 <br>
 
-<section class="text-center hero-section-podcast">
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format "January 2, 2006" }}
+
+<!-- Hero Section -->
+<section class="text-center hero-section-podcast py-5">
     <div class="container">
         <h1 class="display-3">{{ .Title }}</h1>
         <p class="lead">{{ .Params.subtitle }}</p>
+        <hr>
         <!-- Publication Date -->
-        <time datetime="{{ $dateMachine }}" class="podcast-date">{{ $dateHuman }}</time>
+        Published on <time datetime="{{ $dateMachine }}" class="podcast-date">{{ $dateHuman }}</time>, By Olesia
+        <hr>
     </div>
 </section>
 
 <!-- Podcast Player and Summary -->
-<div class="container my-5">
-    <article>
-        <!-- Podcast Audio Player -->
-        {{ if .Params.audio }}
-            <div class="podcast-player">
-                <audio controls>
-                    <source src="{{ .Params.audio }}" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
+<div class="container my-5 px-3 px-md-0">
+    <p class="lead">{{ .Params.foreword }}</p>
+
+        <!-- SoundCloud Podcast Player -->
+        {{ if .Params.soundcloud_id }}
+            <div class="podcast-player mb-4">
+                ACTUALLY REAL
+                <iframe width="70%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .Params.soundcloud_id }}&color=%23f54ad5&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
+            </div>
+        {{ else }}
+            <div class="d-flex justify-content-center">
+                <iframe width="70%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/630938718&color=%23f54ad5&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
             </div>
         {{ end }}
 
+
+        
+<article>
         <!-- Podcast Description/Transcript -->
         <div class="podcast-description">
             {{ .Content }}
         </div>
     </article>
 
-    <!-- Tags -->
-    {{ if .Params.tags }}
-        <div class="tags">
-            {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    <!-- Tag Buttons for the Podcast -->
+    <div class="podcast-tags mt-4">
+        {{ if .Params.tags }}
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <h5 class="mb-0 fw-bold">Explore more podcasts with these tags:</h5>
+                </div>
+                <div class="col">
+                    <div class="btn-group" role="group" aria-label="Tag Buttons">
+                        {{ range .Params.tags }}
+                            <a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}" class="btn btn-outline-secondary">{{ . }}</a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+
+    <!-- End of Podcast Components -->
+    <div class="end-of-article mt-5">
+        <hr>
+        <!-- Ideas: Related Articles, Comments Section, Call to Action for Newsletter Signup -->
+        <!-- About the Author - Customized Bootstrap Brain Component -->
+<section class="py-5">
+    <div class="container overflow-hidden bsb-author-1 ">
+      <div class="row justify-content-center gy-4 gy-md-0 ">
+        <!-- Author Image -->
+        <div class="col-12 col-md-3 col-xl-2 d-flex align-items-center justify-content-center ">
+          <img class="img-fluid rounded-circle author-avatar" loading="lazy" src="/img/photo_2021-11-20_22-52-54.webp" alt="Olesia Melnyk">
         </div>
-    {{ end }}
-    
-    <!-- Additional sections like Subscribe on Platforms can be added here -->
+  
+        <!-- Author Bio Content -->
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5 d-flex align-items-center justify-content-center ">
+          <div class="text-center text-md-start author-content">
+            <h5 class="text-secondary fs-7">Podcast recorded by</h5>
+            <h2 class="fs-2 mb-3">Olesia Melnyk</h2>
+            <p class="mb-3">Olesia Melnyk is a seasoned psychologist with a focus on cognitive behavioral therapy, dedicated to empowering individuals to overcome challenges and improve their mental well-being. With a compassionate approach, she has been guiding people through their personal growth journeys for over a decade.</p>
+            <!-- Optional: Link to More Content by the Author -->
+            <p class="mb-0">
+              <a href="#!" class="link-dark text-decoration-none">
+                More from Olesia
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    </div>
+</div>
 </div>
 
-<!-- Comment Section for Podcasts -->
-<div class="container">
-    <!-- Integration code for comments goes here, tailored for podcasts -->
-</div>
+<script>var currentPage = 'podcasts';</script>
 
 {{ end }}

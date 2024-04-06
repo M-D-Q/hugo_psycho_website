@@ -2693,6 +2693,55 @@ h1 {
 
 }
 
+/* FOR ARTICLES */
+/* Ensure the modal dialog can expand to fit the image */
+.article .modal-dialog {
+  max-width: 90%; /* Allows the modal to expand to most of the viewport width */
+  width: auto; /* Allows the modal width to adjust based on the image width */
+}
+
+/* Ensure the image in the modal body uses the maximum available width */
+.article .modal-body img {
+  width: 100%; /* Makes the image scale to the width of the modal */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+article img {
+  max-width: 100%;
+  max-height: 500px;
+  display: block;
+  margin: 0 auto; /* Center images */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 13px;
+}
+
+.author-cartouche {
+  background-color: var(--bs-primary-bg-subtle);
+  border-radius: 13px;
+  border: 1px solid #e1e1e1; /* Adds a light border for more definition */
+}
+
+.author-name {
+  font-weight: bold; /* Emphasize the author's name */
+}
+
+.author-bio {
+  color: #6c757d; /* Muted color for the profession */
+}
+
+.author-description {
+  font-style: italic; /* Italicized for a more subtle bio */
+  color: #6c757d; /* Muted color for subtlety */
+}
+
+/* Additional styling for 'About the Author' heading */
+.about-author-heading {
+  color: var(--bs-primary);
+  border-bottom: 1px solid #e1e1e1; /* Subtle separation */
+  padding-bottom: 10px; /* Spacing below the heading */
+}
+
 
 /* Base styles */
 body {

@@ -1,7 +1,8 @@
 ---
 title: The eugenic effect of religiousness confirmed
-date: 2024-04-06T23:27:00.000Z
+date: 2024-04-06
 description: "Let's test all these features shall we ? "
+categories: ["Articles"]
 tags:
   - Eugenics
   - Religion

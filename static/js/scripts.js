@@ -1,3 +1,9 @@
+
+
+if (typeof currentPage !== 'undefined' && currentPage === 'index') {
+  // Your index page-specific JavaScript here
+
+
 document.querySelectorAll('.therapy-btn').forEach(button => {
     button.addEventListener('click', function() {
         document.querySelectorAll('.therapy-content').forEach(content => {
@@ -47,33 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-function copyToClipboard() {
-  var copyText = document.getElementById("helpText");
-  var successMessage = document.getElementById("copySuccess");
-
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(copyText.value);
-
-  // Show the success message
-  successMessage.style.display = "block";
-  successMessage.style.opacity = "1";
-
-  // Fade out the success message after 2 seconds
-  setTimeout(function() {
-      var fadeEffect = setInterval(function () {
-          if (!successMessage.style.opacity) {
-              successMessage.style.opacity = "1";
-          }
-          if (successMessage.style.opacity > "0") {
-              successMessage.style.opacity -= "0.1";
-          } else {
-              clearInterval(fadeEffect);
-              successMessage.style.display = "none";
-          }
-      }, 100);
-  }, 2000);
-}
 
 
 var myMockupSwiper = new Swiper('.myMockupSwiper', {
@@ -178,4 +157,63 @@ var postsSwiper = new Swiper('.postsSwiper', {
         },
     }
 });
+
+
+}
+
+
+if (typeof currentPage !== 'undefined' && currentPage === 'article') {
+  // Your index page-specific JavaScript here
+
+  document.querySelectorAll('article img').forEach(item => {
+    item.style.cursor = 'pointer';
+    item.addEventListener('click', event => {
+        const imageSrc = event.currentTarget.src;
+        const imageTitle = event.currentTarget.title;
+        const imageDescription = event.currentTarget.alt;
+  
+        const modalImage = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('imageModalLabel');
+        const modalDescription = document.querySelector('.image-description');
+  
+        modalImage.src = imageSrc;
+        modalTitle.textContent = imageTitle;
+        modalDescription.textContent = imageDescription;
+  
+        const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+        imageModal.show();
+    });
+  });
+
+
+  function copyToClipboard() {
+    var copyText = document.getElementById("helpText");
+    var successMessage = document.getElementById("copySuccess");
+  
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+  
+    // Show the success message
+    successMessage.style.display = "block";
+    successMessage.style.opacity = "1";
+  
+    // Fade out the success message after 2 seconds
+    setTimeout(function() {
+        var fadeEffect = setInterval(function () {
+            if (!successMessage.style.opacity) {
+                successMessage.style.opacity = "1";
+            }
+            if (successMessage.style.opacity > "0") {
+                successMessage.style.opacity -= "0.1";
+            } else {
+                clearInterval(fadeEffect);
+                successMessage.style.display = "none";
+            }
+        }, 100);
+    }, 2000);
+  }
+  
+
+}
 

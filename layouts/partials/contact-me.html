@@ -1,0 +1,46 @@
+
+<section class="transition-first-to-second"></section> <!-- Transition from first to second background -->
+
+<section id="contact-me" class="contact-methods py-5 second-background overflow-hidden">
+    <div class="container text-center">
+        <h1 class="display-3 mb-4" style="padding-bottom:10px" >Зв’яжіться зі мною</h1>
+        <p style="padding-bottom:10px">Write me a message</p>
+
+        <div class="row">
+            <div class="col-6 col-md-3 mb-3 contact-icon" data-aos="flip-down" data-aos-delay="150" data-bss-hover-animate="pulse"><a href="https://mail.google.com" target="_blank"><img class="gmail-icon" src="/img/Gmail_purple.svg" alt="Gmail"></a></div>
+            <div class="col-6 col-md-3 mb-3 contact-icon" data-aos="flip-down" data-aos-delay="50" data-bss-hover-animate="pulse"><a href="https://telegram.org" target="_blank"><img class="icon" src="/img/Telegram_purple.svg" alt="Telegram"></a></div>
+            <div class="col-6 col-md-3 mb-3 contact-icon" data-aos="flip-down" data-aos-delay="100" data-bss-hover-animate="pulse"><a href="https://www.viber.com" target="_blank"><img class="icon" src="/img/Viber_purple.svg" alt="Viber"></a></div>
+            <div class="col-6 col-md-3 mb-3 contact-icon" data-aos="flip-down" data-aos-delay="200" data-bss-hover-animate="pulse"><a href="https://www.instagram.com" target="_blank"><img class="icon" src="/img/Instagram_purple.svg" alt="Instagram"></a></div>
+
+        </div>
+    
+    <!-- Trigger Button for Collapse -->
+    <a class="btn btn-primary btn-pill" style="margin-top:20px" data-bs-toggle="collapse" href="#collapseHelpText" role="button" aria-expanded="false" aria-controls="collapseHelpText">
+        Need Help Writing a Message?
+    </a>
+
+    <!-- Collapsible Help Text Section -->
+    <div class="collapse mt-3" id="collapseHelpText">
+        <div class="card card-body" style="background-color: #f8f9fa;">
+            <textarea id="helpText" class="form-control" style="height: 200px; font-family: monospace; white-space: pre-wrap;">Dear [Psychotherapist's Name],
+
+I am reaching out to seek assistance for [your issue/problem]. I have been feeling [your feelings] and believe that I could benefit from professional support. 
+
+It would be great if we could schedule a session to discuss this further. 
+
+Looking forward to your response.
+
+Best regards,
+[Your Name]</textarea>
+
+            <button class="btn btn-primary btn-pil align-self-center " style="width: auto; margin-top:15px" onclick="copyToClipboard()">Copy to Clipboard</button>
+
+
+            <div id="copySuccess" style="display:none; color: green; margin-top: 10px;">Text copied successfully!</div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="transition-second-to-first"></section> <!-- Transition from second back to first background -->
+
+

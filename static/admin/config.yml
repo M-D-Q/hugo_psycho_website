@@ -21,7 +21,11 @@ collections:
         widget: 'list'
         default: []
         field: { label: 'Tag', name: 'tag', widget: 'string' }
-
+      - label: 'categories'
+        name: 'categories'
+        widget: "select"
+        options: ["Articles","Podcasts"]
+        default: "Articles"
 
   - name: 'podcasts'
     label: 'Podcast'
@@ -44,3 +48,16 @@ collections:
         widget: 'list'
         default: []
         field: { label: 'Tag', name: 'tag', widget: 'string' }
+      - label: 'categories'
+        name: 'categories'
+        widget: "select"
+        options: ["Articles","Podcasts"]
+        default: "Podcasts"
+      - label: 'foreword'
+        name: 'foreword'
+        widget: 'string'
+        hint: 'tell us whhat it is about, be detailed, it will appear on top of the player'
+      - label: 'soundcloud_id'
+        name: 'soundcloud_id'
+        widget: 'number'
+        hint: "You'll get it inside the soundcloud embed link you get when clicking share, for ex : https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/630938718&color= get the number there"
