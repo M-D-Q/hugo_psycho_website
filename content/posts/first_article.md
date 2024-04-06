@@ -7,7 +7,3 @@ tags: ["Nature", "Inspiration"]
 ---
 
 Nature has always had a profound impact on the human spirit...
-### YEAHAAAAAAAAAAAAAAA
-
-
-YEAHFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF

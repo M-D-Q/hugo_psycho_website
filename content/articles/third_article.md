@@ -7,6 +7,4 @@ tags: ["Nature", "Stuff"]
 ---
 
 Nature has always had a profoazdazdazdazdazdund impact on the humazadazdazn spirit and other things...
-# FFFFFFFFFFFFFFFF
-FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-ezefezrz
+

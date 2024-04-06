@@ -137,3 +137,26 @@ var diplomaSwiper = new Swiper('.diplomaSwiper', {
 // Update the diploma details for the initial slide
 var initialContent = diplomaSwiper.slides[diplomaSwiper.activeIndex].querySelector('.slide-content').innerHTML;
 document.getElementById('diplomaDetails').innerHTML = initialContent;
+
+
+
+
+// BLOG POSTS SWIPËR
+
+var postsSwiper = new Swiper('.postsSwiper', {
+  loop: true,
+    slidesPerView: 1, // Default to 1 slide per view for mobile
+    spaceBetween: 20, // Space between slides
+    pagination: {
+        el: '.swiper-posts-pagination',
+        clickable: true,
+    },
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 768px
+        768: {
+            slidesPerView: 3, // Show 3 slides per view on desktop
+        },
+    }
+});
+

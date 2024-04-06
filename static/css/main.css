@@ -2674,6 +2674,11 @@ h1 {
 
 }
 
+.img-faq {
+  max-height: 300px;
+  width: 50%
+}
+
 /* Base styles */
 body {
   overflow-x: hidden;
