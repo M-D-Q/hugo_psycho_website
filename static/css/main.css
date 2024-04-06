@@ -2232,7 +2232,7 @@ h1 {
     margin-top: 2em
   }
   #about .image-holder {
-    height:455px;
+    height:300px;
     width:100%;
     background: url('../img/photo_debout_livre.webp') top / cover no-repeat;
     border-radius: 13px;
@@ -2260,7 +2260,7 @@ h1 {
 
 
   #about .image-holder {
-    min-height:700px;
+    height:500px;
     width:90%;
     background: url('../img/photo_debout_livre.webp') top / cover no-repeat;
     border-radius: 13px;
@@ -2286,9 +2286,6 @@ h1 {
 }
 
 
-.featured-swiper {
-  position: relative; /* Ensure the Swiper container is positioned relatively */
-}
 
 .swiper-pagination {
   margin-bottom: 25px; /* Adjust this value based on your needs and the height of the pagination */
@@ -2649,6 +2646,33 @@ h1 {
   width: 100%;
 }
 
+
+
+/* Adjust the Swiper container if needed */
+
+
+/* Styling for Swiper slides */
+#diploma-swiper .swiper-slide {
+  display: flex; /* Use flexbox to center the content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+}
+
+/* Styling for images within Swiper slides */
+#diploma-swiper .swiper-slide img {
+  max-width: 80%; /* Limit the image width to be 90% of the Swiper slide */
+  max-height: 400px; /* Adjust based on your needs, considering portrait diplomas */
+  object-fit: contain; /* Preserve the aspect ratio of the images */
+  margin: auto; /* Center the image within the slide */
+}
+
+#diploma-swiper .swiper-diploma-pagination {
+  text-align: center; /* Centers the pagination bullets */
+  width: 100%; /* Ensures the pagination container spans the full width of its parent */
+  margin-top: 20px; /* Add space between the Swiper and the pagination */
+
+}
 
 /* Base styles */
 body {

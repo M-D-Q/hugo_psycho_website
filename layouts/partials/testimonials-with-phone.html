@@ -3,33 +3,55 @@
         <div class="row mb-5">
             <div class="text-center mx-auto">
                 <h1 class="display-3 text-secondary">Відгуки моїх клієнтів</h1>
-                <br>
                 <p class="lead w-lg-50">Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" style="margin-top:-25px">
 
 
             <!-- Column for Carousel -->
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-md-7" style="margin-top:-35px">
                 <div class="phone-mockup text-center">
                     <!-- Swiper Carousel (Your existing carousel setup) -->
                     <div class="swiper myMockupSwiper">
                         <div class="swiper-wrapper">
                             <!-- Slide with the first mockup -->
-                            <div class="swiper-slide" data-title="Title 1" data-description="This is the description for Item 1">
+                            <div class="swiper-slide">
                                 {{ partial "responsiveImage.html" (dict "src" "images/iphone12-screen1.png" "alt" "Testimonail screen from Margaret Johnson, PHD" "class" "phone-bg") }}
+                                <!-- Hidden container for detailed content -->
+                            <div class="slide-content" style="display: none;">
+        <h2>Title 1</h2>
+        <p>This is the description for <strong>Item 1</strong>.</p>
+        <p>It can include multiple paragraphs, <em>styles</em>, and <a href="#">links</a>.</p>
+        <!-- You can include more HTML content here -->
                             </div>
+                            
+                            </div>
+
         
                             <!-- Slide with the second mockup -->
-                            <div class="swiper-slide" data-title="Title 2" data-description="This is the description for Item 2">
+                            <div class="swiper-slide">
                                 {{ partial "responsiveImage.html" (dict "src" "images/iphone12-screen2.png" "alt" "Testimonial screen from John Visse, PHD" "class" "phone-bg") }}
+                                <!-- Hidden container for detailed content -->
+    <div class="slide-content" style="display: none;">
+        <h2>Title 2</h2>
+        <p>This is the description for <strong>Item 2</strong>.</p>
+        <p>It can include multiple paragraphs, <em>styles</em>, and <a href="#">links</a>.</p>
+        <!-- You can include more HTML content here -->
+    </div>
                             </div>
         
                                     <!-- Slide with the third mockup -->
-                            <div class="swiper-slide" data-title="Title 3" data-description="This is the description for Item 3">
-                                {{ partial "responsiveImage.html" (dict "src" "images/iphone12-screen3.png" "alt" "Testimonial screen from Vincent McDoom, Associate Teach at Berkeley" "class" "phone-bg") }}
+                            <div class="swiper-slide">
+        {{ partial "responsiveImage.html" (dict "src" "images/iphone12-screen3.png" "alt" "Testimonial screen from Vincent McDoom, Associate Teach at Berkeley" "class" "phone-bg") }}
+        <!-- Hidden container for detailed content -->
+    <div class="slide-content" style="display: none;">
+        <h2>Title 3</h2>
+        <p>This is the description for <strong>Item 3</strong>.</p>
+        <p>It can include multiple paragraphs, <em>styles</em>, and <a href="#">links</a>.</p>
+        <!-- You can include more HTML content here -->
+    </div>
                             </div>
                     
         

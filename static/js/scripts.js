@@ -85,19 +85,24 @@ var myMockupSwiper = new Swiper('.myMockupSwiper', {
   speed: 600, // Adjust the speed of the fade effect
   pagination: {
       el: '.swiper-phone-pagination',
+      clickable: true, // Make sure this is set to enable clicking on pagination bullets
+
   },
 
   on: {
     slideChange: function () {
         var activeSlide = this.slides[this.activeIndex];
-        var title = activeSlide.getAttribute('data-title');
-        var description = activeSlide.getAttribute('data-description');
+        var content = activeSlide.querySelector('.slide-content').innerHTML; // Get the HTML content
 
-        document.getElementById('infoTitle').textContent = title;
-        document.getElementById('infoDescription').textContent = description;
+        var infoSection = document.getElementById('carouselInfo');
+        infoSection.innerHTML = content; // Replace the inner HTML of the info section with the slide's content
     }
 }
 });
+
+// Manually update the info section with the first slide's content
+var initialContent = myMockupSwiper.slides[myMockupSwiper.activeIndex].querySelector('.slide-content').innerHTML;
+document.getElementById('carouselInfo').innerHTML = initialContent;
 
 
 document.querySelectorAll('.myMockupSwiper .swiper-slide img').forEach(item => {
@@ -109,3 +114,26 @@ document.querySelectorAll('.myMockupSwiper .swiper-slide img').forEach(item => {
     imageModal.show(); // Show the modal
   });
 });
+
+
+var diplomaSwiper = new Swiper('.diplomaSwiper', {
+  // Swiper configuration...
+  loop: true,
+  pagination: {
+      el: '.swiper-diploma-pagination',
+      clickable: true,
+  },
+  on: {
+      slideChange: function () {
+          var activeSlide = this.slides[this.activeIndex];
+          var content = activeSlide.querySelector('.slide-content').innerHTML;
+
+          var detailsSection = document.getElementById('diplomaDetails');
+          detailsSection.innerHTML = content;
+      }
+  }
+});
+
+// Update the diploma details for the initial slide
+var initialContent = diplomaSwiper.slides[diplomaSwiper.activeIndex].querySelector('.slide-content').innerHTML;
+document.getElementById('diplomaDetails').innerHTML = initialContent;

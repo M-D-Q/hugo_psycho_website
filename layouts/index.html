@@ -23,11 +23,12 @@
                         <div class="text-center"><a class="btn btn-primary text-uppercase btn-small btn-pill" role="button" data-bss-hover-animate="pulse" href="#contact-me">Забронюйте сеанс</a></div>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-3" >
+                <div class="col-md-12 col-lg-3">
                     <div class="feature-area" style="border-radius: 13px;">
                         <div class="swiper featured-swiper " style="border-radius: 13px;">
+                            <div class="swiper-pagination"></div>
                             <div class="swiper-wrapper" style="border-radius: 13px;"  >
-                                <div class="swiper-slide " >
+                                <div class="swiper-slide">
                                     <div class="text-center bg-light feat-content p-5" >
                                         <h3>Самопізнання</h3>
                                         <p class="fs-6 fw-light">Регулярна терапія дасть Вам можливість пізнати себе, допоможе вам зрозуміти ваші думки, емоції, тіло та патерни поведінки. Адже не існує однакової особистості і для побудови життя вашої мрії необхідно знати себе.
@@ -70,7 +71,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="swiper-pagination"></div>
+                            
 
 
                             
@@ -82,7 +83,6 @@
             
         </div>
     </section>
-
 
     {{ partial "issues2.html" . }}
     <section class="transition-first-to-second"></section> <!-- Transition from first to second background -->
@@ -123,6 +123,8 @@
             </div>
         </div>
     </div>
+    {{ partial "diploma-swiper.html" . }}
+
     <section class="transition-second-to-first"></section> <!-- Transition from second back to first background -->
 
     {{ partial "methods.html" . }}
