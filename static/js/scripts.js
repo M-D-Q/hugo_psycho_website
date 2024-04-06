@@ -78,6 +78,7 @@ function copyToClipboard() {
 
 var myMockupSwiper = new Swiper('.myMockupSwiper', {
   loop: true,
+  grabCursor: true,
   effect: 'fade', // Use the fade effect for smoother transitions
   fadeEffect: {
       crossFade: true
@@ -119,6 +120,14 @@ document.querySelectorAll('.myMockupSwiper .swiper-slide img').forEach(item => {
 var diplomaSwiper = new Swiper('.diplomaSwiper', {
   // Swiper configuration...
   loop: true,
+  grabCursor: true,
+  effect: 'cube',
+  cubeEffect: {
+      slideShadows: false, // Enables dynamic shadow effects
+      shadow: true,
+      shadowOffset: 10,
+      shadowScale: 0.94
+  },
   pagination: {
       el: '.swiper-diploma-pagination',
       clickable: true,
@@ -150,6 +159,16 @@ var postsSwiper = new Swiper('.postsSwiper', {
     pagination: {
         el: '.swiper-posts-pagination',
         clickable: true,
+    },
+    
+    // Using Coverflow effect
+    effect: 'coverflow',
+    coverflowEffect: {
+        rotate: 12, // Slide rotate in degrees
+        stretch: 0, // Stretch space between slides (in px)
+        depth: 25, // Depth offset in px (slides translate in Z axis)
+        modifier: 1, // Effect multiplier
+        slideShadows: false, // Enables shadows
     },
     // Responsive breakpoints
     breakpoints: {
