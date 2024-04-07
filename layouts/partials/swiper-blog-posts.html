@@ -20,21 +20,25 @@
             {{ range $posts }}
             <div class="swiper-slide">
                 <div class="card">
+                    <div class="card-header text-muted justify-content-center" style="text-align: center;">
+                        {{ range .Params.categories }}{{ . }} {{ end }}
+                    </div>
                     {{ with .Params.image }}
                     <img class="card-img-top w-100" src="{{ . | absURL }}" alt="{{ .Title }}">
                     {{ else }}
                     <img class="card-img-top w-100" src="/img/cbt-1.webp" alt="Default Image">
                     {{ end }}
                     <div class="card-body p-4">
-                        <p class="text-primary card-text mb-0">{{ range .Params.tags }}{{ . }} {{ end }}</p>
-                        <h4 class="card-title">{{ .Title }}</h4>
+                        
+                        <h4 class="card-title" style="text-align: center;">{{ .Title }}</h4>
                         <p class="card-text">{{ .Summary | truncate 150 }}</p>
                         <div class="d-flex justify-content-center">
                             <a href="{{ .RelPermalink }}" class="btn btn-primary btn-pill" data-bss-hover-animate="pulse">Читати більше</a>
                         </div>
                     </div>
-                    <div class="card-footer text-muted">
-                        Category: {{ range .Params.categories }}{{ . }} {{ end }}
+                    <div class="card-footer text-muted justify-content-center" style="text-align: center;">
+                        {{ range .Params.tags }} <a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}" class="btn btn-outline-secondary">{{ . }}</a>
+                            {{ end }}
                     </div>
                 </div>
             </div>

@@ -3,14 +3,13 @@
 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{ $dateHuman := .Date | time.Format ":date_long" }}
 <!-- Hero Section -->
-<br>
-<br>
+
 
 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{ $dateHuman := .Date | time.Format "January 2, 2006" }}
 
 <!-- Hero Section -->
-<section class="text-center hero-section-podcast py-5">
+<section class="text-center hero-section-podcast py-5" style="margin-bottom:-50px">
     <div class="container">
         <h1 class="display-3">{{ .Title }}</h1>
         <p class="lead">{{ .Params.subtitle }}</p>
@@ -22,14 +21,22 @@
 </section>
 
 <!-- Podcast Player and Summary -->
-<div class="container my-5 px-3 px-md-0">
-    <p class="lead">{{ .Params.foreword }}</p>
+<div class="container my-5 px-3 px-md-0" >
+    <div class="justify-content-center d-flex" style="margin-bottom:20px">
+        <p class="lead text-muted" style="width:60%;text-align: center;">{{ .Params.foreword }}</p>
+
+    </div>
+    
 
         <!-- SoundCloud Podcast Player -->
         {{ if .Params.soundcloud_id }}
             <div class="podcast-player mb-4">
-                ACTUALLY REAL
-                <iframe width="70%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .Params.soundcloud_id }}&color=%23f54ad5&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
+                <!-- Inside layouts/podcasts/single.html or similar -->
+{{ $soundcloudURL := partial "soundcloudURL.html" .Params.soundcloud_id }}
+<div class="d-flex justify-content-center">
+<iframe width="60%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+    src="{{ $soundcloudURL | safeURL }}">
+</iframe></div>
             </div>
         {{ else }}
             <div class="d-flex justify-content-center">

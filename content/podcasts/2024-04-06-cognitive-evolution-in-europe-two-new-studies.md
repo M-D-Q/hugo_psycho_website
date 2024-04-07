@@ -1,17 +1,16 @@
 ---
 title: "Cognitive evolution in Europe: two new studies"
-date: 2024-04-07T01:32:00.000Z
+date: 2024-04-06
 description: It happened faster than you may think
 audio: /static/audio/prout.mp3
 tags:
   - podcast_de_psycho
-  - négresse
-categories: Podcasts
+categories: ["Podcasts"]
 foreword: Europeans became a high-IQ population through an evolutionary
   trajectory that began with the adoption of farming and continued because of
   the cognitive demands of social complexity. Much of the upward trend in
   cognitive ability has occurred since medieval times.
-soundcloud_id: 1032256744
+soundcloud_id: '537994743'
 ---
 **H**uman evolution did not end in the Paleolithic. It continued and even accelerated along different trajectories in different populations and for different traits (Cochran and Harpending, 2009; Hawks et al., 2007; Rinaldi, 2017).
 

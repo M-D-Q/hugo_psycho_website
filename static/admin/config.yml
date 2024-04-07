@@ -24,8 +24,8 @@ collections:
       - label: 'categories'
         name: 'categories'
         widget: "select"
-        options: ["Articles","Podcasts"]
-        default: "Articles"
+        options: ['"[Articles]"','"[Podcasts]"']
+        default: '"[Articles]"'
 
   - name: 'podcasts'
     label: 'Podcast'
@@ -38,11 +38,6 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - label: 'audio'
-        name: 'audio'
-        widget: 'file'
-        media_folder: /static/audio
       - label: 'Tags'
         name: 'tags'
         widget: 'list'
@@ -51,13 +46,14 @@ collections:
       - label: 'categories'
         name: 'categories'
         widget: "select"
-        options: ["Articles","Podcasts"]
-        default: "Podcasts"
+        options: ['"[Articles]"','"[Podcasts]"']
+        default: '"[Podcasts]"'
       - label: 'foreword'
         name: 'foreword'
         widget: 'string'
-        hint: 'tell us whhat it is about, be detailed, it will appear on top of the player'
+        hint: 'tell us what it is about, be detailed, it will appear on top of the player'
       - label: 'soundcloud_id'
         name: 'soundcloud_id'
-        widget: 'number'
+        widget: 'string'
         hint: "You'll get it inside the soundcloud embed link you get when clicking share, for ex : https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/630938718&color= get the number there"
+      - { label: 'Body', name: 'body', widget: 'markdown' }

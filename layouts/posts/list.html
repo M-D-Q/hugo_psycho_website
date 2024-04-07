@@ -1,7 +1,7 @@
 
 {{ define "main" }}
 
-<div class="container mt-5">
+<div class="container mt-5" style="width:70%">
     <h1 class="mb-4 text-center">Blog Posts</h1>
 
     <!-- Category Nav Pills -->
@@ -57,7 +57,7 @@
                         <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ .Title }}</h5>
-                            <p class="card-text">{{ .Summary }}</p>
+                            <p class="card-text">{{ .Summary | truncate 150  }}</p>
                             <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                         <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ .Title }}</h5>
-                            <p class="card-text">{{ .Summary }}</p>
+                            <p class="card-text">{{ .Summary | truncate 150  }}</p>
                             <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                         <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ .Title }}</h5>
-                            <p class="card-text">{{ .Summary }}</p>
+                            <p class="card-text">{{ .Summary | truncate 150  }}</p>
                             <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                         <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ .Title }}</h5>
-                            <p class="card-text">{{ .Summary }}</p>
+                            <p class="card-text">{{ .Summary | truncate 150 }}</p>
                             <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
                         </div>
                     </div>
@@ -196,7 +196,7 @@
                         <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ .Title }}</h5>
-                            <p class="card-text">{{ .Summary }}</p>
+                            <p class="card-text">{{ .Summary  | truncate 150 }}</p>
                             <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
                         </div>
                     </div>
@@ -216,7 +216,7 @@
                         <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ .Title }}</h5>
-                            <p class="card-text">{{ .Summary }}</p>
+                            <p class="card-text">{{ .Summary | truncate 150 }}</p>
                             <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
                         </div>
                     </div>
