@@ -2,6 +2,7 @@
 
 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{ $dateHuman := .Date | time.Format "January 2, 2006" }}
+<div class="reducino-single">
 
 <!-- Hero Section -->
 <section class="text-center hero-section-article py-5">
@@ -81,26 +82,26 @@
     </div>
 </div>
 
+
+</div>
+{{ partial "contact-me.html" .}}
 <!-- Bootstrap Modal for Images -->
 <div class="modal fade article" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="imageModalLabel">Image Title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img src="" id="modalImage" class="img-fluid" alt="Responsive image">
-            </div>
-            <div class="modal-footer">
-                <p class="image-description m-0">Image Description</p>
-            </div>
-        </div>
-    </div>
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel">Image Title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="" id="modalImage" class="img-fluid" alt="Responsive image">
+          </div>
+          <div class="modal-footer">
+              <p class="image-description m-0">Image Description</p>
+          </div>
+      </div>
+  </div>
 </div>
-
-{{ partial "contact-me.html" .}}
-
 <script>var currentPage = 'article';</script>
 
 {{ end }}

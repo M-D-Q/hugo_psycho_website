@@ -1,4 +1,57 @@
+// header stick up
 
+document.addEventListener('DOMContentLoaded', function() {
+  let lastScrollTop = 0;
+  const navbar = document.getElementById('customNavbar'); // Ensure this matches your navbar's ID
+
+  window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      // When at the top, make the navbar non-fixed
+      if (currentScroll <= 0) {
+          navbar.classList.remove('sticky');
+      } else {
+          navbar.classList.add('sticky');
+
+          // Rest of your scroll logic...
+          if (currentScroll > lastScrollTop) {
+              navbar.style.top = '-100px'; // Adjust for your navbar's height
+          } else {
+              navbar.style.top = '0';
+          }
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Update last scroll position
+  }, false);
+});
+
+
+function copyToClipboard() {
+  var copyText = document.getElementById("helpText");
+  var successMessage = document.getElementById("copySuccess");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+
+  // Show the success message
+  successMessage.style.display = "block";
+  successMessage.style.opacity = "1";
+
+  // Fade out the success message after 2 seconds
+  setTimeout(function() {
+      var fadeEffect = setInterval(function () {
+          if (!successMessage.style.opacity) {
+              successMessage.style.opacity = "1";
+          }
+          if (successMessage.style.opacity > "0") {
+              successMessage.style.opacity -= "0.1";
+          } else {
+              clearInterval(fadeEffect);
+              successMessage.style.display = "none";
+          }
+      }, 100);
+  }, 2000);
+}
 
 if (typeof currentPage !== 'undefined' && currentPage === 'index') {
   // Your index page-specific JavaScript here
@@ -265,6 +318,8 @@ var debouncedResize = debounce(function() {
 window.addEventListener('resize', debouncedResize);
 
 
+
+
 }
 
 
@@ -292,34 +347,34 @@ if (typeof currentPage !== 'undefined' && currentPage === 'article') {
   });
 
 
-  function copyToClipboard() {
-    var copyText = document.getElementById("helpText");
-    var successMessage = document.getElementById("copySuccess");
-  
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(copyText.value);
-  
-    // Show the success message
-    successMessage.style.display = "block";
-    successMessage.style.opacity = "1";
-  
-    // Fade out the success message after 2 seconds
-    setTimeout(function() {
-        var fadeEffect = setInterval(function () {
-            if (!successMessage.style.opacity) {
-                successMessage.style.opacity = "1";
-            }
-            if (successMessage.style.opacity > "0") {
-                successMessage.style.opacity -= "0.1";
-            } else {
-                clearInterval(fadeEffect);
-                successMessage.style.display = "none";
-            }
-        }, 100);
-    }, 2000);
-  }
   
 
 }
 
+if (typeof currentPage !== 'undefined' && currentPage === 'podcasts') {
+  // Your index page-specific JavaScript here
+
+  document.querySelectorAll('article img').forEach(item => {
+    item.style.cursor = 'pointer';
+    item.addEventListener('click', event => {
+        const imageSrc = event.currentTarget.src;
+        const imageTitle = event.currentTarget.title;
+        const imageDescription = event.currentTarget.alt;
+  
+        const modalImage = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('imageModalLabel');
+        const modalDescription = document.querySelector('.image-description');
+  
+        modalImage.src = imageSrc;
+        modalTitle.textContent = imageTitle;
+        modalDescription.textContent = imageDescription;
+  
+        const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+        imageModal.show();
+    });
+  });
+
+
+  
+
+}

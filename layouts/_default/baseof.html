@@ -4,9 +4,11 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <header>
+  <header id="customNavbar">
     {{ partial "header.html" . }}
   </header>
+  <section class="transition-header-to-first "></section> <!-- Transition from second back to first background -->
+
   <main>
     {{ block "main" . }}{{ end }}
   </main>

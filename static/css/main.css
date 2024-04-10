@@ -1982,6 +1982,19 @@ h1.light, h2.light, h3.light, h4.light, h5.light {
 
 /* 4.1 Header
 ------------------------------------------------------------- */
+/* Prefixing everything with 'unique-' to ensure specificity */
+#customNavbar {
+  /* Regular block styling */
+  width: 100%;
+  z-index: 1000;
+}
+
+#customNavbar.sticky {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Example shadow for elevated effect */
+}
+
 
 
 /* 4.2 Intro
@@ -2776,6 +2789,20 @@ article img {
 @media (min-width: 992px) {
   .reducino-text {
       max-width: 70%; /* Set max-width to 70% for larger screens */
+      margin-left: auto; /* Center the element horizontally */
+      margin-right: auto;
+  }
+}
+
+/* Class applies to all screen sizes by default */
+.reducino-single {
+  max-width: 100%; /* Ensures the element takes full width on smaller screens */
+}
+
+/* Media query for screens wider than 991px */
+@media (min-width: 992px) {
+  .reducino-single {
+      max-width: 50% !important; /* Set max-width to 70% for larger screens */
       margin-left: auto; /* Center the element horizontally */
       margin-right: auto;
   }
