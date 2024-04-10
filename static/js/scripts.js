@@ -159,6 +159,112 @@ var postsSwiper = new Swiper('.postsSwiper', {
 });
 
 
+
+// Issues Swiper 1
+
+document.addEventListener('DOMContentLoaded', function() {
+  var issuesSwiper = new Swiper('.swiper-issues', {
+      loop: false,
+      init: true,
+
+      centeredSlides: true,
+      slidesPerView: 'auto', // or try 1.5, 2.5, etc., depending on the desired effect
+      loopedSlides: 3, // Specify the number of slides to duplicate for looping
+      loopAdditionalSlides: 2, // Additional slides to clone at the end
+      pagination: {
+          el: '.swiper-issues-pagination'},
+      spaceBetween: 0,
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var issuesSwiper1 = new Swiper('.swiper-issues1', {
+      loop: false,
+      init: true,
+
+      centeredSlides: true,
+      slidesPerView: 'auto', // or try 1.5, 2.5, etc., depending on the desired effect
+      loopedSlides: 3, // Specify the number of slides to duplicate for looping
+      loopAdditionalSlides: 2, // Additional slides to clone at the end
+      pagination: {
+        el: '.swiper-issues-pagination1',      },
+      spaceBetween: 0,
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var issuesSwiper2 = new Swiper('.swiper-issues2', {
+      loop: false,
+      init: true,
+
+      centeredSlides: true,
+      slidesPerView: 'auto', // or try 1.5, 2.5, etc., depending on the desired effect
+      loopedSlides: 3, // Specify the number of slides to duplicate for looping
+      loopAdditionalSlides: 2, // Additional slides to clone at the end
+      pagination: {
+          el: '.swiper-issues-pagination2',      },
+      spaceBetween: 0,
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var mobileNavSelector = document.getElementById('mobile-nav-selector');
+  
+  mobileNavSelector.addEventListener('change', function() {
+      var selectedTabId = this.value;
+      new bootstrap.Tab(document.querySelector(`[data-bs-target="${selectedTabId}"]`)).show();
+  });
+});
+
+
+function equalizeSwiperSlidesHeight(swiperSelector) {
+  var maxHeight = 0;
+
+  // Find the tallest slide
+  document.querySelectorAll(swiperSelector + ' .swiper-slide').forEach(function(slide) {
+      var slideHeight = slide.offsetHeight;
+      maxHeight = Math.max(maxHeight, slideHeight);
+  });
+
+  // Set all slides to the height of the tallest slide
+  document.querySelectorAll(swiperSelector + ' .swiper-slide').forEach(function(slide) {
+      slide.style.height = maxHeight + 'px';
+
+      // Additionally, set the height of the cards within the slides
+      var cards = slide.querySelectorAll('.card');
+      cards.forEach(function(card) {
+          card.style.height = maxHeight + 'px';
+      });
+  });
+}
+
+// Run the function for your swiper container, adjust the selector as needed
+// Consider running this function after Swiper initialization and on window resize
+equalizeSwiperSlidesHeight('#issues-reforged .swiper-container');
+
+
+function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+        var context = this, args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        }, wait);
+        if (immediate && !timeout) func.apply(context, args);
+    };
+}
+
+// Debounced resize function
+var debouncedResize = debounce(function() {
+    equalizeSwiperSlidesHeight('#issues-reforged .swiper-container');
+}, 250);
+
+window.addEventListener('resize', debouncedResize);
+
+
 }
 
 

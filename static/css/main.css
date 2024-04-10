@@ -1799,7 +1799,7 @@ html {
 }
 body {
   font-family: var(--body-font);
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 1.5;
   color: var(--accent-color);
@@ -2014,12 +2014,24 @@ h1.light, h2.light, h3.light, h4.light, h5.light {
  .feat-content {
   /*border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;*/
-  border-radius:13px
+  border-radius:13px;
 
  }
 }
 
-
+.swiper-slide-shadow-cards {
+  border-radius: 13px;
+}
+.feat-text {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-left: -20px;
+  margin-right: -20px;
+  text-align: center;
+}
+.feat-title {
+  font-size: 1.4rem;
+}
 
 @media (max-width: 681px) {
   .banner-content h1.banner-title {
@@ -2617,7 +2629,8 @@ h1 {
   align-items: center;
   width: 100%;
   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  font-family:"Roboto";
   color: var(--bs-accordion-btn-color);
   text-align: left;
   background-color: var(--bs-accordion-btn-bg);
@@ -2654,7 +2667,7 @@ h1 {
 .phone-mockup .swiper-slide img {
   width: auto; /* Let images be their natural width */
   max-width: 100%; /* Ensure images are not larger than the container */
-  max-height: 80vh; /* Limit the height of the images */
+  max-height: 66vh; /* Limit the height of the images */
   object-fit: contain; /* Preserve aspect ratio while fitting to the container */
   margin: auto; /* Center images within the slide */
 }
@@ -2742,6 +2755,31 @@ article img {
   padding-bottom: 10px; /* Spacing below the heading */
 }
 
+/* Class applies to all screen sizes by default */
+.reducino {
+    max-width: 100%; /* Ensures the element takes full width on smaller screens */
+}
+
+/* Media query for screens wider than 991px */
+@media (min-width: 992px) {
+    .reducino {
+        max-width: 70% !important; /* Set max-width to 70% for larger screens */
+        margin-left: auto; /* Center the element horizontally */
+        margin-right: auto;
+    }
+}
+.reducino-text {
+  max-width: 100%; /* Ensures the element takes full width on smaller screens */
+}
+
+/* Media query for screens wider than 991px */
+@media (min-width: 992px) {
+  .reducino-text {
+      max-width: 70%; /* Set max-width to 70% for larger screens */
+      margin-left: auto; /* Center the element horizontally */
+      margin-right: auto;
+  }
+}
 
 /* Base styles */
 body {
@@ -2752,3 +2790,21 @@ body {
 .section {
   overflow : hidden
 } 
+
+.lead {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Custom container class with reduced width */
+.custom-container {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .custom-container {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
