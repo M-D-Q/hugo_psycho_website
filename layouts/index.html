@@ -85,7 +85,7 @@
     {{ partial "issues-reforged.html" . }}
     <section class="transition-first-to-second"></section> <!-- Transition from first to second background -->
 
-    <section id="about" class="second-background overflow-hidden ">
+    <section id="about" class="second-background overflow-hidden" style="padding-bottom:50px">
         <div class="container reducino" >
             <div class="row align-items-center">
                 <div class="col-lg-4 miaou">
@@ -93,7 +93,7 @@
                 </div>
                 <div class="col-lg-8 kek" style="padding-left: 50px;padding-right: 50px">
                     <div data-aos="fade-left" data-aos-duration="2000" class="about-us-content" style="text-align: center;">
-                        <h1 class="display-1 text-secondary" style="text-align: center; padding-bottom:25px;">Хто я?</h1><q class="pb-3">Подорож через психотерапію — це не пошук нових пейзажів, а здобуття нових очей.</q>
+                        <h1 class="display-3 text-secondary" style="text-align: center; padding-bottom:25px;">Хто я?</h1><q class="pb-3">Подорож через психотерапію — це не пошук нових пейзажів, а здобуття нових очей.</q>
                         <p class="lead" style="text-align: justify">Я – Олеся. Дипломований психолог. Кандидат в психотерапевти. 9 років в психології, 6 років в психотерапії. Поєдную в своїй работі техніки гештальт-терапії, арт-терапії, когнітивно-поведінкової терапії та МАК. Проходжу особисту та групову супервізію, проходжу індивідуальну терапію, беру участь в різних навчальних проєктах, щоб допомагати клієнтам покращувати якість їхнього життя.</p>
                         <a class="btn btn-primary text-uppercase btn-small btn-pill" role="button" data-bss-hover-animate="pulse" style="text-align: center; margin-top:25px" data-bs-target="#about-me-modal" data-bs-toggle="modal">Мої кваліфікації</a>
                     </div>
@@ -121,13 +121,15 @@
             </div>
         </div>
     </div>
-    {{ partial "diploma-swiper.html" . }}
-
     <section class="transition-second-to-first"></section> <!-- Transition from second back to first background -->
+    {{ partial "diploma-swiper.html" . }}
+    <section class="transition-first-to-second"></section> <!-- Transition from first to second background -->
+
 
     {{ partial "methods.html" . }}
-<section class="transition-first-to-second"></section> <!-- Transition from first to second background -->
 
+
+    
 {{ partial "faq.html" . }}
 
     <section class="transition-second-to-first"></section> <!-- Transition from second back to first background -->

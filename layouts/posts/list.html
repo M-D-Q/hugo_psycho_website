@@ -2,8 +2,8 @@
 {{ define "main" }}
 
 <div class="container mt-5" style="width:70%">
-    <h1 class="mb-4 text-center">Blog Posts</h1>
-
+    <h1 class="mb-4 text-center">All my blog posts</h1>
+<hr>
     <!-- Category Nav Pills -->
     <ul class="nav nav-pills justify-content-center mb-4">
         <li class="nav-item">
@@ -16,13 +16,12 @@
             <button class="nav-link" data-bs-toggle="pill" data-bs-target="#podcasts">Podcasts</button>
         </li>
     </ul>
-
+<hr>
     <!-- Category Content Panes -->
     <div class="tab-content">
         <!-- "All" Content Pane -->
         <!-- "All" Content Pane -->
 <div class="tab-pane fade show active" id="all">
-    <p>Now showing all posts</p>
     <!-- Tag Nav Pills for All Posts -->
     <ul class="nav nav-pills justify-content-center mb-3">
         <li class="nav-item">
@@ -43,28 +42,34 @@
         </li>
         {{ end }}
     </ul>
+    <hr>
+    <br>
+<!-- Tag Content Panes for All Posts -->
+<div class="tab-content">
+    <!-- "All Tags" Pane -->
+    <div class="tab-pane fade show active" id="all-all-tags">
+        <div class="row">
+            {{ range $allPosts }}
+            <!-- Card structure for displaying posts -->
+            <div class="col-md-3 mb-3 d-flex"> <!-- Adjusted from col-md-4 to col-md-3 -->
+                <!-- Post card -->
+                <div class="card flex-fill"> <!-- 'flex-fill' will make sure the card stretches within the flex container -->
 
-    <!-- Tag Content Panes for All Posts -->
-    <div class="tab-content">
-        <!-- "All Tags" Pane -->
-        <div class="tab-pane fade show active" id="all-all-tags">
-            <div class="row">
-                {{ range $allPosts }}
-                <!-- Card structure for displaying posts -->
-                <div class="col-md-4 mb-4">
-                    <!-- Post card -->
-                    <div class="card">
-                        <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ .Title }}</h5>
-                            <p class="card-text">{{ .Summary | truncate 150  }}</p>
-                            <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
-                        </div>
+                    {{ with .Params.image }}
+                    <img class="card-img-top" src="{{ . | absURL }}" alt="{{ .Title }}">
+                    {{ else }}
+                    <img class="card-img-top" src="/img/cbt-1.webp" alt="Default Image">
+                    {{ end }}
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title smaller-custom-title">{{ .Title }}</h5>
+                        <p class="card-text smaller-custom-text flex-fill">{{ .Summary | truncate 70 }}</p> <!-- Optionally, shorten the summary -->
+                        <a href="{{ .RelPermalink }}" class="btn btn-primary posts-custom-button mt-auto" data-bss-hover-animate="pulse">Читати більше</a>
                     </div>
                 </div>
-                {{ end }}
             </div>
+            {{ end }}
         </div>
+    </div>
 
         <!-- Individual Tag Panes for All Posts -->
         {{ range $allTags }}
@@ -72,14 +77,19 @@
             <div class="row">
                 {{ range where $allPosts "Params.tags" "intersect" (slice .) }}
                 <!-- Card structure for displaying posts with this tag -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 d-flex">
                     <!-- Post card -->
-                    <div class="card">
-                        <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ .Title }}</h5>
-                            <p class="card-text">{{ .Summary | truncate 150  }}</p>
-                            <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+                    <div class="card flex-fill"> <!-- 'flex-fill' will make sure the card stretches within the flex container -->
+
+                        {{ with .Params.image }}
+                        <img class="card-img-top" src="{{ . | absURL }}" alt="{{ .Title }}">
+                        {{ else }}
+                        <img class="card-img-top" src="/img/cbt-1.webp" alt="Default Image">
+                        {{ end }}
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title smaller-custom-title">{{ .Title }}</h5>
+                            <p class="card-text smaller-custom-text flex-fill">{{ .Summary | truncate 150 }}</p> <!-- Optionally, shorten the summary -->
+                            <a href="{{ .RelPermalink }}" class="btn btn-primary posts-custom-button mt-auto" data-bss-hover-animate="pulse">Читати більше</a>
                         </div>
                     </div>
                 </div>
@@ -92,7 +102,6 @@
 
 <!-- "Articles" Content Pane -->
 <div class="tab-pane fade" id="articles">
-    <p>Now showing all articles</p>
     <!-- Tag Nav Pills for Articles -->
     <ul class="nav nav-pills justify-content-center mb-3">
         <li class="nav-item">
@@ -113,7 +122,8 @@
         </li>
         {{ end }}
     </ul>
-
+    <hr>
+    <br>
     <!-- Tag Content Panes for Articles -->
     <div class="tab-content">
         <!-- "All Tags" Pane -->
@@ -121,13 +131,19 @@
             <div class="row">
                 {{ range $articles }}
                 <!-- Card structure for displaying articles -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ .Title }}</h5>
-                            <p class="card-text">{{ .Summary | truncate 150  }}</p>
-                            <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+                <div class="col-md-3 mb-3 d-flex"> <!-- Adjusted from col-md-4 to col-md-3 -->
+                    <!-- Post card -->
+                    <div class="card flex-fill"> <!-- 'flex-fill' will make sure the card stretches within the flex container -->
+    
+                        {{ with .Params.image }}
+                        <img class="card-img-top" src="{{ . | absURL }}" alt="{{ .Title }}">
+                        {{ else }}
+                        <img class="card-img-top" src="/img/cbt-1.webp" alt="Default Image">
+                        {{ end }}
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title smaller-custom-title">{{ .Title }}</h5>
+                            <p class="card-text smaller-custom-text flex-fill">{{ .Summary | truncate 70 }}</p> <!-- Optionally, shorten the summary -->
+                            <a href="{{ .RelPermalink }}" class="btn btn-primary posts-custom-button mt-auto" data-bss-hover-animate="pulse">Читати більше</a>
                         </div>
                     </div>
                 </div>
@@ -141,14 +157,19 @@
             <div class="row">
                 {{ range where $articles "Params.tags" "intersect" (slice .) }}
                 <!-- Card structure for displaying articles with this tag -->
-                <div class="col-md-4 mb-4">
-                    <!-- Article card -->
-                    <div class="card">
-                        <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ .Title }}</h5>
-                            <p class="card-text">{{ .Summary | truncate 150 }}</p>
-                            <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+                <div class="col-md-4 mb-4 d-flex">
+                    <!-- Post card -->
+                    <div class="card flex-fill"> <!-- 'flex-fill' will make sure the card stretches within the flex container -->
+
+                        {{ with .Params.image }}
+                        <img class="card-img-top" src="{{ . | absURL }}" alt="{{ .Title }}">
+                        {{ else }}
+                        <img class="card-img-top" src="/img/cbt-1.webp" alt="Default Image">
+                        {{ end }}
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title smaller-custom-title">{{ .Title }}</h5>
+                            <p class="card-text smaller-custom-text flex-fill">{{ .Summary | truncate 150 }}</p> <!-- Optionally, shorten the summary -->
+                            <a href="{{ .RelPermalink }}" class="btn btn-primary posts-custom-button mt-auto" data-bss-hover-animate="pulse">Читати більше</a>
                         </div>
                     </div>
                 </div>
@@ -162,7 +183,6 @@
 
 <!-- "Podcasts" Content Pane -->
 <div class="tab-pane fade" id="podcasts">
-    <p>Now showing all podcasts</p>
     <!-- Tag Nav Pills for Podcasts -->
     <ul class="nav nav-pills justify-content-center mb-3">
         <li class="nav-item">
@@ -183,7 +203,8 @@
         </li>
         {{ end }}
     </ul>
-
+<hr>
+<br>
     <!-- Tag Content Panes for Podcasts -->
     <div class="tab-content">
         <!-- "All Tags" Pane -->
@@ -191,13 +212,19 @@
             <div class="row">
                 {{ range $podcasts }}
                 <!-- Card structure for displaying podcasts -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ .Title }}</h5>
-                            <p class="card-text">{{ .Summary  | truncate 150 }}</p>
-                            <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+                <div class="col-md-3 mb-3 d-flex"> <!-- Adjusted from col-md-4 to col-md-3 -->
+                    <!-- Post card -->
+                    <div class="card flex-fill"> <!-- 'flex-fill' will make sure the card stretches within the flex container -->
+    
+                        {{ with .Params.image }}
+                        <img class="card-img-top" src="{{ . | absURL }}" alt="{{ .Title }}">
+                        {{ else }}
+                        <img class="card-img-top" src="/img/cbt-1.webp" alt="Default Image">
+                        {{ end }}
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title smaller-custom-title">{{ .Title }}</h5>
+                            <p class="card-text smaller-custom-text flex-fill">{{ .Summary | truncate 70 }}</p> <!-- Optionally, shorten the summary -->
+                            <a href="{{ .RelPermalink }}" class="btn btn-primary posts-custom-button mt-auto" data-bss-hover-animate="pulse">Слухати більше</a>
                         </div>
                     </div>
                 </div>
@@ -211,13 +238,19 @@
             <div class="row">
                 {{ range where $podcasts "Params.tags" "intersect" (slice .) }}
                 <!-- Card structure for displaying podcasts with this tag -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ .Title }}</h5>
-                            <p class="card-text">{{ .Summary | truncate 150 }}</p>
-                            <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+                <div class="col-md-4 mb-4 d-flex">
+                    <!-- Post card -->
+                    <div class="card flex-fill"> <!-- 'flex-fill' will make sure the card stretches within the flex container -->
+
+                        {{ with .Params.image }}
+                        <img class="card-img-top" src="{{ . | absURL }}" alt="{{ .Title }}">
+                        {{ else }}
+                        <img class="card-img-top" src="/img/cbt-1.webp" alt="Default Image">
+                        {{ end }}
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title smaller-custom-title">{{ .Title }}</h5>
+                            <p class="card-text smaller-custom-text flex-fill">{{ .Summary | truncate 150 }}</p> <!-- Optionally, shorten the summary -->
+                            <a href="{{ .RelPermalink }}" class="btn btn-primary posts-custom-button mt-auto" data-bss-hover-animate="pulse">Читати більше</a>
                         </div>
                     </div>
                 </div>
@@ -232,4 +265,6 @@
 </div>
 
 <script>var currentPage = 'list';</script>
+{{ partial "contact-me.html" .}}
+
 {{ end }}

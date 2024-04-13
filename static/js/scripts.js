@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 var myMockupSwiper = new Swiper('.myMockupSwiper', {
   loop: true,
-  grabCursor: true,
+  grabCursor: false,
   effect: 'fade', // Use the fade effect for smoother transitions
   fadeEffect: {
       crossFade: true
@@ -152,7 +152,6 @@ document.querySelectorAll('.myMockupSwiper .swiper-slide img').forEach(item => {
 var diplomaSwiper = new Swiper('.diplomaSwiper', {
   // Swiper configuration...
   loop: true,
-  grabCursor: true,
   effect: 'cube',
   cubeEffect: {
       slideShadows: false, // Enables dynamic shadow effects

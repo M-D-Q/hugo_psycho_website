@@ -1,20 +1,85 @@
 
+<hr>
 
-<footer class="bg-secondary pb-0 position-relative overflow-hidden" id="footer">
-    <div class="container">
-        <div class="row text-center justify-content-center">
-            <div class="col-lg-8 pt-0" style="padding-bottom: 0px;padding-right: 0px;padding-left: 0px;">
-                <div class="image-holder" ><img src="{{ "img/logo-brain-yaga-transformed.webp" | absURL }}" alt="logo" style="width: 150px;" data-bss-hover-animate="pulse"></div>
-                <p class="light py-5" style="padding-bottom: 0px;margin-bottom: 0px;">Copyright {{ now.Year }}. All rights reserved. Morbi non, semper vestibulum euismod accumsan.Sem magna ut pharetra vitae duis eu senectus sem risus.</p>
-                <ul class="list-unstyled d-flex justify-content-center menu-list light pt-4 my-5" style="background: var(--bs-primary-border-subtle);margin: 10px; padding:20px;">
-                    <li class="fs-5 pb-2 pe-3 light" style="max-width: none;"><a href="#">About Us.</a></li>
-                    <li class="fs-5 pb-2 pe-3 light" style="max-width: none;"><a href="#">Terms Of Service.</a></li>
-                    <li class="fs-5 pb-2 pe-3 light" style="max-width: none;"><a href="#">Privacy Policy.</a></li>
-                    <li class="fs-5 pb-2 pe-3 light" style="max-width: none;"><a href="#">Our Services.</a></li>
-                    <li class="fs-5 pb-2 pe-3 light" style="max-width: none;"><a href="#">Latest Blog</a></li>
-                </ul>
+<footer class="footer first-background">
+    <div class="container-fluid">
+        <div class="footer-content">
+            <a href="/" class="footer-brand d-flex align-items-center">
+                <span class="d-flex justify-content-center align-items-center">
+                    <img src="{{ "img/logo-brain-yaga-transformed.webp" | absURL }}" alt="Logo" style="height: 50px; width: 50px;">
+                </span>
+                <span>OMP</span>
+            </a>
+            <ul class="footer-nav">
+                <li><a href="/privacy/">Privacy Policy</a></li>
+                <li><a href="/terms/">Terms of Service</a></li>
+                <li><a href="/sitemap/">Sitemap</a></li>
+                <li><a href="/#contact">Contact Us</a></li>
+                <li><a href="/sitemap/">All tags</a></li>
+                <li><a href="/#contact">All posts</a></li>
+            </ul>
+            <div class="footer-icons">
+                <a href="https://t.me/OlessiaProfesseure" target="_blank" aria-label="Telegram">
+                    <img src="{{ "img/Telegram_purple.svg" | absURL }}" alt="Telegram" style="height: 2em; width: 2em;">
+                </a>
+                <a href="viber://chat?number=+YourNumber" target="_blank" aria-label="Viber">
+                    <img src="{{ "img/Viber_purple.svg" | absURL }}" alt="Viber" style="height: 2em; width: 2em;">
+                </a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2024 OMP. All rights reserved.
+                <br>
+                Made with love by M-D-Q
             </div>
         </div>
-        <div class="footer-image position-absolute"></div>
     </div>
 </footer>
+
+
+<style>
+
+.footer {
+    padding: 20px 0;
+    color: #333;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-icons a {
+    margin-right: 10px;
+}
+
+.footer-copy {
+    margin-top: 10px; /* Provides spacing from icons if wrapped */
+    text-align: center;
+    width: 100%;
+}
+
+</style>

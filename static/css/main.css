@@ -2835,3 +2835,41 @@ body {
       margin-right: auto;
   }
 }
+
+
+@media (min-width: 768px) { /* Applies to screens wider than 768px */
+  .description-limited-width {
+      max-width: 60vw; /* Limit the width to 60% of the viewport width */
+      margin: auto; /* Center the text block horizontally */
+  }
+}
+
+@media (min-width: 768px) { /* Applies to screens wider than 768px */
+  .podcast-player {
+      max-width: 60vw; /* Limit the width to 60% of the viewport width */
+      margin: auto; /* Center the text block horizontally */
+      margin-top : 50px;
+      margin-bottom: 50px;
+  }
+}
+
+.little-card-img {
+  align-self: center;
+}
+
+
+.smaller-custom-title {
+  text-align: center;
+  font-size: 1.2rem; /* Smaller than default */
+}
+
+.smaller-custom-text {
+  font-size: 0.9rem; /* Smaller text */
+  color: #6c757d; /* Bootstrap's 'text-muted' color */
+}
+
+.posts-custom-button {
+  display: block;
+  width: fit-content;
+  margin: 0 auto; /* Centers the button */
+}
