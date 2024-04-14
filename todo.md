@@ -1,10 +1,12 @@
-13/04 :
+14/04 :
+remplir content issues & make modals
 faire le kind issues et 1 example
 remplir de content un peu partout
 Inventer 10 articles et regler le pb de date DecapCMS au passage + cover-image dans les Params.
 Jarter les vieux articles
 Remplir content Diplomes
-
+diplome expand on click
+diplome moscou passer en paysage
 
 
 12/04 : 
@@ -30,11 +32,11 @@ Front-end :
     Urgent :
     Remplir content
     Overflow du swiper cards X
-    Faire un beau footer, simple
+    Faire un beau footer, simple X
 
     P2 :
     Reduire width articles on desktop x
-    Centrer les titres modals sur les articles
+    Centrer les titres modals sur les articles X
     Ajouter de nouveaux diplomes et les textes explicatifs qui vont avec
     Article/fiche pour chaque issue
 
@@ -47,7 +49,7 @@ Content:
 
 Hugo config : 
     Priorité 1 :
-    cover image articles & podcasts
+    cover image articles & podcasts X
     Mettre en place le multilingue - https://www.regisphilibert.com/blog/2018/08/hugo-multilingual-part-1-managing-content-translation/
     Utiliser les kinds/types plutot que les catégories qui ne sont pas sensés êtres aussi larges.
     COmpresser les images avec tinypng

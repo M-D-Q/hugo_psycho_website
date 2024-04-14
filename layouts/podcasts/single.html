@@ -12,11 +12,11 @@
 <!-- Hero Section -->
 <section class="text-center hero-section-podcast py-5" style="margin-bottom:-50px">
     <div class="container">
-        <h1 class="display-3">{{ .Title }}</h1>
+        <h1 class="display-5">{{ .Title }}</h1>
         <p class="lead">{{ .Params.subtitle }}</p>
         <hr>
         <!-- Publication Date -->
-        Published on <time datetime="{{ $dateMachine }}" class="podcast-date">{{ $dateHuman }}</time>, By Olesia
+        Опубліковано <time datetime="{{ $dateMachine }}" class="podcast-date">{{ $dateHuman }}</time>
         <hr>
     </div>
 </section>
@@ -59,7 +59,7 @@
         {{ if .Params.tags }}
             <div class="row align-items-center">
                 <div class="col-auto">
-                    <h5 class="mb-0 fw-bold">Explore more posts with these tags:</h5>
+                    <h5 class="mb-0 fw-bold">Досліджуйте більше публікацій за цими тегами:</h5>
                 </div>
                 <div class="col">
                     <div class="btn-group" role="group" aria-label="Tag Buttons">
@@ -88,7 +88,7 @@
         <!-- Author Bio Content -->
         <div class="col-12 col-md-8 col-lg-6 col-xl-5 d-flex align-items-center justify-content-center ">
           <div class="text-center text-md-start author-content">
-            <h5 class="text-secondary fs-7">Podcast recorded by</h5>
+            <h5 class="text-secondary fs-7">Подкаст записала</h5>
             <h2 class="fs-2 mb-3">Олеся Мельник</h2>
             <p class="mb-3 text-muted">Олеся Мельник — досвідчена психологиня зі спеціалізацією в гештальт-терапії, яка прагне допомогти людям подолати виклики та покращити їхнє психічне здоров'я. Завдяки співчутливому підходу, вона допомагає людям у їхньому особистісному зростанні з 2018 року.</p>
             <!-- Optional: Link to More Content by the Author -->
