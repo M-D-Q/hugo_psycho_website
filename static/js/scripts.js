@@ -138,26 +138,54 @@ var initialContent = myMockupSwiper.slides[myMockupSwiper.activeIndex].querySele
 document.getElementById('carouselInfo').innerHTML = initialContent;
 
 
-document.querySelectorAll('.myMockupSwiper .swiper-slide img').forEach(item => {
-  item.addEventListener('click', event => {
-    const imageSrc = event.currentTarget.src; // Get the src of the clicked image
-    const modalImage = document.getElementById('modalImage'); // Get the modal image element
-    modalImage.src = imageSrc; // Set the modal image src to the clicked image src
-    const imageModal = new bootstrap.Modal(document.getElementById('imageModal')); // Initialize the modal
-    imageModal.show(); // Show the modal
+document.addEventListener('DOMContentLoaded', function () {
+  const overlay = document.getElementById('imageOverlay');
+  const overlayImage = document.getElementById('overlayImage');
+  const closeOverlay = document.getElementById('closeOverlay');
+
+  // Adding click event to each image in the swiper
+  document.querySelectorAll('.myMockupSwiper .swiper-slide img').forEach(item => {
+    item.addEventListener('click', function() {
+      overlayImage.src = this.src; // Set the clicked image source to the overlay image
+      overlay.style.display = 'flex'; // Show the overlay
+    });
+  });
+
+  // Closing the overlay by clicking the close icon
+  closeOverlay.addEventListener('click', function() {
+    overlay.style.display = 'none'; // Hide the overlay
+  });
+
+  // Closing the overlay by clicking anywhere on the overlay except the image
+  overlay.addEventListener('click', function(event) {
+    if (event.target === overlay || event.target === closeOverlay) {
+      overlay.style.display = 'none'; // Hide the overlay
+    }
+  });
+
+  // Prevent closing when clicking on the image
+  overlayImage.addEventListener('click', function(event) {
+    event.stopPropagation(); // Stop the click from bubbling up to the overlay
   });
 });
+
 
 
 var diplomaSwiper = new Swiper('.diplomaSwiper', {
   // Swiper configuration...
   loop: true,
-  effect: 'cube',
-  cubeEffect: {
-      slideShadows: false, // Enables dynamic shadow effects
-      shadow: true,
-      shadowOffset: 10,
-      shadowScale: 0.94
+  grabCursor: true,
+    autoHeight: true, // Enable auto height feature
+
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: false,
+      translate: ["-100%", 0, -1],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
   },
   pagination: {
       el: '.swiper-diploma-pagination',
@@ -178,6 +206,29 @@ var diplomaSwiper = new Swiper('.diplomaSwiper', {
 var initialContent = diplomaSwiper.slides[diplomaSwiper.activeIndex].querySelector('.slide-content').innerHTML;
 document.getElementById('diplomaDetails').innerHTML = initialContent;
 
+document.addEventListener('DOMContentLoaded', function () {
+  var images = document.querySelectorAll('.diplomaSwiper .swiper-slide img');
+  var overlay = document.getElementById('diplomaImageOverlay');
+  var overlayImage = document.getElementById('diplomaOverlayImage');
+
+  images.forEach(function(img) {
+    img.addEventListener('click', function(event) {
+      overlayImage.src = this.src; // Sets the source of the overlay image to the clicked image
+      overlay.style.display = 'flex'; // Shows the overlay
+      event.stopPropagation(); // Stops the click event from propagating to higher elements
+    });
+  });
+
+  // Add event listener to overlay to close it when clicking anywhere on the overlay
+  overlay.addEventListener('click', function() {
+    this.style.display = 'none';
+  });
+
+  // Prevent overlay close when clicking on the image
+  overlayImage.addEventListener('click', function(event) {
+    event.stopPropagation(); // Prevents the click from closing the overlay
+  });
+});
 
 
 
@@ -224,7 +275,9 @@ document.addEventListener('DOMContentLoaded', function() {
       loopedSlides: 3, // Specify the number of slides to duplicate for looping
       loopAdditionalSlides: 2, // Additional slides to clone at the end
       pagination: {
-          el: '.swiper-issues-pagination'},
+          el: '.swiper-issues-pagination',
+          clickable: true, // Makes the dots clickable
+        },
       spaceBetween: 0,
   });
 });
@@ -239,7 +292,9 @@ document.addEventListener('DOMContentLoaded', function() {
       loopedSlides: 3, // Specify the number of slides to duplicate for looping
       loopAdditionalSlides: 2, // Additional slides to clone at the end
       pagination: {
-        el: '.swiper-issues-pagination1',      },
+        el: '.swiper-issues-pagination1',
+        clickable: true, // Makes the dots clickable
+      },
       spaceBetween: 0,
   });
 });
@@ -254,7 +309,9 @@ document.addEventListener('DOMContentLoaded', function() {
       loopedSlides: 3, // Specify the number of slides to duplicate for looping
       loopAdditionalSlides: 2, // Additional slides to clone at the end
       pagination: {
-          el: '.swiper-issues-pagination2',      },
+          el: '.swiper-issues-pagination2',
+          clickable: true, // Makes the dots clickable
+        },
       spaceBetween: 0,
   });
 });

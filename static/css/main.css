@@ -2273,7 +2273,8 @@ h1 {
     margin-top: 2em
   }
   #about .image-holder {
-    min-height:600px;
+    min-height:40vh;
+    max-width: 50vw;
     background: url('../img/photo_debout_livre.webp') top / cover no-repeat;
     border-radius: 13px;
   }
@@ -2678,6 +2679,7 @@ h1 {
 
 
 .phone-mockup .swiper-slide img {
+  cursor: pointer;
   width: auto; /* Let images be their natural width */
   max-width: 100%; /* Ensure images are not larger than the container */
   max-height: 66vh; /* Limit the height of the images */
@@ -2872,4 +2874,36 @@ body {
   display: block;
   width: fit-content;
   margin: 0 auto; /* Centers the button */
+}
+
+.cartouche-heading {
+  align-self: center;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  background-color: rgba(169, 122, 216, 0.767);
+  padding: 12px 25px;
+  border-radius: 13px;
+  border: 3px solid transparent; /* Ensure the border is subtle or matches the background */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease; /* Smooth transition for subtle effects */
+}
+
+.cartouche-heading:hover {
+  background-image: linear-gradient(120deg, rgba(169, 122, 216, 0.567) 0%, rgba(169, 122, 216, 0.8) 50%, rgba(169, 122, 216, 0.567) 100%);
+  background-size: 200% 100%; /* Slightly larger background to allow movement */
+  animation: subtleShimmer 2s linear infinite; /* Slower animation for subtlety */
+}
+
+@keyframes subtleShimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }

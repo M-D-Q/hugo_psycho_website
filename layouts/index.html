@@ -82,7 +82,11 @@
             
         </div>
     </section>
-    {{ partial "issues-reforged.html" . }}
+
+
+    {{ partial "three-types-issues.html" .}}
+
+
     <section class="transition-first-to-second"></section> <!-- Transition from first to second background -->
 
     <section id="about" class="second-background overflow-hidden" style="padding-bottom:50px">
@@ -93,7 +97,7 @@
                 </div>
                 <div class="col-lg-8 kek" style="padding-left: 50px;padding-right: 50px">
                     <div data-aos="fade-left" data-aos-duration="2000" class="about-us-content" style="text-align: center;">
-                        <h1 class="display-3 text-secondary" style="text-align: center; padding-bottom:25px;">Хто я?</h1><q class="pb-3">Подорож через психотерапію — це не пошук нових пейзажів, а здобуття нових очей.</q>
+                        <h2 class="display-4 text-secondary text-muted" style="text-align: center; padding-bottom:25px;">Хто я?</h2><q class="pb-3">Подорож через психотерапію — це не пошук нових пейзажів, а здобуття нових очей.</q>
                         <p class="lead" style="text-align: justify">Я – Олеся. Дипломований психолог. Кандидат в психотерапевти. 9 років в психології, 6 років в психотерапії. Поєдную в своїй работі техніки гештальт-терапії, арт-терапії, когнітивно-поведінкової терапії та МАК. Проходжу особисту та групову супервізію, проходжу індивідуальну терапію, беру участь в різних навчальних проєктах, щоб допомагати клієнтам покращувати якість їхнього життя.</p>
                         <a class="btn btn-primary text-uppercase btn-small btn-pill" role="button" data-bss-hover-animate="pulse" style="text-align: center; margin-top:25px" data-bs-target="#about-me-modal" data-bs-toggle="modal">Мої кваліфікації</a>
                     </div>
@@ -121,6 +125,9 @@
             </div>
         </div>
     </div>
+
+
+
     <section class="transition-second-to-first"></section> <!-- Transition from second back to first background -->
     {{ partial "diploma-swiper.html" . }}
     <section class="transition-first-to-second"></section> <!-- Transition from first to second background -->
@@ -150,6 +157,12 @@
     {{ partial "contact-me.html" .}}
 
     
+
+    <!-- Place this right before the closing </body> tag -->
+<div id="imageOverlay" style="display:none; position: fixed; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0,0,0,0.5); z-index: 1050;">
+    <img src="" id="overlayImage" style="display: block; max-height: 90vh; margin: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <span id="closeOverlay" style="position: absolute; top: 20px; right: 20px; font-size: 30px; color: white; cursor: pointer;">&times;</span>
+  </div>
     <script>var currentPage = 'index';</script>
 
 {{ end }}

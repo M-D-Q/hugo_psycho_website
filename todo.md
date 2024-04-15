@@ -1,3 +1,16 @@
+Revue baptiste : 
+Retirer quasi tout du footer X
+pour les téléphones pas besoin d'un modal. juste afficher l'image en plus gros. y'aura le fond transparent c'est cool.  X
+pas besoin de truc qui tourne pour les diplomes = jarter le cube mettre un créative 3 X
+Posti en dernier sur le header X
+photo du kto ya, augmenter la température
+essayer retirer le fonds de photos X c'est horrible
+cartes jarter la pagination dynamique X
+issues - faire apparaitre dos à dos les catégories plutot que de compresser l'info X
+température des photos d'olessia
+formulaire de contact
+
+
 14/04 :
 remplir content issues & make modals
 faire le kind issues et 1 example
