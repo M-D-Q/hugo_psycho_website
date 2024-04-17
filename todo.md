@@ -9,6 +9,9 @@ cartes jarter la pagination dynamique X
 issues - faire apparaitre dos à dos les catégories plutot que de compresser l'info X
 température des photos d'olessia
 formulaire de contact
+carte tt de la même taille
+faq largeur fixe collapsed or uncollapsed
+
 
 
 14/04 :
