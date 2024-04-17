@@ -317,14 +317,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  var mobileNavSelector = document.getElementById('mobile-nav-selector');
-  
-  mobileNavSelector.addEventListener('change', function() {
-      var selectedTabId = this.value;
-      new bootstrap.Tab(document.querySelector(`[data-bs-target="${selectedTabId}"]`)).show();
-  });
-});
+
 
 
 function equalizeSwiperSlidesHeight(swiperSelector) {
