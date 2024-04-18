@@ -2907,3 +2907,16 @@ body {
     background-position: -100% 0;
   }
 }
+
+#intro .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically if desired */
+}
+
+#intro .feat-content {
+  height: 100%; /* Makes content fill the slide */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Useful if you want the text centered within the colored block */
+}

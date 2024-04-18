@@ -11,6 +11,7 @@ température des photos d'olessia
 formulaire de contact
 carte tt de la même taille
 faq largeur fixe collapsed or uncollapsed
+faq margin top et bottom au titre
 
 
 

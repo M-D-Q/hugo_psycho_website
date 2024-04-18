@@ -15,17 +15,38 @@
         loop: true,
         grabCursor: true,
         effect: "cards",
-
-        // Replace the navigation configuration with pagination
         pagination: {
             el: '.swiper-pagination',
-            clickable: true, // Makes the dots clickable
-            dynamicBullets: false, // Optional: For a more dynamic effect
+            clickable: true,
         },
-
-        // Optionally, you can completely remove the 'navigation' configuration
-        // If you prefer to keep the HTML markup clean, you might also want to remove the related navigation buttons from the HTML
+        on: {
+            init: function () {
+                equalizeSwiperContent(this);
+            },
+            resize: function () {
+                equalizeSwiperContent(this);
+            },
+            slideChangeTransitionEnd: function () {
+                equalizeSwiperContent(this);
+            }
+        }
     });
+
+    function equalizeSwiperContent(swiper) {
+        let maxHeight = 0;
+        // Find the tallest content block
+        swiper.slides.each(function (index, slide) {
+            const content = slide.querySelector('.feat-content');
+            if (content.clientHeight > maxHeight) {
+                maxHeight = content.clientHeight;
+            }
+        });
+        // Set all content blocks to the height of the tallest one
+        swiper.slides.each(function (index, slide) {
+            const content = slide.querySelector('.feat-content');
+            content.style.height = maxHeight + 'px';
+        });
+    }
 </script>
 
 
