@@ -1950,6 +1950,15 @@ h1.light, h2.light, h3.light, h4.light, h5.light {
   opacity: 1; /* Fully opaque on hover */
 }
 
+
+.btn {
+  opacity: 0.8; /* Slightly transparent for a sleeker look */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+.btn {
+  opacity: 1; /* Fully opaque on hover */
+}
+
 /*----------------------------------------------*/
 /* 3 CONTENT ELEMENTS */
 /*----------------------------------------------*/
@@ -2127,8 +2136,8 @@ h1.light, h2.light, h3.light, h4.light, h5.light {
   border-radius: 13px;
 }
 .card-img-top {
-  border-top-left-radius: 13px;
-  border-top-right-radius: 13px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .card:hover .custom-overlay {
@@ -2876,47 +2885,41 @@ body {
   margin: 0 auto; /* Centers the button */
 }
 
+
 .cartouche-heading {
   align-self: center;
   margin-top: 60px;
-  margin-bottom: 25px;
-  background-color: rgba(169, 122, 216, 0.767);
+  margin-bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.647);
   padding: 12px 25px;
-  border-radius: 13px;
-  border: 3px solid transparent; /* Ensure the border is subtle or matches the background */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  text-align: center;
-  color: #ffffff;
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  transition: background-color 0.5s ease; /* Smooth transition for subtle effects */
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border: 2px solid ; 
+  border-bottom: none; /* No bottom border */
+  border-color: #dc72c8;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+  font-size: larger;
+  background: linear-gradient(45deg, #c025ab, #dc72c8, #a222a2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Hide the original text color */
+  animation: rainbow-animation 2s ease-in-out infinite;
+  display: inline; /* Ensures the gradient applies to text only */
+  line-height: 1.2; /* Adjust line-height to prevent clipping */
+  background-size: 200% auto; /* Increase background size for noticeable movement */
 }
 
-.cartouche-heading:hover {
-  background-image: linear-gradient(120deg, rgba(169, 122, 216, 0.567) 0%, rgba(169, 122, 216, 0.8) 50%, rgba(169, 122, 216, 0.567) 100%);
-  background-size: 200% 100%; /* Slightly larger background to allow movement */
-  animation: subtleShimmer 2s linear infinite; /* Slower animation for subtlety */
-}
-
-@keyframes subtleShimmer {
-  0% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: -100% 0;
-  }
-}
 
 #intro .swiper-slide {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers content vertically if desired */
+  justify-content: center; /* Ensures vertical centering within each slide */
 }
 
 #intro .feat-content {
-  height: 100%; /* Makes content fill the slide */
+  flex: 1; /* Ensures it expands to fill the available space in the flex container */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Useful if you want the text centered within the colored block */
+  justify-content: center; /* Centers content vertically within the content block */
+  height: 100%; /* Ensures it takes full height of its parent */
 }

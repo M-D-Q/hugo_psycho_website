@@ -1,17 +1,19 @@
 Revue baptiste : 
 Retirer quasi tout du footer X
-pour les téléphones pas besoin d'un modal. juste afficher l'image en plus gros. y'aura le fond transparent c'est cool.  X
+pour les téléphones pas besoin d'un modal. juste afficher l'image en plus gros. y'aura le fond transparent c'est cool.X
 pas besoin de truc qui tourne pour les diplomes = jarter le cube mettre un créative 3 X
 Posti en dernier sur le header X
-photo du kto ya, augmenter la température
-essayer retirer le fonds de photos X c'est horrible
+essayer retirer le fonds de photos X c'est horrible donc non
 cartes jarter la pagination dynamique X
 issues - faire apparaitre dos à dos les catégories plutot que de compresser l'info X
 température des photos d'olessia
+
 formulaire de contact
-carte tt de la même taille
-faq largeur fixe collapsed or uncollapsed
-faq margin top et bottom au titre
+carte tt de la même taille X
+faq largeur fixe collapsed or uncollapsed - ABANDON
+faq margin top et bottom au titre X 
+mettre les cartes methods à la meme width en vw que leurs images X
+modal au centre horizontal et 30% du haut en vertical X
 
 
 
@@ -22,8 +24,8 @@ remplir de content un peu partout
 Inventer 10 articles et regler le pb de date DecapCMS au passage + cover-image dans les Params.
 Jarter les vieux articles
 Remplir content Diplomes
-diplome expand on click
-diplome moscou passer en paysage
+diplome expand on click : YES X
+diplome moscou passer en paysage - pas besoin : auto resize
 
 
 12/04 : 

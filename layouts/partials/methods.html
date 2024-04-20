@@ -3,7 +3,7 @@
         <h2 class="display-4 text-center text-secondary" style="margin-bottom: 50px; margin-top: 50px;">Мої Методи</h2>
         <p class="text-center text-muted reducino-text" >Психотерапія — це не просто вирішення проблем; мова йде про розкриття потенціалу всередині вас, щоб вести повноцінне життя. Кожен підхід, який я використовую, чудово поєднується один з одним, щоб забезпечити кращий результат.</p>
         <!-- Cards go here -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="margin-top: 30px;">
 
             <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in-right" data-aos-delay="150">
                 <div class="card h-100 position-relative"><img class="w-100 d-block  w-100  w-100 card-img-top" src="img/gestalt-1.webp" alt="C-B-T">
@@ -58,57 +58,10 @@
     </div>
 </section>
 
-<section id="methods2" class="second-background overflow-hidden">
-    <div class="container">
-        <h2 class="display-4 text-center text-secondary my-5">Мої Методи</h2>
-        <p class="text-center text-muted mb-5">Психотерапія — це не просто вирішення проблем; мова йде про розкриття потенціалу всередині вас, щоб вести повноцінне життя. Кожен підхід, який я використовую, чудово поєднується один з одним, щоб забезпечити кращий результат.</p>
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img class="card-img-top" src="img/gestalt-1.webp" alt="Гештальт терапія">
-                    <div class="card-body">
-                        <h4 class="text-center card-title">Гештальт терапія</h4>
-                        <p class="text-center">Про контакт тут і тепер</p>
-                        <div class="text-center"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGestalt">+</button></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img class="card-img-top" src="img/art-therapy-1.webp" alt="Арт-терапія">
-                    <div class="card-body">
-                        <h4 class="text-center card-title">Арт-терапія</h4>
-                        <p class="text-center">Творче самовираження</p>
-                        <div class="text-center"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalArtTherapy">+</button></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img class="card-img-top" src="img/illustrations_dalle_site/cbt1.webp" alt="КПТ">
-                    <div class="card-body">
-                        <h4 class="text-center card-title">КПТ</h4>
-                        <p class="text-center">Думки і поведінка</p>
-                        <div class="text-center"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCbt">+</button></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img class="card-img-top" src="img/cbt-1.webp" alt="МАК">
-                    <div class="card-body">
-                        <h4 class="text-center card-title">МАК</h4>
-                        <p class="text-center">Проективна методика</p>
-                        <div class="text-center"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMAK">+</button></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 
+<div id="modals-methods">
 <div class="modal fade" role="dialog" tabindex="-1" id="modalCbt" aria-labelledby="modalCbtLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -161,39 +114,44 @@
         </div>
     </div>
 </div>
-
+</div>
 
 
 <style>
-#methods2 .container {
-    max-width: 1200px; /* Limit the maximum width of the container */
-}
+
 
 #methods2 .card {
     width: 100%; /* Card width is responsive to the column width */
+    max-width: 300px;
 }
 
 #methods2 .card-img-top {
     width: 100%; /* Image takes full width of the card */
     aspect-ratio: 1 / 1; /* Keeps the image square */
     object-fit: contain; /* Ensures the image covers the area without distortion */
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    max-width: 300px;
 }
 
 @media (max-width: 768px) {
-    #methods2 .card-img-top {
-        max-height: 200px; /* Adjust max height for smaller screens */
-    }
-    #methods2 .row {
-        padding: 10px 50px; /* Smaller horizontal padding on small screens */
-    }
-    #methods2 .card-body {
-        padding: 10px; /* Reduced padding inside the card body on smaller screens */
-    }
-    #methods2 .card-title {
-        font-size: 18px; /* Smaller font size for card titles on small screens */
-    }
-    #methods2 .btn {
-        font-size: 14px; /* Smaller button font size */
+
+    #methods2 .card {
+    width: 50vw; /* Card width is responsive to the column width */
+margin-left: auto;
+margin-right: auto;}
+
+}
+
+/* Media query for screens wider than 768px */
+@media (min-width: 768px) {
+    #modals-methods .modal-dialog {
+        width: 50%; /* Set the width of the modal */
+        min-width: 50vw; /* Optional: Ensures modals are not too small on larger screens */
+        transform: translate(-50%, -50%); /* Center the modal */
+        top: 30%; /* Align vertically at the center */
+        left: 50%; /* Align horizontally at the center */
+        position: absolute; /* Needed to position the modal dialog properly */
     }
 }
 

@@ -19,23 +19,41 @@
         Need Help Writing a Message?
     </a>
 
-    <!-- Collapsible Help Text Section -->
     <div class="collapse mt-3" id="collapseHelpText">
         <div class="card card-body" style="background-color: #f8f9fa;">
-            <textarea id="helpText" class="form-control" style="height: 200px; font-family: monospace; white-space: pre-wrap;">Dear [Psychotherapist's Name],
-
-I am reaching out to seek assistance for [your issue/problem]. I have been feeling [your feelings] and believe that I could benefit from professional support. 
-
-It would be great if we could schedule a session to discuss this further. 
-
-Looking forward to your response.
-
-Best regards,
-[Your Name]</textarea>
-
-            <button class="btn btn-primary btn-pil align-self-center " style="width: auto; margin-top:15px" onclick="copyToClipboard()">Copy to Clipboard</button>
-
-
+            <!-- User Input Form -->
+            <div class="row g-3">
+                <div class="col-auto">
+                    <label for="userName" class="form-label">Your Name:</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+                </div>
+                <div class="col-auto">
+                    <label for="userAge" class="form-label">Your Age:</label>
+                </div>
+                <div class="col-auto">
+                    <input type="number" class="form-control" id="userAge" placeholder="Enter your age">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="bookingReason" class="form-label">Why would you like to book a session?</label>
+                <textarea class="form-control" id="bookingReason" placeholder="Describe your reason"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="userEmotions" class="form-label">What do you feel, what emotions?</label>
+                <textarea class="form-control" id="userEmotions" placeholder="Describe your feelings and emotions"></textarea>
+            </div>
+    
+            <!-- Button to Generate Message -->
+            <button class="btn btn-primary btn-pill align-self-center" style="width: auto;" onclick="generateMessage()">Generate Message</button>
+    
+            <!-- Textarea to Show Generated Message -->
+            <textarea id="generatedMessage" class="form-control" style="height: 200px; margin-top: 15px; font-family: monospace; white-space: pre-wrap;" readonly></textarea>
+    
+            <!-- Button to Copy to Clipboard -->
+            <button class="btn btn-primary btn-pill align-self-center" style="width: auto; margin-top:15px" onclick="copyToClipboard()">Copy to Clipboard</button>
+    
             <div id="copySuccess" style="display:none; color: green; margin-top: 10px;">Text copied successfully!</div>
         </div>
     </div>
@@ -44,3 +62,55 @@ Best regards,
 <section class="transition-second-to-first"></section> <!-- Transition from second back to first background -->
 
 
+
+
+<script>
+function generateMessage() {
+    const name = document.getElementById('userName').value.trim();
+    const age = document.getElementById('userAge').value;
+    const reason = document.getElementById('bookingReason').value.trim();
+    const emotions = document.getElementById('userEmotions').value.trim();
+
+    const message = `Dear Psychotherapist,
+
+My name is ${name}, and I am ${age} years old. I am reaching out to seek assistance for the following reason: ${reason}. I have been feeling ${emotions}, and I believe that I could benefit from professional support.
+
+It would be great if we could schedule a session to discuss this further.
+
+Looking forward to your response.
+
+Best regards,
+${name}`;
+    document.getElementById('generatedMessage').value = message;
+}
+
+function copyToClipboard() {
+    const textArea = document.getElementById('generatedMessage');
+    textArea.select();
+    document.execCommand('copy');
+
+    const successMessage = document.getElementById('copySuccess');
+    successMessage.style.display = 'block';
+    setTimeout(() => successMessage.style.display = 'none', 3000);
+}
+</script>
+
+<style>
+    #collapseHelpText .row {
+    align-items: center; /* Aligns items vertically centered */
+}
+
+#collapseHelpText .col-auto {
+    flex-grow: 0; /* Prevents flex items from growing */
+    margin-bottom:20px
+}
+
+#collapseHelpText input[type="text"],
+#collapseHelpText input[type="number"] {
+    width: auto; /* Reduces width of input fields */
+}
+
+#collapseHelpText textarea {
+    min-height: 100px; /* Adjusts the height of textareas */
+}
+</style>

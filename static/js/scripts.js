@@ -25,37 +25,62 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-function copyToClipboard() {
-  var copyText = document.getElementById("helpText");
-  var successMessage = document.getElementById("copySuccess");
 
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(copyText.value);
-
-  // Show the success message
-  successMessage.style.display = "block";
-  successMessage.style.opacity = "1";
-
-  // Fade out the success message after 2 seconds
-  setTimeout(function() {
-      var fadeEffect = setInterval(function () {
-          if (!successMessage.style.opacity) {
-              successMessage.style.opacity = "1";
-          }
-          if (successMessage.style.opacity > "0") {
-              successMessage.style.opacity -= "0.1";
-          } else {
-              clearInterval(fadeEffect);
-              successMessage.style.display = "none";
-          }
-      }, 100);
-  }, 2000);
-}
 
 if (typeof currentPage !== 'undefined' && currentPage === 'index') {
   // Your index page-specific JavaScript here
 
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Initialize the Swiper
+    const swiper = new Swiper('#intro .featured-swiper', { // Ensure swiper is targeted within the #intro section
+        loop: true,
+        grabCursor: true,
+        effect: "cards",
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        on: {
+            init: function() {
+                equalizeSwiperSlidesHeight('#intro .featured-swiper'); // Adjust the function call to target the intro section specifically
+            },
+            resize: function() {
+                equalizeSwiperSlidesHeight('#intro .featured-swiper');
+            },
+            slideChangeTransitionEnd: function() {
+                equalizeSwiperSlidesHeight('#intro .featured-swiper');
+            }
+        }
+    });
+
+    // Function to equalize slide heights
+    function equalizeSwiperSlidesHeight(swiperSelector) {
+        var maxHeight = 0;
+        // Find the tallest slide
+        document.querySelectorAll(swiperSelector + ' .swiper-slide').forEach(function(slide) {
+            var slideHeight = slide.offsetHeight;
+            maxHeight = Math.max(maxHeight, slideHeight);
+        });
+
+        // Set all slides to the height of the tallest slide
+        document.querySelectorAll(swiperSelector + ' .swiper-slide').forEach(function(slide) {
+            slide.style.height = maxHeight + 'px';
+            // Additionally, set the height of the content within the slides if necessary
+            var contents = slide.querySelectorAll('.feat-content'); // Check for .feat-content within each slide
+            contents.forEach(function(content) {
+                content.style.height = maxHeight + 'px'; // This ensures that the content div also matches the slide height
+            });
+        });
+    }
+
+    window.addEventListener('resize', function() {
+        equalizeSwiperSlidesHeight('#intro .featured-swiper');
+    });
+});
+
+
+    //ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 
 document.querySelectorAll('.therapy-btn').forEach(button => {
     button.addEventListener('click', function() {
@@ -237,7 +262,7 @@ document.addEventListener('DOMContentLoaded', function () {
 var postsSwiper = new Swiper('.postsSwiper', {
   loop: true,
     slidesPerView: 1, // Default to 1 slide per view for mobile
-    spaceBetween: 20, // Space between slides
+    spaceBetween: 25, // Space between slides
     pagination: {
         el: '.swiper-posts-pagination',
         clickable: true,
@@ -246,9 +271,10 @@ var postsSwiper = new Swiper('.postsSwiper', {
     // Using Coverflow effect
     effect: 'coverflow',
     coverflowEffect: {
-        rotate: 12, // Slide rotate in degrees
+        
+        rotate: 13, // Slide rotate in degrees
         stretch: 0, // Stretch space between slides (in px)
-        depth: 25, // Depth offset in px (slides translate in Z axis)
+        depth: 3, // Depth offset in px (slides translate in Z axis)
         modifier: 1, // Effect multiplier
         slideShadows: false, // Enables shadows
     },
