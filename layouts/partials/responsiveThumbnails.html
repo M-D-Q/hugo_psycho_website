@@ -1,0 +1,25 @@
+<!-- layouts/partials/responsiveThumbnails.html -->
+<!-- layouts/partials/thumbnails.html -->
+
+{{ $src := .src }}
+{{ $alt := .alt }}
+{{ $class := .class }}
+{{ $style := .style }}
+
+{{ $image := resources.Get $src }}
+
+{{ if $image }}
+    {{ $srcset := slice }}
+    {{ range $width, $descriptor := (dict "360" "160w" "520" "320w") }}
+        {{ $widthInt := int $width }}  <!-- Convert width to integer -->
+        {{ $height := div (mul $widthInt 9) 16 }}  <!-- Calculate height using integer width -->
+        {{ $resize := printf "%dx%d webp" $widthInt $height }}  <!-- Resize string with calculated height -->
+        {{ $optimizedImage := $image.Resize $resize }}
+        {{ $srcsetData := printf "%s %s" $optimizedImage.RelPermalink $descriptor }}
+        {{ $srcset = $srcset | append $srcsetData }}
+    {{ end }}
+
+    <img src="{{ ($image.Resize (printf "320x%d webp" (div (mul 320 9) 16))).RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}" style="{{ $style | safeCSS }}" srcset="{{ delimit $srcset ", " }}" sizes="(max-width: 480px) 160px, 320px">
+{{ else }}
+    <img src="/path/to/fallback/thumbnail.jpg" alt="Fallback thumbnail" class="{{ $class }}" style="{{ $style | safeCSS }}">
+{{ end }}

@@ -1,3 +1,11 @@
+
+- resize complet images thumbnails
+- resize image classique pour articles ? 
+- Image elements do not have explicit width and height ?
+- Purge JS & CS===
+
+
+
 Revue baptiste : 
 Retirer quasi tout du footer X
 pour les téléphones pas besoin d'un modal. juste afficher l'image en plus gros. y'aura le fond transparent c'est cool.X

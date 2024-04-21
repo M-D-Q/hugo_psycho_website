@@ -16,7 +16,7 @@
                 <div class="swiper-slide">
                     <div class="card flex-md-row">
                         <div class="card-img-left d-flex">
-                            <img src="img\illustrations_dalle_site\depression_trivoga.webp" class="img-fluid" alt="Issue 1" style="object-fit: cover; aspect-ratio: 16 / 9;">
+                            {{ partial "responsiveThumbnails.html" (dict "src" "images/illustrations_dalle_site/depression_trivoga.webp" "alt" "Issue 1" "class" "img-fluid" "style" "object-fit: cover; aspect-ratio: 16 / 9;") }}
                         </div>
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h3 class="card-title">Тривога. Панічні атаки. Депресія.</h3>
@@ -30,7 +30,8 @@
                 <div class="swiper-slide">
                     <div class="card flex-md-row flex-md-row-reverse">
                         <div class="card-img-left d-flex">
-                            <img src="img\illustrations_dalle_site\self_esteem.webp" class="img-fluid" alt="Issue 2" style="object-fit: cover; aspect-ratio: 16 / 9;">
+                            {{ partial "responsiveThumbnails.html" (dict "src" "images/illustrations_dalle_site/self_esteem.webp" "alt" "Issue 2" "class" "img-fluid" "style" "object-fit: cover; aspect-ratio: 16 / 9;") }}
+
                         </div>
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h3 class="card-title">Невпевненість в собі та проблеми з самооцінкою.</h3>
@@ -44,7 +45,7 @@
                 <div class="swiper-slide">
                     <div class="card flex-md-row">
                         <div class="card-img-left d-flex">
-                            <img src="img\illustrations_dalle_site\psychosomatics.webp" class="img-fluid" alt="Issue 3" style="object-fit: cover; aspect-ratio: 16 / 9;">
+                            {{ partial "responsiveThumbnails.html" (dict "src" "images/illustrations_dalle_site/psychosomatics.webp" "alt" "Issue 3" "class" "img-fluid" "style" "object-fit: cover; aspect-ratio: 16 / 9;") }}
                         </div>
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h3 class="card-title">Психосоматика: порушення ШКТ, ВСД, болі в тілі, вагінізм.</h3>
@@ -58,7 +59,8 @@
                 <div class="swiper-slide">
                     <div class="card flex-md-row">
                         <div class="card-img-left d-flex">
-                            <img src="img\illustrations_dalle_site\professional_issues.webp" class="img-fluid" alt="Issue 3" style="object-fit: cover; aspect-ratio: 16 / 9;">
+                            {{ partial "responsiveThumbnails.html" (dict "src" "images/illustrations_dalle_site/professional_issues.webp" "alt" "Issue 4" "class" "img-fluid" "style" "object-fit: cover; aspect-ratio: 16 / 9;") }}
+
                         </div>
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h3 class="card-title">Складнощі в професійній діяльності та вигорання.</h3>
@@ -92,7 +94,8 @@
                             <div class="swiper-slide">
                                 <div class="card flex-md-row">
                                     <div class="card-img-left d-flex">
-                                        <img src="img\illustrations_dalle_site\pb_famille_3.webp" class="img-fluid" alt="Issue 1" style="object-fit: cover; aspect-ratio: 16 / 9;">
+                                        {{ partial "responsiveThumbnails.html" (dict "src" "images/illustrations_dalle_site/pb_famille_3.webp" "alt" "Issue 1" "class" "img-fluid" "style" "object-fit: cover; aspect-ratio: 16 / 9;") }}
+
                                     </div>
                                     <div class="card-body d-flex flex-column justify-content-center">
                                         <h3 class="card-title">Труднощі в партнерських та сімейних стосунках.</h3>
@@ -106,7 +109,9 @@
                     <div class="swiper-slide">
                         <div class="card flex-md-row flex-md-row-reverse">
                             <div class="card-img-left d-flex">
-                                <img src="img\illustrations_dalle_site\social_problem.webp" class="img-fluid" alt="Issue 2" style="object-fit: cover; aspect-ratio: 16 / 9;">
+                                {{ partial "responsiveThumbnails.html" (dict "src" "images/illustrations_dalle_site/social_problem.webp" "alt" "Issue 1" "class" "img-fluid" "style" "object-fit: cover; aspect-ratio: 16 / 9;") }}
+
+                               <!-- <img src="img\illustrations_dalle_site\social_problem.webp" class="img-fluid" alt="Issue 2" style="object-fit: cover; aspect-ratio: 16 / 9;"> -->
                             </div>
                             <div class="card-body d-flex flex-column justify-content-center">
                                 <h3 class="card-title">Складнощі в стосунках з людьми.</h3>
@@ -120,7 +125,8 @@
                     <div class="swiper-slide">
                         <div class="card flex-md-row">
                             <div class="card-img-left d-flex">
-                                <img src="img\illustrations_dalle_site\remont_zradi.webp" class="img-fluid" alt="Issue 3" style="object-fit: cover; aspect-ratio: 16 / 9;">
+                                {{ partial "responsiveThumbnails.html" (dict "src" "images/illustrations_dalle_site/remont_zradi.webp" "alt" "Issue 1" "class" "img-fluid" "style" "object-fit: cover; aspect-ratio: 16 / 9;") }}
+
                             </div>
                             <div class="card-body d-flex flex-column justify-content-center">
                                 <h3 class="card-title">Відновлення довіри після зради.</h3>
@@ -152,7 +158,8 @@
                     <div class="swiper-slide">
                         <div class="card flex-md-row">
                             <div class="card-img-left d-flex">
-                                <img src="img\illustrations_dalle_site\poshuk_cebe.webp" class="img-fluid" alt="Issue 1" style="object-fit: cover; aspect-ratio: 16 / 9;">
+                                {{ partial "responsiveThumbnails.html" (dict "src" "images/illustrations_dalle_site/poshuk_cebe.webp" "alt" "Issue 1" "class" "img-fluid" "style" "object-fit: cover; aspect-ratio: 16 / 9;") }}
+
                             </div>
                             <div class="card-body d-flex flex-column justify-content-center">
                                 <h3 class="card-title">Пошук себе та сенсу.</h3>
@@ -166,7 +173,8 @@
                     <div class="swiper-slide">
                         <div class="card flex-md-row flex-md-row-reverse">
                             <div class="card-img-left d-flex">
-                                <img src="img\illustrations_dalle_site\new_country4.webp" class="img-fluid" alt="Issue 2" style="object-fit: cover; aspect-ratio: 16 / 9;">
+                                {{ partial "responsiveThumbnails.html" (dict "src" "images/illustrations_dalle_site/new_country4.webp" "alt" "Issue 1" "class" "img-fluid" "style" "object-fit: cover; aspect-ratio: 16 / 9;") }}
+
                             </div>
                             <div class="card-body d-flex flex-column justify-content-center">
                                 <h3 class="card-title">Труднощі адаптації в новій країні.</h3>
@@ -180,7 +188,8 @@
                     <div class="swiper-slide">
                         <div class="card flex-md-row">
                             <div class="card-img-left d-flex">
-                                <img src="img\illustrations_dalle_site\deuil1.webp" class="img-fluid" alt="Issue 3" style="object-fit: cover; aspect-ratio: 16 / 9;">
+                                {{ partial "responsiveThumbnails.html" (dict "src" "images/illustrations_dalle_site/deuil1.webp" "alt" "Issue 1" "class" "img-fluid" "style" "object-fit: cover; aspect-ratio: 16 / 9;") }}
+
                             </div>
                             <div class="card-body d-flex flex-column justify-content-center">
                                 <h3 class="card-title">Горювання. Втрата дитини, батьків або партнера.</h3>
