@@ -2270,7 +2270,7 @@ h1 {
   #about .image-holder {
     height:300px;
     width:100%;
-    background: url('../img/photo_debout_livre.webp') top / cover no-repeat;
+    background: url('../img/desktop/photo_debout_livre.webp') top / cover no-repeat;
     border-radius: 13px;
   }
 
