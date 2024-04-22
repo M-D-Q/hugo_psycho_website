@@ -1,9 +1,9 @@
 
-- resize complet images thumbnails
+- resize complet images thumbnails X je l'ai fait à la main finally.
 - resize image classique pour articles ? 
-- Image elements do not have explicit width and height ?
-- Purge JS & CS===
-
+- Purge JS & CSS
+- specify width and height : https://web.dev/articles/optimize-cls#images-without-dimensions
+- diploma/phone have a thumbnail size and when clicked, a big size. Lazy loading ofc. 
 
 
 Revue baptiste : 
