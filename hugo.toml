@@ -1,5 +1,34 @@
 baseURL = 'https://olessia-psycho.netlify.app/'
-languageCode = 'en-us'
-title = 'Olessia Psychologue'
 category = "categories"
 tag = "tags"
+
+defaultContentLanguage = 'ua'
+defaultContentLanguageInSubdir = true
+
+[languages]
+
+  [languages.ua]
+
+    contentDir = 'content/ua'
+    disabled = false
+    languageCode = 'uk-UA'
+    languageDirection = 'ltr'
+    languageName = 'українська'
+    title = 'Олеся, Ваш психолог'
+    weight = 1
+
+    [languages.ua.params]
+      subtitle = 'Живи без жалю'
+
+  [languages.fr]
+
+    contentDir = 'content/fr'
+    disabled = false
+    languageCode = 'fr-FR'
+    languageDirection = 'ltr'
+    languageName = 'Français'
+    title = 'Olessia, votre psychothérapeute'
+    weight = 2
+
+    [languages.fr.params]
+      subtitle = 'Vivez sans regrets'
