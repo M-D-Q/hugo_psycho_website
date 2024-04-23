@@ -2,55 +2,55 @@
 <section id="FAQ" class="faq-section second-background overflow-hidden">
     <div class="container ">
         <div class="row ">
-            <h1 class="display-5" style="padding-bottom: 10px;text-align: center; margin-top : 50px; margin-bottom:30px">Часті запитання</h1>
+            <h1 class="display-5" style="padding-bottom: 10px;text-align: center; margin-top : 50px; margin-bottom:30px">{{ i18n "faq-heading" }}</h1>
 
             <!-- <div class="col-md-5 d-none d-md-flex align-items-center">{{ partial "responsiveImage.html" (dict "src" "images/faq.jpg" "alt" "Descriptive alt text" "class" "" "style" "border-radius: 13px; width:auto; max-width:100%; max-height:500px") }} -->
             
             <div class="col-md-5 d-none d-md-flex align-items-center">
-<img src="/img/desktop/faq.webp" alt="Descriptive alt text" style="border-radius: 13px; width:auto; max-width:100%; max-height:500px" >
+<img src="/img/desktop/faq.webp" alt='{{ i18n "faq-image_desc" }}' style="border-radius: 13px; width:auto; max-width:100%; max-height:500px" >
             </div>
             <div class="col-md-7 d-flex flex-column justify-content-start align-items-center">
                 <div class="accordion" role="tablist" id="faqAccordion">
                     <div class="accordion-item" style="max-width:600px;">
-                        <h2 class="accordion-header" role="tab" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Я не можу сформулювати запит..</button></h2>
+                        <h2 class="accordion-header" role="tab" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">{{ i18n "faq-question1-title" }}</button></h2>
                         <div class="accordion-collapse collapse show item-1 show" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingOne" id="collapseOne">
-                            <div class="accordion-body"><span>Нічого страшного, інколи складно сформулювати запит самостійно. Ми можемо зробити це разом. Буває тривожні думки плутаються і доводиться розмотувати цей клубочок разом з кимось.</span></div>
+                            <div class="accordion-body"><span>{{ i18n "faq-question1-answer" }}</span></div>
                         </div>
                     </div>
                     <div class="accordion-item" style="max-width:600px;">
-                        <h2 class="accordion-header" role="tab" id="headingTwo"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Як часто потрібно ходити?</button></h2>
+                        <h2 class="accordion-header" role="tab" id="headingTwo"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">{{ i18n "faq-question2-title" }}</button></h2>
                         <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingTwo" id="collapseTwo">
-                            <div class="accordion-body"><span>Терапія це глибокий і тривалий процес. Нерегулярні зустрічі не дозволяють вибудувати безпеку і довіру, а значить і зустрітися з переживаннями при іншому. Це як їхати до кінцевої постійно вискакуючи з поїзда. Зазвичай я рекомендую клієнтам щонедільні зустрічі, але все індивідуально. Є  підтримуючі сесії або формат консультацій. Але спершу я запрошую вас на першу зустріч аби ви могли відчути чи хочете продовжувати. Немає ніякого давлення.</span></div>
+                            <div class="accordion-body"><span>{{ i18n "faq-question2-answer" }}</span></div>
                         </div>
                     </div>
                     <div class="accordion-item" style="max-width:600px;">
-                        <h2 class="accordion-header" role="tab" id="headingThree"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Я ніколи не була у психолога і боюсь зустрічі.</button></h2>
+                        <h2 class="accordion-header" role="tab" id="headingThree"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">{{ i18n "faq-question3-title" }}</button></h2>
                         <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingThree" id="collapseThree">
-                            <div class="accordion-body"><span>Страх це нормальна реакція перед чимось невідомим. Однак не ризикуючи ми можемо втратити можливість власного розвитку. Я теж хвилююсь перед знайомством з новим клієнтом, однак я готова зустрітися з вами в цьому переживанні.</span></div>
+                            <div class="accordion-body"><span>{{ i18n "faq-question3-answer" }}</span></div>
                         </div>
                     </div>
                     <div class="accordion-item" style="max-width:600px;">
-                        <h2 class="accordion-header" role="tab" id="headingFour"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Чи можна прийти з партнером на сесію?</button></h2>
+                        <h2 class="accordion-header" role="tab" id="headingFour"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">{{ i18n "faq-question4-title" }}</button></h2>
                         <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingFour" id="collapseFour">
-                            <div class="accordion-body"><span>Так, можна якщо ви не являєтесь моїм клієнтом в індивідуальній терапії. Я проводжу індивідуальну, парну та сімейну терапію. Але якщо це стосується вашої дитини, то я можу проводити одноразові сімейні консультації на якій присутні ваша дитина та члени родини.</span></div>
+                            <div class="accordion-body"><span>{{ i18n "faq-question4-answer" }}</span></div>
                         </div>
                     </div>
                     <div class="accordion-item" style="max-width:600px;">
-                        <h2 class="accordion-header" role="tab" id="headingFive"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Хочу відправити до вас свою дитину (підлітка).</button></h2>
+                        <h2 class="accordion-header" role="tab" id="headingFive"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">{{ i18n "faq-question5-title" }}</button></h2>
                         <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingFive" id="collapseFive">
-                            <div class="accordion-body"><span>Я з радістю зустрінусь з вашою дитиною, але вона повинна знати куди йде і прийти до мене своїми власними зусиллями. В любому випадку ми можемо спершу спробувати познайомитися одне з одним. Ніякого давлення.</span></div>
+                            <div class="accordion-body"><span>{{ i18n "faq-question5-answer" }}</span></div>
                         </div>
                     </div>
                     <div class="accordion-item" style="max-width:600px;">
-                        <h2 class="accordion-header" role="tab" id="headingSix"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Скільки триває консультація?</button></h2>
+                        <h2 class="accordion-header" role="tab" id="headingSix"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">{{ i18n "faq-question6-title" }}</button></h2>
                         <div class="accordion-collapse collapse item-6" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingSix" id="collapseSix">
-                            <div class="accordion-body"><span>Консультація триває 50 хвилин. Цього достатньо щоб попрацювати з запитом і змогти ресурсно вернутись в звичне життя.</span></div>
+                            <div class="accordion-body"><span>{{ i18n "faq-question6-answer" }}</span></div>
                         </div>
                     </div>
                     <div class="accordion-item" style="max-width:600px;">
-                        <h2 class="accordion-header" role="tab" id="headingSeven"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Які є способи оплати?</button></h2>
+                        <h2 class="accordion-header" role="tab" id="headingSeven"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">{{ i18n "faq-question7-title" }}</button></h2>
                         <div class="accordion-collapse collapse item-7" role="tabpanel" data-bs-parent="#faqAccordion" aria-labelledby="headingSeven" id="collapseSeven">
-                            <div class="accordion-body"><span>Ви можете оплачувати сесії переказом через український банк, Stripe, PayPal або на міжнародну карту. Мені здається ми знайдемо зручний для нас обох варіант.</span></div>
+                            <div class="accordion-body"><span>{{ i18n "faq-question7-answer" }}</span></div>
                         </div>
                     </div>
                 </div>

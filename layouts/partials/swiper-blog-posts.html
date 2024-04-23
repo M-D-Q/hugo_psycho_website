@@ -4,11 +4,11 @@
     <div class="row mb-5">
         <div class="text-center">
             <h1 class="display-3 links-container">
-                <div data-bss-hover-animate="pulse"> <a href="/categories/articles/" class="gradient-text">Статті</a> </div>
+                <div data-bss-hover-animate="pulse"> <a href="/categories/articles/" class="gradient-text">{{ i18n "blogPostSwiper-article-heading" }}</a> </div>
                 <span>&</span>
-                <div data-bss-hover-animate="pulse"> <a href="/categories/podcasts/" class="gradient-text">Подкасти</a></div>
+                <div data-bss-hover-animate="pulse"> <a href="/categories/podcasts/" class="gradient-text">{{ i18n "blogPostSwiper-podcast-heading" }}</a></div>
               </h1>
-            <p class="lead">Curated insights and thoughts.</p>
+            <p class="lead">{{ i18n "blogPostSwiper-podcast-subtitle" }}</p>
 
         </div>
     </div>
@@ -33,7 +33,7 @@
                         <h4 class="card-title" style="text-align: center;">{{ .Title }}</h4>
                         <p class="card-text">{{ .Summary | truncate 150 }}</p>
                         <div class="d-flex justify-content-center">
-                            <a href="{{ .RelPermalink }}" class="btn btn-primary btn-pill" data-bss-hover-animate="pulse">Читати більше</a>
+                            <a href="{{ .RelPermalink }}" class="btn btn-primary btn-pill" data-bss-hover-animate="pulse">{{ i18n "issues-readmore-button" }}</a>
                         </div>
                     </div>
                     <div class="card-footer text-muted justify-content-center" style="text-align: center;">

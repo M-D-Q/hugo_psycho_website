@@ -1,0 +1,555 @@
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+########
+########                                INDEX AND GENERALS TEMPLATE
+########
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+
+
+
+- id: hello
+  translation: "Bonjour"
+
+- id: brand-name
+  translation: "OMP"
+
+- id: menu-item-1
+  translation: "À propos de moi"
+
+- id: menu-item-2
+  translation: "Réservez une séance"
+
+- id: menu-item-3
+  translation: "Articles"
+
+#####################################################
+####################  HERO    #######################
+#####################################################
+
+
+
+- id : banner-title
+  translation: "Changez votre vie"
+- id : banner-title-mobile
+  translation: "Changez votre vie"
+
+- id : banner-subtitle
+  translation: "Psychothérapies"
+- id : banner-subtitle-mobile
+  translation: "Psychothérapies"
+
+- id : moving-text
+  translation: "Une bonne vie c'est"
+
+- id : banner-button
+  translation: "Réservez une séance"
+
+
+
+- id : banner-card_1_title
+  translation: "Connaissance de soi"
+- id : banner-card_1_body
+  translation: "Une thérapie régulière vous permettra de mieux vous connaître, vous aidera à comprendre vos pensées, émotions, votre corps et vos comportements. Chaque individu est unique et connaître soi-même est essentiel pour construire la vie de vos rêves."
+
+- id : banner-card_2_title
+  translation: "Amélioration des relations"
+- id : banner-card_2_body
+  translation: "Nos crises personnelles et traumatismes peuvent influencer nos relations de manière malsaine et parfois nous ne voyons pas d'autres options. La thérapie offre un espace expérimental pour explorer de nouvelles manières de construire des relations."
+
+- id : banner-card_3_title
+  translation: "Réduction du stress"
+- id : banner-card_3_body
+  translation: "Apprenez des stratégies efficaces pour gérer le stress. La psychothérapie aide à identifier les sources de stress et à trouver de nouvelles solutions."
+
+- id : banner-card_4_title
+  translation: "Guérison des traumatismes"
+- id : banner-card_4_body
+  translation: "La psychothérapie offre un environnement sûr pour guérir des traumatismes passés. Bien que nos expériences douloureuses restent avec nous, nous pouvons minimiser leur impact sur notre vie."
+
+- id : banner-card_5_title
+  translation: "Prendre les bonnes décisions"
+- id : banner-card_5_body
+  translation: "Apprenez à écouter votre intuition, votre corps, vos émotions sans succomber à des décisions impulsives grâce à la thérapie. Un équilibre entre les sphères émotionnelles et cognitives vous mènera à de bonnes décisions. Je suis là pour vous éclairer un peu."
+
+
+
+#####################################################
+####################  ISSUES  #######################
+#####################################################
+
+  # THREE TYPES ISSUES SECTION
+
+
+- id : issues-section-heading
+  translation: "Dans quelles situations je peux aider" 
+
+- id : issues-readmore-button
+  translation: "En savoir plus"
+
+
+##########################################""
+
+- id : cartouche-heading-1
+  translation: "Défis personnels"
+
+- id : type_1-issue_1-title
+  translation: "Anxiété. Attaques de panique. Dépression."
+- id : type_1-issue_1-body
+  translation: "Ces états peuvent limiter considérablement votre qualité de vie, mais avec le soutien et les stratégies appropriés, il est possible de trouver un soulagement et de retrouver une vie pleine."
+
+- id : type_1-issue_2-title
+  translation: "Manque de confiance en soi et problèmes d'estime de soi."
+- id : type_1-issue_2-body
+  translation: "Construire une force intérieure et un respect de soi nécessite du temps et de la réflexion. Reconnaître vos propres réalisations et qualités positives peut être le premier pas."
+
+- id : type_1-issue_3-title
+  translation: "Psychosomatique : troubles du GIT, dystonie végétative-vasculaire, douleurs corporelles, vaginisme."
+- id : type_1-issue_3-body
+  translation: "Le corps et l'esprit sont étroitement liés. Le malaise émotionnel peut provoquer des symptômes physiques, mais comprendre et adresser les besoins émotionnels peut soulager ces conditions."
+
+- id : type_1-issue_4-title
+  translation: "Difficultés professionnelles et épuisement professionnel."
+- id : type_1-issue_4-body
+  translation: "Les conflits avec les collègues, la stagnation professionnelle, l'épuisement professionnel et l'incertitude professionnelle peuvent générer du stress, engendrer un mécontentement de soi et même affecter les relations familiales."
+
+
+##########################################""
+
+- id : cartouche-heading-2
+  translation: "Relations et communication"
+
+- id : type_2-issue_1-title
+  translation: "Difficultés dans les relations partenaires et familiales."
+- id : type_2-issue_1-body
+  translation: "Les relations nécessitent du travail et de la compréhension mutuelle. Les malentendus et les conflits peuvent miner la confiance et le bonheur partagé. En travaillant ensemble, nous pouvons trouver des voies vers l'harmonie et le soutien mutuel."
+
+- id : type_2-issue_2-title
+  translation: "Difficultés dans les relations avec les autres."
+- id : type_2-issue_2-body
+  translation: "Une communication efficace et de l'empathie sont les clés des relations solides. Comprendre et respecter les limites de chacun aide à établir des relations saines."
+
+- id : type_2-issue_3-title
+  translation: "Restaurer la confiance après une trahison."
+- id : type_2-issue_3-body
+  translation: "La trahison inflige de la douleur et détruit la confiance, mais la guérison est possible à travers l'honnêteté et le travail commun sur la relation. Il est crucial de déterminer la racine du problème et de travailler à sa résolution."
+
+##########################################""
+
+- id : cartouche-heading-3
+  translation: "Défis des transitions de vie"
+
+- id : type_3-issue_1-title
+  translation: "Recherche de soi et de sens."
+- id : type_3-issue_1-body
+  translation: "Comprendre votre identité et votre but nécessite de l'auto-exploration et du temps. Ce voyage peut être difficile mais aussi une source de croissance personnelle profonde."
+
+- id : type_3-issue_2-title
+  translation: "Difficultés d'adaptation dans un nouveau pays."
+- id : type_3-issue_2-body
+  translation: "S'adapter à un nouvel environnement peut être un processus difficile. Les défis liés à la barrière de la langue, à l'accoutumance aux normes culturelles différentes et à la recherche d'amis peuvent causer du stress et un sentiment d'isolement."
+
+- id : type_3-issue_3-title
+  translation: "Deuil. Perte d'un enfant, des parents ou d'un partenaire."
+- id : type_3-issue_3-body
+  translation: "La perte d'un être cher est l'une des épreuves les plus difficiles, nécessitant du temps pour vivre le deuil et s'adapter aux nouvelles circonstances de la vie."
+
+
+#####################################################
+#################### ABOUT ME #######################
+#####################################################
+
+
+- id : about-me-title
+  translation: "Qui suis-je ?"
+
+- id : about-me-subtitle
+  translation: "Voyager à travers la psychothérapie, ce n'est pas chercher de nouveaux paysages, mais acquérir de nouveaux yeux."
+
+- id : about-me-body
+  translation: "Je suis Olesia, psychologue diplômée et candidate à la psychothérapie. Je possède 9 ans d'expérience en psychologie et 6 ans en psychothérapie. Dans mon travail, je combine les techniques de la gestalt-thérapie, de l'art-thérapie, de la thérapie cognitive-comportementale et de l'EMDR. Je participe à des supervisions personnelles et de groupe, je poursuis une thérapie individuelle et je participe à divers projets éducatifs pour aider mes clients à améliorer la qualité de leur vie."
+
+- id : about-me-button
+  translation: "Mes qualifications"
+
+- id : about-me-picture_desc
+  translation: "Photo de Olesia"
+
+- id : about-me-modalcontent
+  translation: "Diplôme de licence et de master en psychologie, 6 ans d'études. <br><br>
+    Certificat de fin de premier niveau en gestalt-thérapie. MIAGI, un an d'études.<br><br>
+    Certificat de fin de deuxième niveau en gestalt-thérapie, Gestalt University de Kiev (KGU), 5 ans d'études.<br><br>
+    Certificat de fin de formation en art-thérapie, un an d'études.<br><br>
+    Certificat de participation à un intensif de gestalt de deux semaines.<br><br>
+    Certificat de propédeutique en psychiatrie.<br><br>
+    Certificat de participation à la 20e conférence internationale du KGU.<br><br>
+    Certificat de formation en thérapie par le sable pour travailler avec les clients."
+
+
+#####################################################
+############## DIPLOMA SWIPER #######################
+#####################################################
+
+
+- id : diploma-title
+  translation: "Mes qualifications"
+
+##### DIPLOMA 1
+- id : diploma1-details-title
+  translation: "Licence en Psychologie pratique"
+
+- id : diploma1-details-body
+  translation: "Description du diplôme 1..."
+
+- id : diploma1-details-link
+  translation: "Informations sur le lien pour le diplôme 1"
+
+- id : diploma1-details-alt
+  translation: "Description de l'image pour le diplôme 1"
+
+##### DIPLOMA 2
+- id : diploma2-details-title
+  translation: "Master en Psychologie pratique"
+
+- id : diploma2-details-body
+  translation: "Description du diplôme 2..."
+
+- id : diploma2-details-link
+  translation: "Informations sur le lien pour le diplôme 2"
+
+- id : diploma2-details-alt
+  translation: "Description de l'image pour le diplôme 2"
+
+##### DIPLOMA 3
+- id : diploma3-details-title
+  translation: "Diplôme de Moscou"
+
+- id : diploma3-details-body
+  translation: "Description du diplôme 3..."
+
+- id : diploma3-details-link
+  translation: "Informations sur le lien pour le diplôme 3"
+
+- id : diploma3-details-alt
+  translation: "Description de l'image pour le diplôme 3"
+
+##### DIPLOMA 4
+- id : diploma4-details-title
+  translation: "Diplôme de Gestalt"
+
+- id : diploma4-details-body
+  translation: "Description du diplôme 4..."
+
+- id : diploma4-details-link
+  translation: "Informations sur le lien pour le diplôme 4"
+
+- id : diploma4-details-alt
+  translation: "Description de l'image pour le diplôme 4"
+
+
+#####################################################
+################      METHODS     ###################
+#####################################################
+
+- id : methods-heading
+  translation: "Mes méthodes"
+
+- id : methods-subtitle
+  translation: "La psychothérapie ne consiste pas seulement à résoudre des problèmes ; il s'agit de révéler le potentiel en vous pour mener une vie épanouie. Chaque approche que j'utilise se combine parfaitement avec les autres pour garantir les meilleurs résultats."
+
+#METHOD 1
+- id : methods-card1-title
+  translation: "Thérapie gestalt"
+
+- id : methods-card1-overlay_phrase
+  translation: "Contact ici et maintenant"
+
+- id : methods-card1-image_desc
+  translation: "Thérapie gestalt"
+
+- id : methods-card1-modal_title
+  translation: "Thérapie gestalt"
+
+- id : methods-card1-modal_body
+  translation: |
+    La GT est une question de contact avec soi-même et avec le monde ici et maintenant. À propos de la manière dont votre expérience passée résonne en vous à cet instant. Vous avez probablement déjà entendu l'expression « fermer un gestalt ». La GT considère le processus de vie comme la recherche de vos véritables besoins (prise de conscience des gestalts) et des moyens de les satisfaire (fermeture des gestalts). Fermer un gestalt signifie comprendre complètement une situation qui vous préoccupe, l'accepter, vous apaiser et ne plus y revenir.
+
+    Fritz Perls, le fondateur de la thérapie gestalt, a dit : « Je fais mon affaire et tu fais la tienne. Je ne suis pas dans ce monde pour répondre à tes attentes, et tu n'es pas dans ce monde pour répondre aux miennes. Tu es toi, et je suis moi. Si nous nous trouvons, c'est merveilleux. Sinon, cela ne peut être aidé et il n'y a rien de mal à cela. »
+
+#METHOD 2
+- id : methods-card2-title
+  translation: "Art-thérapie"
+
+- id : methods-card2-overlay_phrase
+  translation: "Expression créative"
+
+- id : methods-card2-image_desc
+  translation: "Art-thérapie"
+
+- id : methods-card2-modal_title
+  translation: "Art-thérapie"
+
+- id : methods-card2-modal_body
+  translation: "L'art-thérapie est la guérison par l'art : peinture, contes, argile, musique, films, sable, photographie, danse, jeu théâtral, etc. La créativité permet de vivre des conflits intérieurs, d'exprimer l'inconscient, de vivre différents scénarios en faisant appel au subconscient. Cette méthode est reconnue comme sûre, profonde et efficace pour travailler avec les enfants et les adultes."
+
+#METHOD 3
+- id : methods-card3-title
+  translation: "TCC"
+
+- id : methods-card3-overlay_phrase
+  translation: "Pensées et comportements"
+
+- id : methods-card3-image_desc
+  translation: "Image TCC"
+
+- id : methods-card3-modal_title
+  translation: "Thérapie cognitive-comportementale"
+
+- id : methods-card3-modal_body
+  translation: "La TCC examine comment vos pensées affectent vos émotions et votre comportement, et vous aide à acquérir des compétences nécessaires pour gérer divers problèmes. Par exemple, si vous avez des pensées négatives, elles peuvent provoquer des émotions qui influencent votre comportement de manière non bénéfique. La TCC combine la thérapie cognitive (ce que vous pensez) et la thérapie comportementale (ce que vous faites). La TCC s'est avérée efficace pour travailler avec les troubles anxieux, le stress post-traumatique, les phobies, les troubles obsessionnels-compulsifs, la dépression et les troubles alimentaires."
+
+#METHOD 4
+- id : methods-card4-title
+  translation: "EMDR"
+
+- id : methods-card4-overlay_phrase
+  translation: "Technique projective"
+
+- id : methods-card4-image_desc
+  translation: "Image EMDR"
+
+- id : methods-card4-modal_title
+  translation: "EMDR"
+
+- id : methods-card4-modal_body
+  translation: "L'EMDR utilise des cartes métaphoriques avec des images d'animaux, de personnes, de lieux, d'objets sur différents thèmes. En tirant une carte, une personne projette sur elle des sentiments et des expériences (in)conscientes. L'utilisation de cartes métaphoriques aide à formuler une demande, à mieux comprendre les problèmes, à trouver des ressources, et c'est un excellent lieu pour des insights."
+
+
+
+
+#####################################################
+################       FAQ        ###################
+#####################################################
+
+- id : faq-heading
+  translation: "Foire aux questions"
+
+- id : faq-image_desc
+  translation: "Texte alternatif descriptif"
+
+- id : faq-question1-title
+  translation: "Je ne peux pas formuler ma demande..."
+- id : faq-question1-answer
+  translation: "Pas de souci, il est parfois difficile de formuler une demande seul. Nous pouvons le faire ensemble. Les pensées anxieuses peuvent s'emmêler et il faut parfois les démêler avec quelqu'un."
+
+- id : faq-question2-title
+  translation: "À quelle fréquence dois-je venir?"
+- id : faq-question2-answer
+  translation: "La thérapie est un processus profond et de longue durée. Des rendez-vous irréguliers ne permettent pas d'établir un climat de sécurité et de confiance, essentiel pour affronter les épreuves. C'est comme vouloir atteindre votre destination finale en sautant constamment du train. Habituellement, je recommande des séances hebdomadaires, mais c'est personnalisé. Il existe des sessions de soutien ou des formats de consultation. Mais d'abord, je vous invite à une première rencontre pour sentir si vous souhaitez continuer. Il n'y a aucune pression."
+
+- id : faq-question3-title
+  translation: "Je n'ai jamais consulté de psychologue et j'ai peur de la rencontre."
+- id : faq-question3-answer
+  translation: "La peur est une réaction normale face à l'inconnu. Cependant, sans prendre de risques, nous pourrions manquer une opportunité de développement personnel. Je suis également anxieuse à l'idée de rencontrer un nouveau client, mais je suis prête à vous accompagner dans cette expérience."
+
+- id : faq-question4-title
+  translation: "Puis-je venir avec mon partenaire à une séance?"
+- id : faq-question4-answer
+  translation: "Oui, vous pouvez si vous n'êtes pas déjà mon client en thérapie individuelle. Je propose des thérapies individuelles, de couple et familiales. Cependant, si cela concerne votre enfant, je peux proposer une consultation familiale unique où votre enfant et les membres de la famille peuvent participer."
+
+- id : faq-question5-title
+  translation: "Je souhaite envoyer mon enfant (adolescent)."
+- id : faq-question5-answer
+  translation: "Je serais heureuse de rencontrer votre enfant, mais il doit savoir où il va et venir à moi de son propre gré. Quoi qu'il en soit, nous pourrions d'abord essayer de nous rencontrer. Il n'y a aucune pression."
+
+- id : faq-question6-title
+  translation: "Combien de temps dure une consultation?"
+- id : faq-question6-answer
+  translation: "La consultation dure 50 minutes. Cela suffit pour travailler sur la demande et permettre un retour ressourcé à la vie quotidienne."
+
+- id : faq-question7-title
+  translation: "Quels sont les moyens de paiement?"
+- id : faq-question7-answer
+  translation: "Vous pouvez payer les séances par virement via une banque ukrainienne, Stripe, PayPal ou sur une carte internationale. Je suis sûre que nous trouverons une option qui nous convienne à tous les deux."
+
+
+
+#####################################################
+################ BLOG POST SWIPER ###################
+#####################################################
+
+- id: blogPostSwiper-article-heading
+  translation: "Articles"
+
+- id: blogPostSwiper-podcast-heading
+  translation: "Podcasts"
+
+- id: blogPostSwiper-podcast-subtitle
+  translation: "Aperçus et réflexions sélectionnés."
+
+
+
+#################################################
+################ TESTIMONIALS ###################
+#################################################
+
+
+
+
+- id: testimonialSwiper-heading
+  translation: "Témoignages de mes clients"
+- id: testimonialSwiper-subtitle
+  translation: "Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices."
+
+# Testimonial 1
+- id: testimonialSwiper-phone1-image_desc
+  translation: "Témoignages de mes clients"
+- id: testimonialSwiper-phone1-description
+  translation: "<h2>Titre 1</h2>
+        <p>Voici la description pour <strong>l'Article 1</strong>.</p>
+        <p>Elle peut inclure plusieurs paragraphes, des <em>styles</em>, et des <a href='#'>liens</a>.</p>"
+
+# Testimonial 2
+- id: testimonialSwiper-phone2-image_desc
+  translation: "Témoignages de mes clients"
+- id: testimonialSwiper-phone2-description
+  translation: "<h2>Titre 2</h2>
+        <p>Voici la description pour <strong>l'Article 2</strong>.</p>
+        <p>Elle peut inclure plusieurs paragraphes, des <em>styles</em>, et des <a href='#'>liens</a>.</p>"
+
+# Testimonial 3
+- id: testimonialSwiper-phone3-image_desc
+  translation: "Témoignages de mes clients"
+- id: testimonialSwiper-phone3-description
+  translation: "<h2>Titre 3</h2>
+        <p>Voici la description pour <strong>l'Article 3</strong>.</p>
+        <p>Elle peut inclure plusieurs paragraphes, des <em>styles</em>, et des <a href='#'>liens</a>.</p>"
+
+
+
+
+#################################################
+################     PRICING  ###################
+#################################################
+
+- id: pricing-heading
+  translation: "Формат консультацій"
+- id: pricing-subtitle
+  translation: "Explore our individual and couple therapy sessions tailored to your needs."
+
+- id: pricing-button1
+  translation: "Індивідуальна терапія"
+- id: pricing-button2
+  translation: "Парна терапія"
+
+##OPTION 1 
+- id: pricing-option1-image_desc
+  translation: "Individual Therapy"
+- id: pricing-option1-description
+  translation: "Індивідуальна терапія - це шанс для змін в кращу сторону. Завдання психотерапевта полягає в тому, щоб допомогти пацієнту визначитися у своїх життєвих цілях і знайти найкоротший шлях до бажаного.
+Інтимність атмосфери допомагає встановити довірливі відносини і розкритися."
+
+- id: pricing-option1-heading
+  translation: "Standard Therapy"
+- id: pricing-option1-session
+  translation: "/Per Session"
+- id: pricing-option1-description
+  translation: "Кожен сеанс — це ще один крок на шляху до якісного життя."
+- id: pricing-option1-button
+  translation: "Забронювати сеанс"
+
+##OPTION 2 
+- id: pricing-option2-image_desc
+  translation: "Couple Therapy"
+- id: pricing-option2-description
+  translation: "Терапія пари має відбутись задовго до того, коли пара відчуває гостру потребу. Похід до психолога до “критичної” ситуації допомагає парам попередити безліч проблем, від фінансових до сексуальних, навчитись спілкуватись одне з одним в конфлікті та глибше розуміти потреби одне одного."
+
+- id: pricing-option2-heading
+  translation: "Standard Therapy"
+- id: pricing-option2-session
+  translation: "/Per Session"
+- id: pricing-option2-description
+  translation: "Кожен сеанс – це ще один крок на шляху до здорових стосунків."
+- id: pricing-option2-button
+  translation: "Забронювати сеанс"
+
+
+
+
+#################################################
+################  CONTACT-ME  ###################
+#################################################
+
+
+- id: contact-heading
+  translation: "Contactez-moi"
+- id: contact-subtitle
+  translation: "Écrivez-moi un message"
+- id: contact-help-button1
+  translation: "Besoin d'aide pour rédiger un message ?"
+- id: contact-help-button2
+  translation: "Générer un message"
+- id: contact-help-button3
+  translation: "Copier dans le presse-papiers"
+
+- id: contact-form-field1-desc
+  translation: "Votre nom :"
+- id: contact-form-field1-hint
+  translation: "Entrez votre nom"
+
+- id: contact-form-field2-desc
+  translation: "Votre âge :"
+- id: contact-form-field2-hint
+  translation: "Entrez votre âge"
+
+- id: contact-form-field3-desc
+  translation: "Pourquoi souhaitez-vous prendre rendez-vous ?"
+- id: contact-form-field3-hint
+  translation: "Décrivez votre raison"
+
+- id: contact-form-field4-desc
+  translation: "Que ressentez-vous, quelles émotions ?"
+- id: contact-form-field4-hint
+  translation: "Décrivez vos sentiments et émotions"
+
+
+
+#################################################
+################    FOOTER    ###################
+#################################################
+
+# brand name earlier defined
+
+- id: footer-mentions
+  translation: "© 2024 OMP. Tous droits réservés."
+- id: footer-thanks
+  translation: "Réalisé par M-D-Q"
+
+                
+
+
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+########
+########                                SINGLE ARTICLE LAYOUTS
+########
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+

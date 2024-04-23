@@ -1,56 +1,56 @@
 <section id="methods2" class="second-background overflow-hidden">
     <div  class="container reducino">
-        <h2 class="display-4 text-center text-secondary" style="margin-bottom: 50px; margin-top: 50px;">Мої Методи</h2>
-        <p class="text-center text-muted reducino-text" >Психотерапія — це не просто вирішення проблем; мова йде про розкриття потенціалу всередині вас, щоб вести повноцінне життя. Кожен підхід, який я використовую, чудово поєднується один з одним, щоб забезпечити кращий результат.</p>
+        <h2 class="display-4 text-center text-secondary" style="margin-bottom: 50px; margin-top: 50px;">{{ i18n "methods-heading" }}</h2>
+        <p class="text-center text-muted reducino-text" >{{ i18n "methods-subtitle" }}</p>
         <!-- Cards go here -->
         <div class="row justify-content-center" style="margin-top: 30px;">
 
             <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in-right" data-aos-delay="150">
-                <div class="card h-100 position-relative"><img class="w-100 d-block  w-100  w-100 card-img-top" src="img\desktop\gestalt-1.webp" alt="C-B-T">
+                <div class="card h-100 position-relative"><img class="w-100 d-block  w-100  w-100 card-img-top" src="img\desktop\gestalt-1.webp" alt='{{ i18n "methods-card1-image_desc" }}'>
                     <div class="custom-overlay">
                         <div>
-                            <p class="text-white">Про контакт тут і тепер</p><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGestalt">+</button>
+                            <p class="text-white">{{ i18n "methods-card1-overlay_phrase" }}</p><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGestalt">+</button>
                         </div>
                     </div>
                     <div class="card-body">
-                        <h4 class="text-center card-title">Гештальт терапія</h4>
+                        <h4 class="text-center card-title">{{ i18n "methods-card1-title" }}</h4>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in-right" data-aos-delay="250">
-                <div class="card h-100 position-relative"><img class="w-100 d-block w-100w-100 card-img-top" src="img\desktop\art-therapy-1.webp" alt="C-B-T">
+                <div class="card h-100 position-relative"><img class="w-100 d-block w-100w-100 card-img-top" src="img\desktop\art-therapy-1.webp" alt='{{ i18n "methods-card2-image_desc" }}'>
                     <div class="custom-overlay">
                         <div>
-                            <p class="text-white">Творче самовираження</p><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalArtTherapy">+</button>
+                            <p class="text-white">{{ i18n "methods-card2-overlay_phrase" }}</p><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalArtTherapy">+</button>
                         </div>
                     </div>
                     <div class="card-body">
-                        <h4 class="text-center card-title">Арт-терапія</h4>
+                        <h4 class="text-center card-title">{{ i18n "methods-card2-title" }}</h4>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in-right" data-aos-delay="350">
-                <div class="card h-100 position-relative"><img class="w-100 d-block w-100 w-100 card-img-top" src="img\desktop\cbt1.webp" alt="C-B-T">
+                <div class="card h-100 position-relative"><img class="w-100 d-block w-100 w-100 card-img-top" src="img\desktop\cbt1.webp" alt='{{ i18n "methods-card3-image_desc" }}'>
                     <div class="custom-overlay">
                         <div>
-                            <p class="text-white">Думки і поведінка</span></p><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCbt">+</button>
+                            <p class="text-white">{{ i18n "methods-card3-overlay_phrase" }}</span></p><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCbt">+</button>
                         </div>
                     </div>
                     <div class="card-body">
-                        <h4 class="text-center card-title">КПТ</h4>
+                        <h4 class="text-center card-title">{{ i18n "methods-card3-title" }}</h4>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in-right" data-aos-delay="400">
-                <div class="card h-100 position-relative"><img class="w-100 d-block w-100 w-100 card-img-top" src="img\desktop\cbt-1.webp" alt="C-B-T">
+                <div class="card h-100 position-relative"><img class="w-100 d-block w-100 w-100 card-img-top" src="img\desktop\cbt-1.webp" alt='{{ i18n "methods-card4-image_desc" }}'>
                     <div class="custom-overlay">
                         <div>
-                            <p class="text-white">Проективна методика</span></p><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMAK">+</button>
+                            <p class="text-white">{{ i18n "methods-card4-overlay_phrase" }}</span></p><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMAK">+</button>
                         </div>
                     </div>
                     <div class="card-body">
-                        <h4 class="text-center card-title">МАК</h4>
+                        <h4 class="text-center card-title">{{ i18n "methods-card4-title" }}</h4>
                     </div>
                 </div>
             </div>
@@ -66,10 +66,10 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalCbt">Когнітивно-поведінкова терапія</h5><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button>
+                <h5 class="modal-title" id="modalCbt">{{ i18n "methods-card3-modal_title" }}</h5><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button>
             </div>
             <div class="modal-body">
-                <p>КПТ відслідковує, як ваші думки впливають на ваші емоції і поведінку, і допомагає вам освоїти навички, які необхідні для вирішення різних проблем. Для прикладу, якщо у вас є негативні думки, то вони можуть викликати емоції, які впливатимуть на вашу поведінку невигідним для вас чином. КПТ поєднує в собі когнітивну терапію (те, що ви думаєте) і поведінкову терапію (те, що ви робите). КПТ заявив себе як ефективний метод в роботі з ПА, тривожним та постратравматичним розладами, фобіями, обсесивно-компульсивним розладом, депресією та розладами харчової поведінки.</p>
+                <p>{{ i18n "methods-card3-modal_body" | safeHTML }}</p>
             </div>
         </div>
     </div>
@@ -79,10 +79,10 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalGestalt">Гештальт-терапія</h5><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button>
+                <h5 class="modal-title" id="modalGestalt">{{ i18n "methods-card1-modal_title" }}</h5><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button>
             </div>
             <div class="modal-body">
-                <p>ГТ - це про контакт з собою, зі світом тут і зараз. Про те, як ваш минулий досвід відгукується у вас в цьому моменті. Ви мабуть вже чули фразу «закрити гештальт? ГТ розглядає процес життя як пошук своїх справжніх потреб (усвідомлення гештальтів) та способів їх задоволення (закриття гештальтів). Закрити гештальт означає до кінця розібратися в ситуації, що турбує вас, прийняти її, заспокоїтися і більше до неї не повертатися. <br> <br> Франц Перлз, засновник гештальт-терапії сказав: «Я роблю свою справу, а ти робиш свою. Я в цьому світі не для того, щоб відповідати твоїм очікуванням, а ти в цьому світі не для того, щоб відповідати моїм очікуванням. Ти це ти, а я це я. Якщо нам доведеться знайти один одного – це чудово. Якщо ні, то нічого не вдієш і нічого в цьому страшного.»</p>
+                <p>{{ i18n "methods-card1-modal_body" | safeHTML }}</p>
             </div>
         </div>
     </div>
@@ -93,10 +93,10 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalArtTherapy">Арт терапія</h5><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button>
+                <h5 class="modal-title" id="modalArtTherapy">{{ i18n "methods-card3-modal_title" }}</h5><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button>
             </div>
             <div class="modal-body">
-                <p>Арт-терапія – це зцілення мистецтвом: малюванням, казками, глиною, музикою, фільмами, піском, фотографіями, танцями, театральною грою і т.д.. Творчість дозволяє пережити внутрішні конфлікти, виразити несвідоме,  прожити різні сценарії звертаючись до підсвідомого. Цей метод признаний безпечним, глибоким і ефективним для роботи з дітьми та дорослими.</p>
+                <p>{{ i18n "methods-card3-modal_body" | safeHTML }}</p>
             </div>
         </div>
     </div>
@@ -106,10 +106,10 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalArtTherapy">МАК</h5><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button>
+                <h5 class="modal-title" id="modalArtTherapy">{{ i18n "methods-card4-modal_title" }}</h5><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button>
             </div>
             <div class="modal-body">
-                <p>МАК - метафоричні карти з малюнками тварин, людей, місць, речей на різні тематики. Витягуючи карту людина проектує на неї (не)усвідомлені почуття та переживання. Використовування метафоричних карт допомагає людині сформувати запит, краще розкрити проблематику, віднайти ресурс і це класне місце для інсайтів.</p>
+                <p>{{ i18n "methods-card4-modal_body" | safeHTML }}</p>
             </div>
         </div>
     </div>

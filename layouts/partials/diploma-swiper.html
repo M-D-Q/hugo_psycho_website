@@ -1,7 +1,7 @@
 <section id="diploma-swiper" class="first-background overflow-hidden">
 <div class="container">
     <div class="row">
-        <h2 class="display-4" style="text-align: center; padding-bottom:25px; margin-bottom: 50px; margin-top: 50px;">Мої кваліфікації</h2>
+        <h2 class="display-4" style="text-align: center; padding-bottom:25px; margin-bottom: 50px; margin-top: 50px;">{{ i18n "diploma-title" }}</h2>
 
 
 
@@ -13,40 +13,49 @@
             <div class="swiper-wrapper">
                 <!-- Slide for Diploma 1 -->
                 <div class="swiper-slide">
-                    <img src="img/desktop/bachelor.webp" alt="Diploma 1">
+                    <img src="img/desktop/bachelor.webp" alt='{{ i18n "diploma1-details-alt" }}'>
                     <div class="slide-content" style="display: none;">
-                        <h2>Licence de Psychologie pratique</h2>
+                        <h2>{{ i18n "diploma1-details-title" }}</h2>
                         <br>
-                        <p>Description for Diploma 1...
-                        </p>
-                        
+                        <p>{{ i18n "diploma1-details-body" }}</p>
+                        <br><br>
+                        <a href="/">{{ i18n "diploma1-details-link" }}</a>
                     </div>
                 </div>
                 <!-- Repeat for more diplomas as needed -->
                 <!-- Slide for Diploma 2 -->
                 <div class="swiper-slide">
-                    <img src="img/desktop/moscow-certificate.webp" alt="Diploma 2">
+                    <img src="img/desktop/moscow-certificate.webp" alt='{{ i18n "diploma1-details-alt" }}'>
 
                     <div class="slide-content" style="display: none;">
-                        <h2>Diploma 2 Title</h2>
-                        <p>Description for Diploma 2...</p>
+                        <h2>{{ i18n "diploma2-details-title" }}</h2>
+                        <br>
+                        <p>{{ i18n "diploma2-details-body" }}</p>
+                        <br><br>
+                        <a href="/">{{ i18n "diploma2-details-link" }}</a>
                     </div>
                 </div>
                 <!-- Slide for Diploma 3 -->
                 <div class="swiper-slide">
-                    <img src="img/desktop/master.webp" alt="Diploma 3">
+                    <img src="img/desktop/master.webp" alt='{{ i18n "diploma1-details-alt" }}'>
                     <div class="slide-content" style="display: none;">
-                        <h2>Diploma 3 Title</h2>
-                        <p>Description for Diploma 3...</p>
+                        <h2>{{ i18n "diploma3-details-title" }}</h2>
+                        <br>
+                        <p>{{ i18n "diploma3-details-body" }}</p>
+                        <br><br>
+                        <a href="/">{{ i18n "diploma3-details-link" }}</a>
                     </div>
                 </div>
                 <!-- Slide for Diploma 4 -->
                 <div class="swiper-slide">
-                    <img src="img/desktop/kyiv-gestalt.webp" alt="Diploma 4">
+                    <img src="img/desktop/kyiv-gestalt.webp" alt='{{ i18n "diploma1-details-alt" }}'>
 
                     <div class="slide-content" style="display: none;">
-                        <h2>Diploma 4 Title</h2>
-                        <p>Description for Diploma 4...</p>
+                        <h2>{{ i18n "diploma4-details-title" }}</h2>
+                        <br>
+                        <p>{{ i18n "diploma4-details-body" }}</p>
+                        <br><br>
+                        <a href="/">{{ i18n "diploma4-details-link" }}</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +68,7 @@
         <div class="col-md-5 d-flex justify-content-center order-2 order-md-1">
             <div id="diplomaDetails" class="diploma-details">
                 <!-- Dynamic Content for the active diploma will be displayed here -->
-                <h2 id="diplomaTitle">Diploma Title</h2>
+                <h2 id="diplomaTitle" style="text-align: center;">Diploma Title</h2>
                 <p id="diplomaDescription">Diploma description...</p>
             </div>
         </div>

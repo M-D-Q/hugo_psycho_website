@@ -2,8 +2,8 @@
 {{ define "main" }}
 
 <div style="text-align: center; margin-top:2em" class="hide-on-big">
-    <h1 class="banner-title text-fading">Змініть своє життя</h1>
-    <h1 class="banner-subtitle text-fading"><span class="gradient-text">Психологією</span></h1>
+    <h1 class="banner-title text-fading">{{ i18n "banner-title-mobile" }}</h1>
+    <h1 class="banner-subtitle text-fading"><span class="gradient-text">{{ i18n "banner-subtitle-mobile" }}</span></h1>
 </div>
 
 <section id="intro" class="overflow-hidden" >
@@ -16,11 +16,11 @@
                 <div class="col-md-12 col-lg-8">
                     <div class="banner-content ">
                         <div class="hide-on-small">
-                            <h1 class="banner-title text-fading">Змініть своє життя</h1>
-                            <h1 class="banner-subtitle text-fading"> <span class="gradient-text">Психотерапії</span></h1>
+                            <h1 class="banner-title text-fading">{{ i18n "banner-title" }}</h1>
+                            <h1 class="banner-subtitle text-fading"> <span class="gradient-text">{{ i18n "banner-subtitle" }}</span></h1>
                         </div>
-                        <p class="psychology-text">Якісне життя – це бути <span class="typed-text"></span><span class="cursor">|</span></p>
-                        <div class="text-center"><a class="btn btn-primary text-uppercase btn-small btn-pill" role="button" data-bss-hover-animate="pulse" href="#contact-me">Забронюйте сеанс</a></div>
+                        <p class="psychology-text">{{ i18n "moving-text" }} <span class="typed-text"></span><span class="cursor">|</span></p>
+                        <div class="text-center"><a class="btn btn-primary text-uppercase btn-small btn-pill" role="button" data-bss-hover-animate="pulse" href="#contact-me">{{ i18n "banner-button" }}</a></div>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
@@ -30,42 +30,32 @@
                             <div class="swiper-wrapper" style="border-radius: 13px;"  >
                                 <div class="swiper-slide">
                                     <div class="bg-light feat-content p-5" >
-                                        <h3 class="feat-title text-center ">Самопізнання</h3>
-                                        <p class="fw-light feat-text">Регулярна терапія дасть Вам можливість пізнати себе, допоможе вам зрозуміти ваші думки, емоції, тіло та патерни поведінки. Адже не існує однакової особистості і для побудови життя вашої мрії необхідно знати себе.
-                                            <br>
-                                            <br>
-
-                                        </p>
+                                        <h3 class="feat-title text-center ">{{ i18n "banner-card_1_title" }}</h3>
+                                        <p class="fw-light feat-text">{{ i18n "banner-card_1_body" }}</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="bg-light feat-content p-5 " >
-                                        <h3 class="feat-title text-center ">Покращення стосунків</h3>
-                                        <p class="fw-light feat-text">Наші особисті кризи та травми можуть формувати нездорові стосунки з людьми й інколи ми не знаємо іншого шляху. Терапія це ваше експериментальне життя для пошуку нових способів будування контакту. 
-                                            
-                                        </p>
+                                        <h3 class="feat-title text-center ">{{ i18n "banner-card_2_title" }}</h3>
+                                        <p class="fw-light feat-text">{{ i18n "banner-card_2_body" }}</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="bg-light feat-content p-5 ">
-                                        <h3 class="feat-title text-center ">Зниження стресу</h3>
-                                        <p class="fw-light feat-text">Навчіться ефективних стратегій аби справлятися зі стресом. Психотерапія помагає підсвітити зони, які можуть спричиняти стресс, і допомагає знайти нові можливості.
-                                            
-                                        </p>
+                                        <h3 class="feat-title text-center ">{{ i18n "banner-card_3_title" }}</h3>
+                                        <p class="fw-light feat-text">{{ i18n "banner-card_3_body" }}</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="bg-light feat-content p-5 ">
-                                        <h3 class="feat-title text-center ">Зцілення від травми</h3>
-                                        <p class="fw-light feat-text">Психотерапія надає безпечне середовище для зцілення від минулих травм. Хоча наш болючий досвід завжди залишається з нами, ми можемо мінімізувати його вплив на наше життя. 
-                                            
-                                        </p>
+                                        <h3 class="feat-title text-center ">{{ i18n "banner-card_4_title" }}</h3>
+                                        <p class="fw-light feat-text">{{ i18n "banner-card_4_body" }}</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class=" bg-light feat-content p-5 ">
-                                        <h3 class="feat-title text-center">Прийняття правильних рішень</h3>
-                                        <p class="feat-text fw-light">Навчіться завдяки терапії слухати вашу інтуїцію, тіло, емоції, але не піддаватися імпульсивним рішенням. Баланс між емоційною та когнітивною сферою приведуть вас до правильних рішень. А я готова вам трішки в цьому підсвітити.</p>
+                                        <h3 class="feat-title text-center ">{{ i18n "banner-card_5_title" }}</h3>
+                                        <p class="fw-light feat-text">{{ i18n "banner-card_5_body" }}</p>
                                     </div>
                                 </div>
                                 
@@ -97,9 +87,9 @@
                 </div>
                 <div class="col-lg-8 kek" style="padding-left: 50px;padding-right: 50px">
                     <div data-aos="fade-left" data-aos-duration="2000" class="about-us-content" style="text-align: center;">
-                        <h2 class="display-4 text-secondary text-muted" style="text-align: center; padding-bottom:25px;">Хто я?</h2><q class="pb-3">Подорож через психотерапію — це не пошук нових пейзажів, а здобуття нових очей.</q>
-                        <p class="lead" style="text-align: justify">Я – Олеся. Дипломований психолог. Кандидат в психотерапевти. 9 років в психології, 6 років в психотерапії. Поєдную в своїй работі техніки гештальт-терапії, арт-терапії, когнітивно-поведінкової терапії та МАК. Проходжу особисту та групову супервізію, проходжу індивідуальну терапію, беру участь в різних навчальних проєктах, щоб допомагати клієнтам покращувати якість їхнього життя.</p>
-                        <a class="btn btn-primary text-uppercase btn-small btn-pill" role="button" data-bss-hover-animate="pulse" style="text-align: center; margin-top:25px" data-bs-target="#about-me-modal" data-bs-toggle="modal">Мої кваліфікації</a>
+                        <h2 class="display-4 text-secondary text-muted" style="text-align: center; padding-bottom:25px;">{{ i18n "about-me-title" }}</h2><q class="pb-3">{{ i18n "about-me-subtitle" }}</q>
+                        <p class="lead" style="text-align: justify">{{ i18n "about-me-body" }}</p>
+                        <a class="btn btn-primary text-uppercase btn-small btn-pill" role="button" data-bss-hover-animate="pulse" style="text-align: center; margin-top:25px" data-bs-target="#about-me-modal" data-bs-toggle="modal">{{ i18n "about-me-button" }}</a>
                     </div>
                 </div>
             </div>
@@ -109,17 +99,10 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Мої кваліфікації</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    <h4 class="modal-title">{{ i18n "about-me-button" }}</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Диплом балавра та магістра в психології. 6 років навчання.<br>
-                        Сертифікат про завершення першого ступеню в гештальт-терапії. МИГИП. Рік навчання. <br>
-                        Сертифікат про завершення другого ступеню в гештальт-терапії. Київський Гештальт університет (КГУ). 5 років навчання. <br>
-                        Сертифікат про завершення навчання в арт-терапії. Рік навчання.<br>
-                        Сертифікат про участь в двотижневому гештальт інтенсиві.<br>
-                        Сертифікат про проходження пропедевтики психіатрії.<br>
-                        Сертифікат про участь у 20 міжнародній конференції КГУ.<br>
-                        Свідоцтво про проходження навчання по використанню піскової терапії в роботі з клієнтами.
+                    <p>{{ i18n "about-me-modalcontent" | safeHTML }}
                         </p>
                 </div>
             </div>
