@@ -3,8 +3,8 @@
 
 <section id="contact-me" class="contact-methods second-background overflow-hidden">
     <div class="container text-center" >
-        <h1 class="display-3 mb-4" style="padding-bottom:10px" >Зв’яжіться зі мною</h1>
-        <p style="padding-bottom:10px">Write me a message</p>
+        <h1 class="display-3 mb-4" style="padding-bottom:10px" >{{ i18n "contact-heading" }}</h1>
+        <p style="padding-bottom:10px">{{ i18n "contact-subtitle" }}</p>
 
         <div class="row d-flex justify-content-center">
             <div class="col-6 col-md-2 mb-2 contact-icon" data-aos="flip-down" data-aos-delay="150" data-bss-hover-animate="pulse"><a href="https://mail.google.com" target="_blank"><img class="gmail-icon" src="/img/Gmail_purple.svg" alt="Gmail"></a></div>
@@ -15,46 +15,44 @@
         </div>
     
     <!-- Trigger Button for Collapse -->
-    <a class="btn btn-primary btn-pill" style="margin-top:20px" data-bs-toggle="collapse" href="#collapseHelpText" role="button" aria-expanded="false" aria-controls="collapseHelpText">
-        Need Help Writing a Message?
-    </a>
+    <a class="btn btn-primary btn-pill" style="margin-top:20px" data-bs-toggle="collapse" href="#collapseHelpText" role="button" aria-expanded="false" aria-controls="collapseHelpText">{{ i18n "contact-help-button1" }}</a>
 
     <div class="collapse mt-3" id="collapseHelpText">
         <div class="card card-body" style="background-color: #f8f9fa;">
             <!-- User Input Form -->
             <div class="row g-3">
                 <div class="col-auto">
-                    <label for="userName" class="form-label">Your Name:</label>
+                    <label for="userName" class="form-label">{{ i18n "contact-form-field1-desc" }}</label>
                 </div>
                 <div class="col-auto">
-                    <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+                    <input type="text" class="form-control" id="userName" placeholder='{{ i18n "contact-form-field1-hint" }}'>
                 </div>
                 <div class="col-auto">
-                    <label for="userAge" class="form-label">Your Age:</label>
+                    <label for="userAge" class="form-label">{{ i18n "contact-form-field2-desc" }}</label>
                 </div>
                 <div class="col-auto">
-                    <input type="number" class="form-control" id="userAge" placeholder="Enter your age">
+                    <input type="number" class="form-control" id="userAge" placeholder='{{ i18n "contact-form-field2-hint" }}'>
                 </div>
             </div>
             <div class="mb-3">
-                <label for="bookingReason" class="form-label">Why would you like to book a session?</label>
-                <textarea class="form-control" id="bookingReason" placeholder="Describe your reason"></textarea>
+                <label for="bookingReason" class="form-label">{{ i18n "contact-form-field3-desc" }}</label>
+                <textarea class="form-control" id="bookingReason" placeholder='{{ i18n "contact-form-field3-hint" }}'></textarea>
             </div>
             <div class="mb-3">
-                <label for="userEmotions" class="form-label">What do you feel, what emotions?</label>
-                <textarea class="form-control" id="userEmotions" placeholder="Describe your feelings and emotions"></textarea>
+                <label for="userEmotions" class="form-label">{{ i18n "contact-form-field4-desc" }}</label>
+                <textarea class="form-control" id="userEmotions" placeholder='{{ i18n "contact-form-field4-hint" }}'></textarea>
             </div>
     
             <!-- Button to Generate Message -->
-            <button class="btn btn-primary btn-pill align-self-center" style="width: auto;" onclick="generateMessage()">Generate Message</button>
+            <button class="btn btn-primary btn-pill align-self-center" style="width: auto;" onclick="generateMessage()">{{ i18n "contact-help-button2" }}</button>
     
             <!-- Textarea to Show Generated Message -->
             <textarea id="generatedMessage" class="form-control" style="height: 200px; margin-top: 15px; font-family: monospace; white-space: pre-wrap;" readonly></textarea>
     
             <!-- Button to Copy to Clipboard -->
-            <button class="btn btn-primary btn-pill align-self-center" style="width: auto; margin-top:15px" onclick="copyToClipboard()">Copy to Clipboard</button>
+            <button class="btn btn-primary btn-pill align-self-center" style="width: auto; margin-top:15px" onclick="copyToClipboard()">{{ i18n "contact-help-button3" }}</button>
     
-            <div id="copySuccess" style="display:none; color: green; margin-top: 10px;">Text copied successfully!</div>
+            <div id="copySuccess" style="display:none; color: green; margin-top: 10px;">{{ i18n "contact-help-button4" }}</div>
         </div>
     </div>
 </div>

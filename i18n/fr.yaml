@@ -32,17 +32,17 @@
 
 
 - id : banner-title
-  translation: "Changez votre vie"
+  translation: "Changez grâce à la"
 - id : banner-title-mobile
-  translation: "Changez votre vie"
+  translation: "Changez grâce à la"
 
 - id : banner-subtitle
-  translation: "Psychothérapies"
+  translation: "Psychothérapie"
 - id : banner-subtitle-mobile
-  translation: "Psychothérapies"
+  translation: "Psychothérapie"
 
 - id : moving-text
-  translation: "Une bonne vie c'est"
+  translation: "Bien vivre c'est :"
 
 - id : banner-button
   translation: "Réservez une séance"
@@ -435,45 +435,49 @@
 #################################################
 
 - id: pricing-heading
-  translation: "Формат консультацій"
+  translation: "Formats de consultation"
 - id: pricing-subtitle
-  translation: "Explore our individual and couple therapy sessions tailored to your needs."
+  translation: "Explorez nos séances de thérapie individuelle et de couple, adaptées à vos besoins."
 
 - id: pricing-button1
-  translation: "Індивідуальна терапія"
+  translation: "Thérapie individuelle"
 - id: pricing-button2
-  translation: "Парна терапія"
+  translation: "Thérapie de couple"
 
 ##OPTION 1 
 - id: pricing-option1-image_desc
-  translation: "Individual Therapy"
+  translation: "Thérapie individuelle"
 - id: pricing-option1-description
-  translation: "Індивідуальна терапія - це шанс для змін в кращу сторону. Завдання психотерапевта полягає в тому, щоб допомогти пацієнту визначитися у своїх життєвих цілях і знайти найкоротший шлях до бажаного.
-Інтимність атмосфери допомагає встановити довірливі відносини і розкритися."
+  translation: "La thérapie individuelle est une chance de changer pour le mieux. Le rôle du psychothérapeute est d'aider le patient à clarifier ses objectifs de vie et à trouver le chemin le plus court vers ce qu'il désire. L'intimité de l'atmosphère aide à établir une relation de confiance et à s'ouvrir."
 
 - id: pricing-option1-heading
-  translation: "Standard Therapy"
+  translation: "Thérapie standard"
 - id: pricing-option1-session
-  translation: "/Per Session"
-- id: pricing-option1-description
-  translation: "Кожен сеанс — це ще один крок на шляху до якісного життя."
+  translation: "/Par séance"
+- id: pricing-option1-description2
+  translation: "Chaque séance est un pas de plus vers une vie de qualité."
 - id: pricing-option1-button
-  translation: "Забронювати сеанс"
+  translation: "Réserver une séance"
+- id: pricing-option1-price
+  translation: "??? €"
 
 ##OPTION 2 
 - id: pricing-option2-image_desc
-  translation: "Couple Therapy"
+  translation: "Thérapie de couple"
 - id: pricing-option2-description
-  translation: "Терапія пари має відбутись задовго до того, коли пара відчуває гостру потребу. Похід до психолога до “критичної” ситуації допомагає парам попередити безліч проблем, від фінансових до сексуальних, навчитись спілкуватись одне з одним в конфлікті та глибше розуміти потреби одне одного."
+  translation: "La thérapie de couple devrait se faire bien avant que le couple ne ressente un besoin urgent. Consulter un psychologue avant une situation 'critique' aide les couples à prévenir de nombreux problèmes, des financiers aux sexuels, apprendre à communiquer dans le conflit et à mieux comprendre les besoins de chacun."
 
 - id: pricing-option2-heading
-  translation: "Standard Therapy"
+  translation: "Thérapie standard"
 - id: pricing-option2-session
-  translation: "/Per Session"
-- id: pricing-option2-description
-  translation: "Кожен сеанс – це ще один крок на шляху до здорових стосунків."
+  translation: "/Par séance"
+- id: pricing-option2-description2
+  translation: "Chaque séance est un pas de plus vers une relation saine."
 - id: pricing-option2-button
-  translation: "Забронювати сеанс"
+  translation: "Réserver une séance"
+- id: pricing-option2-price
+  translation: "??? €"
+
 
 
 
@@ -493,6 +497,8 @@
   translation: "Générer un message"
 - id: contact-help-button3
   translation: "Copier dans le presse-papiers"
+- id: contact-help-button4
+  translation: "Le texte est bien copié"
 
 - id: contact-form-field1-desc
   translation: "Votre nom :"
@@ -507,12 +513,12 @@
 - id: contact-form-field3-desc
   translation: "Pourquoi souhaitez-vous prendre rendez-vous ?"
 - id: contact-form-field3-hint
-  translation: "Décrivez votre raison"
+  translation: "Décrivez ce qui vous pousse à chercher des conseils et du soutien"
 
 - id: contact-form-field4-desc
   translation: "Que ressentez-vous, quelles émotions ?"
 - id: contact-form-field4-hint
-  translation: "Décrivez vos sentiments et émotions"
+  translation: "Décrivez ce que vous ressentez, vos sentiments et émotions"
 
 
 
@@ -523,7 +529,7 @@
 # brand name earlier defined
 
 - id: footer-mentions
-  translation: "© 2024 OMP. Tous droits réservés."
+  translation: "2024 OMP. Tous droits réservés."
 - id: footer-thanks
   translation: "Réalisé par M-D-Q"
 
@@ -541,15 +547,100 @@
 ############################################################################################################################
 
 
+- id: article-published
+  translation: "Publié le"
+
+- id: article-bywhom
+  translation: ", par Olessia"
+
+- id: article-explore
+  translation: "Explorez plus d'articles avec ces tags :"
+
+- id: article-author-drum
+  translation: "Article écrit par"
+
+- id: article-author-Olessia
+  translation: "Olessia Melnyk"
+
+- id: article-author-description
+  translation: "Olessia Melnyk est une psychologue expérimentée spécialisée en thérapie gestalt, qui aspire à aider les individus à surmonter les défis et à améliorer leur santé mentale. Grâce à une approche empathique, elle aide les personnes dans leur croissance personnelle depuis 2018."
+
+- id: article-author-img_desc
+  translation: "Olessia Melnyk"
+
+- id: article-author-more
+  translation: "Voir plus d'Olessia"
+
+
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+########
+########                                SINGLE PODCAST LAYOUTS
+########
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
 
 
 
 
+- id: podcast-published
+  translation: "Publié le"
+
+- id: podcast-bywhom
+  translation: ", par Olessia"
+
+- id: podcast-explore
+  translation: "Explorez plus de contenu avec ces tags :"
+
+- id: podcast-author-drum
+  translation: "Podcast enregistré par"
+
+- id: podcast-author-Olessia
+  translation: "Olessia Melnyk"
+
+- id: podcast-author-description
+  translation: "Olessia Melnyk est une psychologue expérimentée spécialisée en thérapie gestalt, qui aspire à aider les individus à surmonter les défis et à améliorer leur santé mentale. Grâce à une approche empathique, elle aide les personnes dans leur croissance personnelle depuis 2018."
+
+- id: podcast-author-img_desc
+  translation: "Olessia Melnyk"
+
+- id: podcast-author-more
+  translation: "Plus de contenu par Olessia"
 
 
 
 
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+########
+########                                LIST LAYOUT
+########
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
 
 
+- id : list-heading
+  translation: "Tous mes articles de blog"
 
+- id : list-button-all
+  translation: "Tous"
+
+- id : list-button-articles
+  translation: "Articles"
+
+- id : list-button-podcasts
+  translation: "Podcasts"
+
+- id : list-button-all_tags
+  translation: "Tous les tags"
+
+- id : list-button-readmore
+  translation: "Lire la suite"
+
+- id : list-button-listenmore
+  translation: "Écouter la suite"
 

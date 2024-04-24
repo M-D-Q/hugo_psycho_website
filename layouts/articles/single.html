@@ -14,7 +14,7 @@
 
         <hr>
                 <!-- Publication Date -->
-                Published on <time datetime="{{ $dateMachine }}" class="article-date">{{ $dateHuman }}</time>, By Olesia
+                {{ i18n "article-published" }} <time datetime="{{ $dateMachine }}" class="article-date">{{ $dateHuman }}</time>{{ i18n "article-bywhom" }}
                 <hr>
     </div>
 </section>
@@ -33,7 +33,7 @@
     {{ if .Params.tags }}
     <div class="row align-items-center">
         <div class="col-auto">
-            <h5 class="mb-0 fw-bold">Explore more posts with these tags:</h5>
+            <h5 class="mb-0 fw-bold">{{ i18n "article-explore" }}</h5>
         </div>
         <div class="col">
             <div class="btn-group" role="group" aria-label="Tag Buttons">
@@ -63,19 +63,19 @@
     <div class="row justify-content-center gy-4 gy-md-0 ">
       <!-- Author Image -->
       <div class="col-12 col-md-3 col-xl-2 d-flex align-items-center justify-content-center ">
-        <img class="img-fluid rounded-circle author-avatar" loading="lazy" src="/img/hero-bg_opti_extra-small.png" alt="Olesia Melnyk">
+        <img class="img-fluid rounded-circle author-avatar" loading="lazy" src="/img/hero-bg_opti_extra-small.png" alt='{{ i18n "article-author-img_desc" }}'>
       </div>
 
       <!-- Author Bio Content -->
       <div class="col-12 col-md-8 col-lg-6 col-xl-5 d-flex align-items-center justify-content-center ">
         <div class="text-center text-md-start author-content">
-          <h5 class="text-secondary fs-7">Статтю написала</h5>
-          <h2 class="fs-2 mb-3">Олеся Мельник</h2>
-          <p class="mb-3 text-muted">Олеся Мельник — досвідчена психологиня зі спеціалізацією в гештальт-терапії, яка прагне допомогти людям подолати виклики та покращити їхнє психічне здоров'я. Завдяки співчутливому підходу, вона допомагає людям у їхньому особистісному зростанні з 2018 року.</p>
+          <h5 class="text-secondary fs-7">{{ i18n "article-author-drum" }}</h5>
+          <h2 class="fs-2 mb-3">{{ i18n "article-author-Olessia" }}</h2>
+          <p class="mb-3 text-muted">{{ i18n "article-author-description" }}</p>
           <!-- Optional: Link to More Content by the Author -->
           <p class="mb-0">
             <a href="#!" class="link-dark text-decoration-none">
-              Більше від Олесі
+              {{ i18n "article-author-more" }}
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
               </svg>

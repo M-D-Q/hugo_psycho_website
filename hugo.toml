@@ -3,7 +3,7 @@ category = "categories"
 tag = "tags"
 
 defaultContentLanguage = 'ua'
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 [languages]
 

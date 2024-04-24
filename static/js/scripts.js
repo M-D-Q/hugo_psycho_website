@@ -91,16 +91,35 @@ document.querySelectorAll('.therapy-btn').forEach(button => {
     });
 });
 
+// Define the text arrays for each language
+const textArrays = {
+  "ua": ["вільним", "в гармонії", "зрілим", "собою", "спокійним", "впевненим", "в здорових стосунках", "реалізованим", "у прийнятті", "відповідальним"],
+  "fr": ["être généralement reconnu comme un bon gars", "ne pas accumuler les regrets", "être content de se lever le matin", "souhaiter le meilleur pour soi-même", "être difficile à déstabiliser", "connaitre et faire confiance en ses qualités", "entretenir des relations saines", "être apte à être responsable"]
+};
+
+// Utility function to determine the current language from the URL
+function getLanguage() {
+  const path = window.location.pathname;
+  if (path.includes("fr")) return "fr";
+  return "ua"; // Default to Ukrainian
+}
+
+// Get elements from the DOM
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
-const textArray = ["вільним", "в гармонії", "зрілим","собою","спокійним ","впевненим","в здорових стосунках","реалізованим","у прийнятті","відповідальним"]; // Add more words as needed
+
+// Set typing speeds
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000; // Delay between words
+
+// Initialize typing state variables
 let textArrayIndex = 0;
 let charIndex = 0;
 
+// Typing effect functions
 function type() {
+  const textArray = textArrays[getLanguage()]; // Get text array based on current language
   if (charIndex < textArray[textArrayIndex].length) {
     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
@@ -113,6 +132,7 @@ function type() {
 }
 
 function erase() {
+  const textArray = textArrays[getLanguage()]; // Get text array based on current language
   if (charIndex > 0) {
     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
     typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
@@ -121,13 +141,14 @@ function erase() {
   } else {
     cursorSpan.classList.remove("typing");
     textArrayIndex++;
-    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    if(textArrayIndex >= textArray.length) textArrayIndex = 0;
     setTimeout(type, typingDelay + 1100);
   }
 }
 
+// Initialize typing effect when the document is fully loaded
 document.addEventListener("DOMContentLoaded", function() {
-  if(textArray.length) setTimeout(type, newTextDelay + 250);
+  if(textArrays[getLanguage()].length) setTimeout(type, newTextDelay + 250);
 });
 
 

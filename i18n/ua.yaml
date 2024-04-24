@@ -192,55 +192,55 @@
 
 ##### DIPLOMA 1
 - id : diploma1-details-title
-  translation: "Licence de Psychologie pratique"
+  translation: "Ліцензія з практичної психології"
 
 - id : diploma1-details-body
-  translation: "Description for diploma 1..."
+  translation: "Опис диплома 1..."
 
 - id : diploma1-details-link
-  translation: "Link info for diploma 1"
+  translation: "Інформація про посилання на диплом 1"
 
 - id : diploma1-details-alt
-  translation: "Desc image for diploma 1"
+  translation: "Опис зображення для диплома 1"
 
 ##### DIPLOMA 2
 - id : diploma2-details-title
-  translation: "Master de Psychologie pratique"
+  translation: "Магістр практичної психології"
 
 - id : diploma2-details-body
-  translation: "Description for diploma 2.."
+  translation: "Опис диплома 2..."
 
 - id : diploma2-details-link
-  translation: "Link info for diploma 2"
+  translation: "Інформація про посилання на диплом 2"
 
 - id : diploma2-details-alt
-  translation: "Desc image for diploma 2"
+  translation: "Опис зображення для диплома 2"
 
 ##### DIPLOMA 3
 - id : diploma3-details-title
-  translation: "Diplome de Moscou"
+  translation: "Московський диплом"
 
 - id : diploma3-details-body
-  translation: "Description for diploma 3.."
+  translation: "Опис диплома 3..."
 
 - id : diploma3-details-link
-  translation: "Link info for diploma 3"
+  translation: "Інформація про посилання на диплом 3"
 
 - id : diploma3-details-alt
-  translation: "Desc image for diploma 3"
+  translation: "Опис зображення для диплома 3"
 
 ##### DIPLOMA 4
 - id : diploma4-details-title
-  translation: "Gestalt Diploma"
+  translation: "Диплом з гештальт-терапії"
 
 - id : diploma4-details-body
-  translation: "Description for diploma 4..."
+  translation: "Опис диплома 4..."
 
 - id : diploma4-details-link
-  translation: "Link info for diploma 4"
+  translation: "Інформація про посилання на диплом 4"
 
 - id : diploma4-details-alt
-  translation: "Desc image for diploma 4"
+  translation: "Опис зображення для диплома 4"
 
 
 #####################################################
@@ -398,7 +398,7 @@
 - id: testimonialSwiper-phone1-description
   translation: "<h2>Title 1</h2>
         <p>This is the description for <strong>Item 1</strong>.</p>
-        <p>It can include multiple paragraphs, <em>styles</em>, and <a href="#">links</a>.</p>"
+        <p>It can include multiple paragraphs, <em>styles</em>, and <a href='#'>links</a>.</p>"
 
 # Testimonial 2
 - id: testimonialSwiper-phone2-image_desc
@@ -406,7 +406,7 @@
 - id: testimonialSwiper-phone2-description
   translation: "<h2>Title 2</h2>
         <p>This is the description for <strong>Item 2</strong>.</p>
-        <p>It can include multiple paragraphs, <em>styles</em>, and <a href="#">links</a>.</p>"
+        <p>It can include multiple paragraphs, <em>styles</em>, and <a href='#'>links</a>.</p>"
 
 
 # Testimonial 3
@@ -415,7 +415,7 @@
 - id: testimonialSwiper-phone3-description
   translation: "<h2>Title 3</h2>
         <p>This is the description for <strong>Item 3</strong>.</p>
-        <p>It can include multiple paragraphs, <em>styles</em>, and <a href="#">links</a>.</p>"
+        <p>It can include multiple paragraphs, <em>styles</em>, and <a href='#'>links</a>.</p>"
 
 #################################################
 ################     PRICING  ###################
@@ -424,7 +424,7 @@
 - id: pricing-heading
   translation: "Формат консультацій"
 - id: pricing-subtitle
-  translation: "Explore our individual and couple therapy sessions tailored to your needs."
+  translation: "Дослідіть наші сесії індивідуальної та парної терапії, адаптовані до ваших потреб."
 
 - id: pricing-button1
   translation: "Індивідуальна терапія"
@@ -433,34 +433,39 @@
 
 ##OPTION 1 
 - id: pricing-option1-image_desc
-  translation: "Individual Therapy"
+  translation: "Індивідуальна терапія"
 - id: pricing-option1-description
   translation: "Індивідуальна терапія - це шанс для змін в кращу сторону. Завдання психотерапевта полягає в тому, щоб допомогти пацієнту визначитися у своїх життєвих цілях і знайти найкоротший шлях до бажаного.
 Інтимність атмосфери допомагає встановити довірливі відносини і розкритися."
 
 - id: pricing-option1-heading
-  translation: "Standard Therapy"
+  translation: "Стандартна терапія"
 - id: pricing-option1-session
-  translation: "/Per Session"
-- id: pricing-option1-description
+  translation: "/За сесію"
+- id: pricing-option1-description2
   translation: "Кожен сеанс — це ще один крок на шляху до якісного життя."
 - id: pricing-option1-button
   translation: "Забронювати сеанс"
+- id: pricing-option1-price
+  translation: "50 грн"
 
 ##OPTION 2 
 - id: pricing-option2-image_desc
-  translation: "Couple Therapy"
+  translation: "Парна терапія"
 - id: pricing-option2-description
   translation: "Терапія пари має відбутись задовго до того, коли пара відчуває гостру потребу. Похід до психолога до “критичної” ситуації допомагає парам попередити безліч проблем, від фінансових до сексуальних, навчитись спілкуватись одне з одним в конфлікті та глибше розуміти потреби одне одного."
 
 - id: pricing-option2-heading
-  translation: "Standard Therapy"
+  translation: "Стандартна терапія"
 - id: pricing-option2-session
-  translation: "/Per Session"
-- id: pricing-option2-description
+  translation: "/За сесію"
+- id: pricing-option2-description2
   translation: "Кожен сеанс – це ще один крок на шляху до здорових стосунків."
 - id: pricing-option2-button
   translation: "Забронювати сеанс"
+- id: pricing-option2-price
+  translation: "?? грн"
+
 
 
 #################################################
@@ -471,33 +476,34 @@
 - id: contact-heading
   translation: "Зв’яжіться зі мною"
 - id: contact-subtitle
-  translation: "Write me a message"
+  translation: "Напишіть мені повідомлення"
 - id: contact-help-button1
-  translation: "Need Help Writing a Message?"
-- id: contact-help-button1
-  translation: "Generate Message"
+  translation: "Потрібна допомога з написанням повідомлення?"
+- id: contact-help-button2
+  translation: "Створити повідомлення"
 - id: contact-help-button3
-  translation: "Copy to Clipboard"
+  translation: "Копіювати в буфер обміну"
 
 - id: contact-form-field1-desc
-  translation: "Your Name:"
+  translation: "Ваше ім'я:"
 - id: contact-form-field1-hint
-  translation: "Enter your name"
+  translation: "Введіть ваше ім'я"
 
 - id: contact-form-field2-desc
-  translation: "Your Age:"
+  translation: "Ваш вік:"
 - id: contact-form-field2-hint
-  translation: "Enter your age"
+  translation: "Введіть ваш вік"
 
 - id: contact-form-field3-desc
-  translation: "Why would you like to book a session?"
+  translation: "Чому ви хочете записатися на сесію?"
 - id: contact-form-field3-hint
-  translation: "Describe your reason"
+  translation: "Опишіть вашу причину"
 
 - id: contact-form-field4-desc
-  translation: "What do you feel, what emotions?"
+  translation: "Що ви відчуваєте, які емоції?"
 - id: contact-form-field4-hint
-  translation: "Describe your feelings and emotions"
+  translation: "Опишіть свої відчуття та емоції"
+
 
 
 
@@ -510,9 +516,9 @@
 # brand name earlier defined
 
 - id: footer-mentions
-  translation: "© 2024 OMP. All rights reserved."
+  translation: "2024 OMP. Всі права захищені."
 - id: footer-thanks
-  translation: "Made by M-D-Q"
+  translation: "Створено M-D-Q"
 
                 
 
@@ -528,7 +534,100 @@
 ############################################################################################################################
 
 
+- id: article-published
+  translation: "Опубліковано"
+
+- id: article-bywhom
+  translation: ""
+
+- id: article-explore
+  translation: "Дослідіть більше публікацій з цими тегами:"
+
+- id: article-author-drum
+  translation: "Статтю написала"
+
+- id: article-author-Olessia
+  translation: "Олеся Мельник"
+
+- id: article-author-description
+  translation: "Олеся Мельник — досвідчена психологиня зі спеціалізацією в гештальт-терапії, яка прагне допомогти людям подолати виклики та покращити їхнє психічне здоров'я. Завдяки співчутливому підходу, вона допомагає людям у їхньому особистісному зростанні з 2018 року."
+
+- id: article-author-img_desc
+  translation: "Олеся Мельник"
+
+- id: article-author-more
+  translation: "Більше від Олесі"
+
+
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+########
+########                                SINGLE PODCAST LAYOUTS
+########
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
 
 
 
+
+- id: podcast-published
+  translation: "Опубліковано"
+
+- id: podcast-bywhom
+  translation: ""
+
+- id: podcast-explore
+  translation: "Досліджуйте більше публікацій за цими тегами:"
+
+- id: podcast-author-drum
+  translation: "Подкаст записала"
+
+- id: podcast-author-Olessia
+  translation: "Олеся Мельник"
+
+- id: podcast-author-description
+  translation: "Олеся Мельник — досвідчена психологиня зі спеціалізацією в гештальт-терапії, яка прагне допомогти людям подолати виклики та покращити їхнє психічне здоров'я. Завдяки співчутливому підходу, вона допомагає людям у їхньому особистісному зростанні з 2018 року."
+
+- id: podcast-author-img_desc
+  translation: "Олеся Мельник"
+
+- id: podcast-author-more
+  translation: "Більше від Олесі"
+
+
+
+
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+########
+########                                LIST LAYOUT
+########
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+
+
+- id : list-heading
+  translation: "Усі мої блог-пости"
+
+- id : list-button-all
+  translation: "Усі"
+
+- id : list-button-articles
+  translation: "Статті"
+
+- id : list-button-podcasts
+  translation: "Подкасти"
+
+- id : list-button-all_tags
+  translation: "Усі теги"
+
+- id : list-button-readmore
+  translation: "Читати більше"
+
+- id : list-button-listenmore
+  translation: "Слухати більше"
 

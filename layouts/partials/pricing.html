@@ -2,16 +2,16 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col text-center">
-                <h2 class="display-4" style="margin-top:50px">Формат консультацій</h2>
-                <p class="lead">Explore our individual and couple therapy sessions tailored to your needs.</p>
+                <h2 class="display-4" style="margin-top:50px">{{ i18n "pricing-heading" }}</h2>
+                <p class="lead">{{ i18n "pricing-subtitle" }}</p>
             </div>
         </div>
         <ul class="nav nav-pills justify-content-center mb-4" id="therapyTabs" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="active nav-link btn btn-primary text-uppercase btn-small btn-pill" id="individual-tab" data-bs-toggle="tab" data-bss-hover-animate="pulse" data-bs-target="#individual" type="button" role="tab" aria-controls="individual" aria-selected="true" style="margin-right: 25px; margin-bottom:5px">Індивідуальна терапія</button>
+                <button class="active nav-link btn btn-primary text-uppercase btn-small btn-pill" id="individual-tab" data-bs-toggle="tab" data-bss-hover-animate="pulse" data-bs-target="#individual" type="button" role="tab" aria-controls="individual" aria-selected="true" style="margin-right: 25px; margin-bottom:5px">{{ i18n "pricing-button1" }}</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link btn btn-primary text-uppercase btn-small btn-pill" id="couple-tab" data-bs-toggle="tab" data-bss-hover-animate="pulse" data-bs-target="#couple" type="button" role="tab" aria-controls="couple" aria-selected="false" style=" margin-bottom:5px">Парна терапія</button>
+                <button class="nav-link btn btn-primary text-uppercase btn-small btn-pill" id="couple-tab" data-bs-toggle="tab" data-bss-hover-animate="pulse" data-bs-target="#couple" type="button" role="tab" aria-controls="couple" aria-selected="false" style=" margin-bottom:5px">{{ i18n "pricing-button2" }}</button>
             </li>
         </ul>
         <div class="tab-content" id="therapyTabContent">
@@ -21,21 +21,21 @@
 
                     
                     <div class="col-md-4 col-xxl-5" data-aos="zoom-in-right" data-aos-delay="300">
-                        <div class="card mb-4" style="border-radius:13px;"><img class="card-img-top w-100 d-block card-img-top" src="img/individual.webp" alt="Individual Therapy" style="border-top-left-radius:13px;border-top-right-radius:13px;height:50%;" width="414" height="24">
+                        <div class="card mb-4" style="border-radius:13px;"><img class="card-img-top w-100 d-block card-img-top" src="/img/individual.webp" alt='{{ i18n "pricing-option1-image_desc" }}' style="border-top-left-radius:13px;border-top-right-radius:13px;height:50%;" width="414" height="24">
                             <div class="card-body">
-                                <p class="card-text">Індивідуальна терапія - це шанс для змін в кращу сторону. Завдання психотерапевта полягає в тому, щоб допомогти пацієнту визначитися у своїх життєвих цілях і знайти найкоротший шлях до бажаного. <br>Інтимність атмосфери допомагає встановити довірливі відносини і розкритися.</p>
+                                <p class="card-text">{{ i18n "pricing-option1-description" }}</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3" data-aos="zoom-in-left" data-aos-delay="300">
                         <div class="card text-center mb-4 padding-small border-rounded-20">
                             <div class="card-header bg-transparent border-0" style="padding-bottom: 0px;">
-                                <h4 class="fs-5">Standard Therapy</h4>
+                                <h4 class="fs-5">{{ i18n "pricing-option1-heading" }}</h4>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title pricing-card-title">??<small>/Per Session</small></h3>
-                                <p style="margin-bottom: 12px;">Кожен сеанс — це ще один крок на шляху до якісного життя.</p>
-<a href="#contact-me" class="btn btn-primary text-uppercase btn-small btn-pill" data-bss-hover-animate="pulse">Забронювати сеанс</a>
+                                <h3 class="card-title pricing-card-title">{{ i18n "pricing-option2-price" }}<small>{{ i18n "pricing-option1-session" }}</small></h3>
+                                <p style="margin-bottom: 12px;">{{ i18n "pricing-option1-description2" }}</p>
+<a href="#contact-me" class="btn btn-primary text-uppercase btn-small btn-pill" data-bss-hover-animate="pulse">{{ i18n "pricing-option1-button" }}</a>
                             </div>
                         </div>
                     </div>
@@ -45,20 +45,20 @@
                 <div class="row justify-content-center">
                     
                     <div class="col-md-4 col-xxl-5" data-aos="zoom-in-right" data-aos-duration="300">
-                        <div class="card mb-4" style="border-radius:13px;"><img class="card-img-top w-100 d-block card-img-top" src="img/couple-1.webp" alt="Individual Therapy" style="border-top-left-radius:13px;border-top-right-radius:13px;height:50%;">
+                        <div class="card mb-4" style="border-radius:13px;"><img class="card-img-top w-100 d-block card-img-top" src="/img/couple-1.webp" alt='{{ i18n "pricing-option2-image_desc" }}' style="border-top-left-radius:13px;border-top-right-radius:13px;height:50%;">
                             <div class="card-body">
-                                <p class="card-text">Терапія пари має відбутись задовго до того, коли пара відчуває гостру потребу. Похід до психолога до “критичної” ситуації допомагає парам попередити безліч проблем, від фінансових до сексуальних, навчитись спілкуватись одне з одним в конфлікті та глибше розуміти потреби одне одного.</p>
+                                <p class="card-text">{{ i18n "pricing-option2-description" }}</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3" data-aos="zoom-in-left" data-aos-duration="300">
                         <div class="card text-center mb-4 padding-small border-rounded-20">
                             <div class="card-header bg-transparent border-0" style="padding-bottom: 0px;">
-                                <h4 class="fs-5">Standard Therapy</h4>
+                                <h4 class="fs-5">{{ i18n "pricing-option2-heading" }}</h4>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title pricing-card-title">??<small>/Per Session</small></h3>
-                                <p style="margin-bottom: 12px;">Кожен сеанс – це ще один крок на шляху до здорових стосунків.</p><a href="#contact-me" class="btn btn-primary text-uppercase btn-small btn-pill" data-bss-hover-animate="pulse">Забронювати сеанс</a>
+                                <h3 class="card-title pricing-card-title">{{ i18n "pricing-option2-price" }}<small>{{ i18n "pricing-option2-session" }}</small></h3>
+                                <p style="margin-bottom: 12px;">{{ i18n "pricing-option2-description2" }}</p><a href="#contact-me" class="btn btn-primary text-uppercase btn-small btn-pill" data-bss-hover-animate="pulse">{{ i18n "pricing-option2-button" }}</a>
 
                             </div>
                         </div>
