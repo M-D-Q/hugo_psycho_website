@@ -1,3 +1,17 @@
+- PURGE JS CSS
+- LIENS TAGS ET CATEGORIES
+- OLESSIA : CORRIGER LES ISSUES
+- ARTICLES POUR CHAQUES ISSUES
+- 5 Articles sur des sujets UA/FR
+- specify width and height : https://web.dev/articles/optimize-cls#images-without-dimensions
+- diploma/phone have a thumbnail size and when clicked, a big size.
+- Passer la hero banner en webp
+- pb de date sur decapcms
+
+
+
+
+
 
 - resize complet images thumbnails X je l'ai fait à la main finally.
 - resize image classique pour articles ? 
