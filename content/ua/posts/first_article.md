@@ -1,5 +1,5 @@
 ---
-title: "The Beauty of Nature FIRSTddddddddddddddddddddddddddd"
+title: "The Beauty of Nature 2"
 date: 2024-02-01
 subtitle: "Exploring the wonders around us."
 categories: ["Article"]

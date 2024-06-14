@@ -1,5 +1,5 @@
 ---
-title: The eugenic effect of religiousness confirmed
+title: The effect of religiousness confirmed
 date: 2024-04-06
 description: "Let's test all these features shall we ? "
 categories: ["Articles"]

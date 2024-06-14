@@ -1,10 +1,10 @@
 ---
-title: The eugenic effect of religiousness confirmed
+title: The effect of religiousness confirmed
 date: 2024-04-06
 description: "Let's test all these features shall we ? "
 categories: ["Articles"]
 tags:
-  - Eugenics
+  - EugenicAs
   - Religion
 ---
 Some time ago, Ed Dutton and I published a study showing that in the USA, being a member of the Mormon club seems to protect one against having a dysgenic fertility pattern for intelligence. In plain language, in the total population, more intelligent people have somewhat fewer children on average (this varies by country). However, this negative correlation is absent or maybe even reversed (positive) among Mormons. Visually:

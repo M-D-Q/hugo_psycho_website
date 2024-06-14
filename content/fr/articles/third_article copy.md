@@ -1,7 +1,7 @@
 ---
-title: "THIRD is htrhtrhtrhtrhtrhhtr"
+title: "Sample article 3"
 date: 2024-02-01
-subtitle: "Exploring tazdazzadazdhe wonders of my azd around us."
+subtitle: "etc etc etc etc etc etc etc."
 categories: ["Articles"]
 tags: ["Nature", "Stuff"]
 ---

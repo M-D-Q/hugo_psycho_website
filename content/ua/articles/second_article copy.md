@@ -1,7 +1,7 @@
 ---
-title: "The BeautySECOND of Nature is shitddddddddddddddddddddddd"
+title: "Sample article 1"
 date: 2024-02-01
-subtitle: "Exploring the wonders of my ass around us."
+subtitle: "Exploring lorem ipsus sample sample"
 categories: ["Articles"]
 tags: ["Nature", "Inspiration"]
 ---
