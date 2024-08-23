@@ -15,7 +15,7 @@ defaultContentLanguageInSubdir = true
     languageDirection = 'ltr'
     languageName = 'українська'
     title = 'Олеся, Ваш психолог'
-    weight = 1
+    weight = 2
 
     [languages.ua.params]
       subtitle = 'Живи без жалю'
@@ -28,7 +28,7 @@ defaultContentLanguageInSubdir = true
     languageDirection = 'ltr'
     languageName = 'Français'
     title = 'Olessia, votre psychothérapeute'
-    weight = 2
+    weight = 1
 
     [languages.fr.params]
       subtitle = 'Vivez sans regrets'
