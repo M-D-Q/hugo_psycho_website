@@ -2,7 +2,7 @@ baseURL = 'https://olessia.fr'
 category = "categories"
 tag = "tags"
 
-defaultContentLanguage = 'ua'
+defaultContentLanguage = 'fr'
 defaultContentLanguageInSubdir = true
 
 [languages]
