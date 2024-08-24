@@ -7,8 +7,8 @@
         <p style="padding-bottom:10px">{{ i18n "contact-subtitle" }}</p>
 
         <div class="row d-flex justify-content-center">
-            <div class="col-6 col-md-2 mb-2 contact-icon" data-aos="flip-down" data-aos-delay="150" data-bss-hover-animate="pulse"><a href="https://mail.google.com" target="_blank"><img class="gmail-icon" src="/img/Gmail_purple.svg" alt="Gmail"></a></div>
-            <div class="col-6 col-md-2 mb-2 contact-icon" data-aos="flip-down" data-aos-delay="50" data-bss-hover-animate="pulse"><a href="https://telegram.org" target="_blank"><img class="icon" src="/img/Telegram_purple.svg" alt="Telegram"></a></div>
+            <div class="col-6 col-md-2 mb-2 contact-icon" data-aos="flip-down" data-aos-delay="150" data-bss-hover-animate="pulse"><a href="mailto:olesyamelnyk96@gmail.com" target="_blank"><img class="gmail-icon" src="/img/Gmail_purple.svg" alt="Gmail"></a></div>
+            <div class="col-6 col-md-2 mb-2 contact-icon" data-aos="flip-down" data-aos-delay="50" data-bss-hover-animate="pulse"><a href="https://t.me/OlessiaProf" target="_blank"><img class="icon" src="/img/Telegram_purple.svg" alt="Telegram"></a></div>
             <div class="col-6 col-md-2 mb-2 contact-icon" data-aos="flip-down" data-aos-delay="100" data-bss-hover-animate="pulse"><a href="https://www.viber.com" target="_blank"><img class="icon" src="/img/Viber_purple.svg" alt="Viber"></a></div>
             <div class="col-6 col-md-2 mb-2 contact-icon" data-aos="flip-down" data-aos-delay="200" data-bss-hover-animate="pulse"><a href="https://www.instagram.com" target="_blank"><img class="icon" src="/img/Instagram_purple.svg" alt="Instagram"></a></div>
 
@@ -47,7 +47,7 @@
             <button class="btn btn-primary btn-pill align-self-center" style="width: auto;" onclick="generateMessage()">{{ i18n "contact-help-button2" }}</button>
     
             <!-- Textarea to Show Generated Message -->
-            <textarea id="generatedMessage" class="form-control" style="height: 200px; margin-top: 15px; font-family: monospace; white-space: pre-wrap;" readonly></textarea>
+            <textarea id="generatedMessage" class="form-control" style="height: 200px; margin-top: 15px; font-family: monospace; white-space: pre-wrap;" ></textarea>
     
             <!-- Button to Copy to Clipboard -->
             <button class="btn btn-primary btn-pill align-self-center" style="width: auto; margin-top:15px" onclick="copyToClipboard()">{{ i18n "contact-help-button3" }}</button>
@@ -63,22 +63,55 @@
 
 
 <script>
+
+
+
+const messageTemplates = {
+  "ua": `Шановний психотерапевт,
+
+Мене звати {name}, мені {age} років. Я звертаюся по допомогу з наступної причини: {reason}. Я відчуваю {emotions}, і вважаю, що мені може бути корисною професійна підтримка.
+
+Було б чудово, якби ми могли домовитися про сеанс для подальшого обговорення.
+
+Чекаю на вашу відповідь.
+
+З повагою,
+{name}`,
+  
+  "fr": `Chère Olessia,
+
+Je m'appelle {name}, et j'ai {age} ans. Je vous contacte pour demander de l'aide pour la raison suivante : {reason}.
+
+Aujourd'hui, je me sens {emotions}, et je pense que je pourrais bénéficier d'un soutien professionnel.
+
+J'aimerais planifier une séance prochainement.
+
+Dans l'attente de votre réponse.
+
+Cordialement,
+{name}`
+};
+
 function generateMessage() {
     const name = document.getElementById('userName').value.trim();
     const age = document.getElementById('userAge').value;
     const reason = document.getElementById('bookingReason').value.trim();
     const emotions = document.getElementById('userEmotions').value.trim();
 
-    const message = `Dear Psychotherapist,
+    // Get the current language
+    const language = getLanguage();
 
-My name is ${name}, and I am ${age} years old. I am reaching out to seek assistance for the following reason: ${reason}. I have been feeling ${emotions}, and I believe that I could benefit from professional support.
+    // Select the correct template
+    const template = messageTemplates[language];
 
-It would be great if we could schedule a session to discuss this further.
+    // Replace placeholders with actual values
+    const message = template
+        .replace(/{name}/g, name)
+        .replace(/{age}/g, age)
+        .replace(/{reason}/g, reason)
+        .replace(/{emotions}/g, emotions);
 
-Looking forward to your response.
-
-Best regards,
-${name}`;
+    // Set the generated message in the corresponding field
     document.getElementById('generatedMessage').value = message;
 }
 

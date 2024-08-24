@@ -94,7 +94,7 @@ document.querySelectorAll('.therapy-btn').forEach(button => {
 // Define the text arrays for each language
 const textArrays = {
   "ua": ["вільним", "в гармонії", "зрілим", "собою", "спокійним", "впевненим", "в здорових стосунках", "реалізованим", "у прийнятті", "відповідальним"],
-  "fr": ["être généralement reconnu comme un bon gars", "ne pas accumuler les regrets", "être content de se lever le matin", "souhaiter le meilleur pour soi-même", "être difficile à déstabiliser", "connaitre et faire confiance en ses qualités", "entretenir des relations saines", "être apte à être responsable"]
+  "fr": ["être brave", "ne pas accumuler les regrets", "être content de se lever le matin", "souhaiter le meilleur pour soi-même", "être dur à déstabiliser", "connaitre et croire en ses qualités", "entretenir des relations saines", "être apte à être responsable"]
 };
 
 // Utility function to determine the current language from the URL

@@ -2,19 +2,26 @@
 <div class="container mt-4">
     <h1 class="mb-4">Category: {{ .Title }}</h1>
     <div class="row">
-        {{ range .Pages }}
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
-                <div class="card-body">
-                    <h5 class="card-title">{{ .Title }}</h5>
-                    <p class="card-text">{{ .Summary }}</p>
-                    <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+        {{ if .Pages }}
+            {{ range .Pages }}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="card-img-top" alt="{{ .Title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ .Title }}</h5>
+                        <p class="card-text">{{ .Summary }}</p>
+                        <a href="{{ .RelPermalink }}" class="btn btn-primary" data-bss-hover-animate="pulse">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
+            {{ end }}
+        {{ else }}
+            <!-- Message when no items are available in this category -->
+            <div class="alert alert-info text-center my-5 py-5" role="alert">
+                <h4 class="alert-heading">No Content Available</h4>
+                <p class="mb-0">There are no items in this category yet. Please check back later.</p>
+            </div>
         {{ end }}
     </div>
 </div>
 {{ end }}
-
