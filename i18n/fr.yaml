@@ -11,7 +11,7 @@
 
 
 - id: hello
-  translation: "Bonjour"
+  translation: "Practicienne en psychologie"
 
 - id: brand-name
   translation: "DEV"
@@ -32,9 +32,9 @@
 
 
 - id : banner-title
-  translation: "Changez grâce à la"
+  translation: "Changez avec la"
 - id : banner-title-mobile
-  translation: "Changez grâce à la"
+  translation: "Changez avec la"
 
 - id : banner-subtitle
   translation: "Psychothérapie"
@@ -79,204 +79,242 @@
 #####################################################
 ####################  ISSUES  #######################
 #####################################################
-
   # THREE TYPES ISSUES SECTION
 
-
 - id : issues-section-heading
-  translation: "Où j'interviens" 
+  translation: "Dans quelles situations j'interviens"
 
 - id : issues-readmore-button
   translation: "En savoir plus"
 
-
-##########################################""
+### FIRST CAROUSEL OF ISSUES
 
 - id : cartouche-heading-1
   translation: "Défis personnels"
 
 - id : type_1-issue_1-title
-  translation: "Anxiété. Attaques de panique. Dépression."
+  translation: "Troubles émotionnels"
 - id : type_1-issue_1-body
-  translation: "Ces états peuvent limiter considérablement votre qualité de vie, mais avec le soutien et les stratégies appropriés, il est possible de trouver un soulagement et de retrouver une vie pleine."
+  translation: "L'anxiété, les attaques de panique et la dépression peuvent non seulement réduire la capacité de fonctionner au quotidien, mais aussi causer des problèmes de santé. Il est important de demander de l'aide professionnelle à temps, car des traitements efficaces existent, comme la psychothérapie, les médicaments et les stratégies d'auto-assistance, qui peuvent grandement améliorer l'état d'une personne."
 
 - id : type_1-issue_2-title
-  translation: "Manque de confiance en soi et problèmes d'estime de soi."
+  translation: "Problèmes d'estime de soi"
 - id : type_1-issue_2-body
-  translation: "Construire une force intérieure et un respect de soi nécessite du temps et de la réflexion. Reconnaître vos propres réalisations et qualités positives peut être le premier pas."
+  translation: "Une faible estime de soi et un manque de confiance peuvent poser des problèmes dans divers aspects de la vie, rendant difficiles la prise de décisions, les relations sociales, l'atteinte des objectifs personnels et la construction de relations. La psychothérapie peut aider à changer les croyances négatives sur soi et à développer une attitude plus positive envers soi-même."
 
 - id : type_1-issue_3-title
-  translation: "Psychosomatique : troubles du GIT, dystonie végétative-vasculaire, douleurs corporelles, vaginisme."
+  translation: "Psychosomatique"
 - id : type_1-issue_3-body
-  translation: "Le corps et l'esprit sont étroitement liés. Le malaise émotionnel peut provoquer des symptômes physiques, mais comprendre et adresser les besoins émotionnels peut soulager ces conditions."
+  translation: "Le malaise émotionnel, le stress et les traumatismes psychologiques peuvent affecter la santé physique, provoquant des symptômes tels que troubles gastro-intestinaux, dystonie végétative, vaginisme, éruptions cutanées, douleurs, grossesse nerveuse, et plus encore. Les manifestations psychosomatiques surviennent lorsque des besoins ne sont pas satisfaits pendant longtemps. Ces états peuvent entraîner anxiété et dépression, aggravant ainsi la psychosomatique."
 
 - id : type_1-issue_4-title
-  translation: "Difficultés professionnelles et épuisement professionnel."
+  translation: "Difficultés professionnelles et burn-out"
 - id : type_1-issue_4-body
-  translation: "Les conflits avec les collègues, la stagnation professionnelle, l'épuisement professionnel et l'incertitude professionnelle peuvent générer du stress, engendrer un mécontentement de soi et même affecter les relations familiales."
+  translation: "Les conflits avec les collègues, la stagnation professionnelle, le burn-out, l'incertitude professionnelle peuvent causer du stress, entraîner un sentiment d'insatisfaction envers soi-même et même affecter les relations familiales."
 
 
-##########################################""
+# SECOND CAROUSEL OF ISSUES
 
 - id : cartouche-heading-2
   translation: "Relations et communication"
 
 - id : type_2-issue_1-title
-  translation: "Difficultés dans les relations partenaires et familiales."
+  translation: "Couple et Famille"
 - id : type_2-issue_1-body
-  translation: "Les relations nécessitent du travail et de la compréhension mutuelle. Les malentendus et les conflits peuvent miner la confiance et le bonheur partagé. En travaillant ensemble, nous pouvons trouver des voies vers l'harmonie et le soutien mutuel."
+  translation: "La tension dans les relations engendre de nombreux sentiments négatifs. Il est difficile de rester dans une telle relation, mais tout aussi difficile de la rompre. Vous commencez à ressentir du ressentiment, de la colère, de la jalousie, vous cherchez un partenaire ailleurs ou vous regrettez votre choix. La thérapie vous aidera à exprimer vos besoins au partenaire de manière respectueuse, à mettre fin aux relations avec gratitude, à comprendre les schémas familiaux et à éviter de répéter les mêmes erreurs."
 
 - id : type_2-issue_2-title
-  translation: "Difficultés dans les relations avec les autres."
+  translation: "Relations avec les autres"
 - id : type_2-issue_2-body
-  translation: "Une communication efficace et de l'empathie sont les clés des relations solides. Comprendre et respecter les limites de chacun aide à établir des relations saines."
+  translation: "Les ressentiments, la colère, les conflits, les manipulations, le contrôle, les crises personnelles, le deuil non résolu et les querelles domestiques peuvent créer une tension émotionnelle et de la distance. La thérapie vous apprendra à défendre vos limites, à exprimer vos sentiments, à reconnaître l'autre dans la relation et à savoir mettre fin aux choses."
 
 - id : type_2-issue_3-title
-  translation: "Restaurer la confiance après une trahison."
+  translation: "Recherche d'un partenaire"
 - id : type_2-issue_3-body
-  translation: "La trahison inflige de la douleur et détruit la confiance, mais la guérison est possible à travers l'honnêteté et le travail commun sur la relation. Il est crucial de déterminer la racine du problème et de travailler à sa résolution."
+  translation: "Trouver l'amour est parfois une tâche difficile, et choisir un partenaire est l'une des étapes les plus importantes de la vie. Parfois, nous ne sommes pas au bon endroit ni au bon moment. Cependant, l'immaturité, les peurs, la faible estime de soi et le manque de confiance, ou des exigences trop élevées, peuvent empêcher de construire de nouvelles relations. La psychothérapie peut aider à comprendre ses besoins et attentes en matière de relations, ainsi qu'à surmonter les peurs et les obstacles qui freinent la recherche d'un partenaire."
 
-##########################################""
+
+# THIRD CAROUSEL OF ISSUES
 
 - id : cartouche-heading-3
-  translation: "Défis des transitions de vie"
+  translation: "Défis de la vie"
 
 - id : type_3-issue_1-title
-  translation: "Recherche de soi et de sens."
+  translation: "Recherche de soi et de sens"
 - id : type_3-issue_1-body
-  translation: "Comprendre votre identité et votre but nécessite de l'auto-exploration et du temps. Ce voyage peut être difficile mais aussi une source de croissance personnelle profonde."
+  translation: "L'absence de repères et de sens, l'incompréhension de soi-même et de son vrai 'moi' peuvent être des obstacles sur le chemin du succès et mener à la dépression. 'Qui suis-je ?' demandait Alice au Pays des Merveilles. Et pour répondre à cette question, elle a dû surmonter de nombreuses épreuves."
 
 - id : type_3-issue_2-title
-  translation: "Difficultés d'adaptation dans un nouveau pays."
+  translation: "Adaptation à nouvel environnement"
 - id : type_3-issue_2-body
-  translation: "S'adapter à un nouvel environnement peut être un processus difficile. Les défis liés à la barrière de la langue, à l'accoutumance aux normes culturelles différentes et à la recherche d'amis peuvent causer du stress et un sentiment d'isolement."
+  translation: "L'adaptation à un nouvel environnement peut être un processus difficile. Les défis liés à la barrière linguistique, à l'adaptation aux nouvelles normes culturelles et à la recherche d'amis peuvent causer du stress et un sentiment d'isolement. La psychothérapie peut aider à traverser cette phase d'adaptation, en soutenant la personne dans ses expériences émotionnelles et ses défis."
 
 - id : type_3-issue_3-title
-  translation: "Deuil. Perte d'un enfant, des parents ou d'un partenaire."
+  translation: "Gestion du deuil"
 - id : type_3-issue_3-body
-  translation: "La perte d'un être cher est l'une des épreuves les plus difficiles, nécessitant du temps pour vivre le deuil et s'adapter aux nouvelles circonstances de la vie."
+  translation: "La perte d'un être cher est l'une des épreuves les plus difficiles, nécessitant du temps pour vivre le deuil et s'adapter aux nouvelles circonstances de la vie. La psychothérapie peut offrir un soutien précieux dans ce processus. Le psychologue aide à traverser toutes les étapes de la perte, à traiter les émotions et à trouver des moyens de continuer à vivre. Une partie importante du processus consiste à reconnaître et accepter ses sentiments, ainsi qu'à créer de nouveaux sens dans la vie."
 
 
 #####################################################
 #################### ABOUT ME #######################
 #####################################################
-
-
 - id : about-me-title
   translation: "Qui suis-je ?"
 
 - id : about-me-subtitle
-  translation: "Voyager à travers la psychothérapie, ce n'est pas chercher de nouveaux paysages, mais acquérir de nouveaux yeux."
+  translation: "La psychothérapie n'est pas une quête de nouveaux paysages, mais l'acquisition de nouveaux regards."
 
 - id : about-me-body
-  translation: "Je suis Olesia, psychologue diplômée et candidate à la psychothérapie. Je possède 9 ans d'expérience en psychologie et 6 ans en psychothérapie. Dans mon travail, je combine les techniques de la gestalt-thérapie, de l'art-thérapie, de la thérapie cognitive-comportementale et de l'EMDR. Je participe à des supervisions personnelles et de groupe, je poursuis une thérapie individuelle et je participe à divers projets éducatifs pour aider mes clients à améliorer la qualité de leur vie."
+  translation: "Je suis Olessia, psychologue diplômée et candidate en psychothérapie. J'évolue dans le monde de la psychologie depuis 11 ans, et pratique la psychothérapie depuis 8 ans.<br><br>J'intègre dans mon travail des techniques de gestalt-thérapie, d'art-thérapie, de thérapie cognitivo-comportementale et de cartes associatives métaphoriques. Je propose des thérapies individuelles et de couple, pour adultes et adolescents."
 
 - id : about-me-button
   translation: "Mes qualifications"
 
 - id : about-me-picture_desc
-  translation: "Photo de Olesia"
+  translation: "Mes qualifications"
 
 - id : about-me-modalcontent
-  translation: "Diplôme de licence et de master en psychologie, 6 ans d'études. <br><br>
-    Certificat de fin de premier niveau en gestalt-thérapie. MIAGI, un an d'études.<br><br>
-    Certificat de fin de deuxième niveau en gestalt-thérapie, Gestalt University de Kiev (KGU), 5 ans d'études.<br><br>
-    Certificat de fin de formation en art-thérapie, un an d'études.<br><br>
-    Certificat de participation à un intensif de gestalt de deux semaines.<br><br>
-    Certificat de propédeutique en psychiatrie.<br><br>
-    Certificat de participation à la 20e conférence internationale du KGU.<br><br>
-    Certificat de formation en thérapie par le sable pour travailler avec les clients."
-
+  translation: "Pour devenir psychologue professionnelle, j'ai suivi une formation de six ans dans une université publique en Ukraine. Pour approfondir mes connaissances dans une approche spécifique de la psychothérapie, j'ai choisi l'Université de Gestalt de Kiev, accréditée par l'Association Européenne de Gestalt-thérapie (EAGT), où j'étudie depuis six ans et demi. En 2020, j'ai terminé une formation en art-thérapie, ce qui m'a permis de travailler avec les enfants et les adolescents.<br><br><i>'Apprendre tout au long de la vie'</i> résume parfaitement le besoin constant d'amélioration des connaissances d'un psychologue. Je participe donc régulièrement à des supervisions, à des groupes thérapeutiques, je lis beaucoup, et je suis actuellement en spécialisation sur le traitement des différents types de traumatismes dans l'approche Gestalt.<br><br>"
 
 #####################################################
 ############## DIPLOMA SWIPER #######################
 #####################################################
-
 
 - id : diploma-title
   translation: "Mes qualifications"
 
 ##### DIPLOMA 1
 - id : diploma1-details-title
-  translation: "Licence en Psychologie pratique"
+  translation: "Diplôme de Master en Psychologie"
 
 - id : diploma1-details-body
-  translation: "Description du diplôme 1..."
+  translation: "6 ans d'études à l'Université nationale d'Uzhhorod (UzhNU) en psychologie pratique et générale."
 
 - id : diploma1-details-link
-  translation: "Informations sur le lien pour le diplôme 1"
+  translation: "Site de l'université UzhNU"
 
 - id : diploma1-details-alt
-  translation: "Description de l'image pour le diplôme 1"
+  translation: "Diplôme de Master en Psychologie"
 
 ##### DIPLOMA 2
 - id : diploma2-details-title
-  translation: "Master en Psychologie pratique"
+  translation: "Introduction à la gestalt-thérapie"
 
 - id : diploma2-details-body
-  translation: "Description du diplôme 2..."
+  translation: "Une année de formation au premier cycle de pratique gestalt à l'Institut de Gestalt et de Psychodrame de Moscou (МИГИП). Durant cette première année, nous avons appris les bases de la gestalt, son histoire, et comment entrer en contact avec soi-même et avec les autres dans le cadre du processus thérapeutique. 160h de théorie et de pratique au total."
 
 - id : diploma2-details-link
-  translation: "Informations sur le lien pour le diplôme 2"
+  translation: "Site de l'institut formateur (désormais KGU)"
 
 - id : diploma2-details-alt
-  translation: "Description de l'image pour le diplôme 2"
+  translation: "Introduction à la gestalt-thérapie / conseil gestalt. Contact avec soi et les autres"
 
 ##### DIPLOMA 3
 - id : diploma3-details-title
-  translation: "Diplôme de Moscou"
+  translation: "Certificat cycle II - Université de Gestalt de Kyiv"
 
 - id : diploma3-details-body
-  translation: "Description du diplôme 3..."
+  translation: "660h, repartie sur 5 ans de formation, au cours desquels j'ai étudié la théorie et la pratique de la psychothérapie sous la supervision de thérapeutes accrédités, étudié de nombreux ouvrages scientifiques, reçu des supervisions individuelles et de groupe, pris part à des intervisions (supervisions entre pairs) et mené ma propre pratique."
 
 - id : diploma3-details-link
-  translation: "Informations sur le lien pour le diplôme 3"
+  translation: "Site de l'institut de Gestalt Thérapie de Kyiv"
 
 - id : diploma3-details-alt
-  translation: "Description de l'image pour le diplôme 3"
+  translation: "Certificat de fin du deuxième cycle à l'université du Gestalt de Kyiv"
 
 ##### DIPLOMA 4
 - id : diploma4-details-title
-  translation: "Diplôme de Gestalt"
+  translation: "Certificat du XVIe séminaire KGU 2024"
 
 - id : diploma4-details-body
-  translation: "Description du diplôme 4..."
+  translation: "J'ai eu l'occasion de me rendre à un séminaire intensif de deux semaines en tant que thérapeute, où plus de 300 practiciens étaient présents. Ce séminaire comprenait des conférences, des groupes de formation thérapeutique, des séances avec des clients, des supervisions. Cet événement offre non seulement des connaissances, mais permet aussi de rencontrer de nouveaux formateurs et d'apprendre de ses collègues."
 
 - id : diploma4-details-link
-  translation: "Informations sur le lien pour le diplôme 4"
+  translation: "Site de l'institut de Gestalt Thérapie de Kyiv"
 
 - id : diploma4-details-alt
-  translation: "Description de l'image pour le diplôme 4"
+  translation: "Certificat du XVIe séminaire intensif KGU 2019"
 
+##### DIPLOMA 5
+- id : diploma5-details-title
+  translation: "Certificat de participation au XIIIe séminaire KGU 2019"
+
+- id : diploma5-details-body
+  translation: "Séminaire intensif de deux semaines en tant que cliente. Conférences quotidiennes, ateliers, groupes thérapeutiques et groupes de processus."
+
+- id : diploma5-details-link
+  translation: "Site de l'institut de Gestalt Thérapie de Kyiv"
+
+- id : diploma5-details-alt
+  translation: "Certificat de participation au XIIIe séminaire intensif de KGU"
+
+##### DIPLOMA 6
+- id : diploma6-details-title
+  translation: "Certificat de formation en propédeutique de la  psychiatrie"
+
+- id : diploma6-details-body
+  translation: "J'ai suivi une série de cours de psychiatrie avec un psychiatre renommé (156 heures au total). Nous avons étudié la théorie, créé des questionnaires, examiné des patients et posé des diagnostics."
+
+- id : diploma6-details-link
+  translation: "Site de l'institut de Gestalt Thérapie de Kyiv"
+
+- id : diploma6-details-alt
+  translation: "Certificat de formation en propédeutique en psychiatrie"
+
+##### DIPLOMA 7
+- id : diploma7-details-title
+  translation: "Certificat de la XXe conférence internationale de KGU"
+
+- id : diploma7-details-body
+  translation: "J'ai eu l'opportunité d'assister à des conférences et des ateliers animés par des thérapeutes européens et américains de premier plan."
+
+- id : diploma7-details-link
+  translation: "Site de l'institut de Gestalt Thérapie de Kyiv"
+
+- id : diploma7-details-alt
+  translation: "Certificat de participation à la XXe conférence internationale de KGU"
+
+##### DIPLOMA 8
+- id : diploma8-details-title
+  translation: "L'art-thérapie pour le psychologue praticien et de l'éducateur social"
+
+- id : diploma8-details-body
+  translation: "En un an (160h au total), j'ai appris à utiliser dans mon travail la thérapie par les contes, par le dessin, par le façonnage de l'argile et par la photothérapie. J'ai étudié les archétypes masculins et féminins, ainsi que la psychologie des couleurs et des symboles."
+
+- id : diploma8-details-link
+  translation: "Site de l'institut formateur en art-thérapie"
+
+- id : diploma8-details-alt
+  translation: "Certificat de fin de formation en art-thérapie"
 
 #####################################################
 ################      METHODS     ###################
 #####################################################
 
 - id : methods-heading
-  translation: "Mes méthodes"
+  translation: "Mes Méthodes"
 
 - id : methods-subtitle
-  translation: "La psychothérapie ne consiste pas seulement à résoudre des problèmes ; il s'agit de révéler le potentiel en vous pour mener une vie épanouie. Chaque approche que j'utilise se combine parfaitement avec les autres pour garantir les meilleurs résultats."
+  translation: "La psychothérapie ne se limite pas à résoudre des problèmes; il s'agit de révéler le potentiel en vous pour mener une vie épanouie. Les approches que j'utilise se complètent pour offrir les meilleurs résultats."
 
 #METHOD 1
 - id : methods-card1-title
-  translation: "Thérapie gestalt"
+  translation: "Gestalt-thérapie"
 
 - id : methods-card1-overlay_phrase
-  translation: "Contact ici et maintenant"
+  translation: "Le contact ici et maintenant"
 
 - id : methods-card1-image_desc
-  translation: "Thérapie gestalt"
+  translation: "Gestalt-thérapie"
 
 - id : methods-card1-modal_title
-  translation: "Thérapie gestalt"
+  translation: "Aperçu de la Gestalt-thérapie"
 
 - id : methods-card1-modal_body
-  translation: |
-    La GT est une question de contact avec soi-même et avec le monde ici et maintenant. À propos de la manière dont votre expérience passée résonne en vous à cet instant. Vous avez probablement déjà entendu l'expression « fermer un gestalt ». La GT considère le processus de vie comme la recherche de vos véritables besoins (prise de conscience des gestalts) et des moyens de les satisfaire (fermeture des gestalts). Fermer un gestalt signifie comprendre complètement une situation qui vous préoccupe, l'accepter, vous apaiser et ne plus y revenir.
+  translation: "La gestalt-thérapie est centrée sur le contact avec soi-même et le monde ici et maintenant.<br>Elle explore comment vos expériences passées résonnent en vous à cet instant. Vous avez peut-être entendu l'expression 'fermer un gestalt' ? La vie est considérée comme une recherche de vos véritables besoins (prendre conscience des gestalts) et des moyens de les satisfaire (fermer les gestalts).<br><br>Fermer une gestalt signifie comprendre pleinement une situation qui vous trouble, l'accepter, se calmer et ne plus y revenir.
 
-    Fritz Perls, le fondateur de la thérapie gestalt, a dit : « Je fais mon affaire et tu fais la tienne. Je ne suis pas dans ce monde pour répondre à tes attentes, et tu n'es pas dans ce monde pour répondre aux miennes. Tu es toi, et je suis moi. Si nous nous trouvons, c'est merveilleux. Sinon, cela ne peut être aidé et il n'y a rien de mal à cela. »
+<br><br> Fritz Perls, le fondateur de la gestalt-thérapie, a dit : <br>'<i>Je suis moi et tu es toi. Je poursuis ma voie et tu poursuis la tienne. Je ne suis pas en ce monde pour répondre à tes attentes et tu n’es pas en ce monde pour répondre aux miennes. Tu es toi et je suis moi.<br>
+Et si par chance nous nous rencontrons alors c’est merveilleux. Mais sinon…nous n’y pouvons rien.</i>'<br><br> <a href='https://fr.wikipedia.org/wiki/Gestalt-th%C3%A9rapie' class='gradient-text' class='gradient-text'>En apprendre plus sur la Gestalt-Thérapie</a>"
 
 #METHOD 2
 - id : methods-card2-title
@@ -289,90 +327,86 @@
   translation: "Art-thérapie"
 
 - id : methods-card2-modal_title
-  translation: "Art-thérapie"
+  translation: "L'Art-thérapie en quelques mots"
 
 - id : methods-card2-modal_body
-  translation: "L'art-thérapie est la guérison par l'art : peinture, contes, argile, musique, films, sable, photographie, danse, jeu théâtral, etc. La créativité permet de vivre des conflits intérieurs, d'exprimer l'inconscient, de vivre différents scénarios en faisant appel au subconscient. Cette méthode est reconnue comme sûre, profonde et efficace pour travailler avec les enfants et les adultes."
+  translation: "L'art-thérapie est une forme de guérison par l'art : dessin, contes, argile, musique, films, sable, photographies, danse, jeu théâtral, etc. <br><br> La créativité permet de vivre des conflits intérieurs, d'exprimer l'inconscient et de vivre différents scénarios en accédant au subconscient. Cette méthode est reconnue comme sûre, profonde et efficace pour travailler avec les enfants et les adultes.<br><br><a href='https://www.psychologies.com/Therapies/Toutes-les-therapies/Therapies-breves/Articles-et-Dossiers/L-art-therapie' class='gradient-text'>Une bonne introduction sur le sujet de l'Art-Thérapie</a>"
 
 #METHOD 3
 - id : methods-card3-title
-  translation: "TCC"
+  translation: "Thérapie Cognitivo-Comportementale"
 
 - id : methods-card3-overlay_phrase
-  translation: "Pensées et comportements"
+  translation: "Pensées et attitudes"
 
 - id : methods-card3-image_desc
-  translation: "Image TCC"
+  translation: "TCC image"
 
 - id : methods-card3-modal_title
-  translation: "Thérapie cognitive-comportementale"
+  translation: "Aperçu de la Thérapie Cognitivo-Comportementale"
 
 - id : methods-card3-modal_body
-  translation: "La TCC examine comment vos pensées affectent vos émotions et votre comportement, et vous aide à acquérir des compétences nécessaires pour gérer divers problèmes. Par exemple, si vous avez des pensées négatives, elles peuvent provoquer des émotions qui influencent votre comportement de manière non bénéfique. La TCC combine la thérapie cognitive (ce que vous pensez) et la thérapie comportementale (ce que vous faites). La TCC s'est avérée efficace pour travailler avec les troubles anxieux, le stress post-traumatique, les phobies, les troubles obsessionnels-compulsifs, la dépression et les troubles alimentaires."
+  translation: "La TCC examine comment vos pensées influencent vos émotions et comportements, et vous aide à acquérir les compétences nécessaires pour résoudre divers problèmes. Par exemple, si vous avez des pensées négatives, elles peuvent provoquer des émotions qui affecteront votre comportement de manière défavorable. <br><br>La TCC combine la thérapie cognitive (ce que vous pensez) et la thérapie comportementale (ce que vous faites). La TCC s'est avérée efficace pour traiter les attaques de panique, les troubles anxieux, les troubles post-traumatiques, les phobies, les troubles obsessionnels-compulsifs, la dépression et les troubles alimentaires. <br><br><a href='https://fr.wikipedia.org/wiki/Th%C3%A9rapie_cognitivo-comportementale' class='gradient-text'>En apprendre plus sur la TCC</a>"
 
 #METHOD 4
 - id : methods-card4-title
-  translation: "EMDR"
+  translation: "Cartes Associatives Métaphoriques"
 
 - id : methods-card4-overlay_phrase
-  translation: "Technique projective"
+  translation: "Technique de projection"
 
 - id : methods-card4-image_desc
-  translation: "Image EMDR"
+  translation: "Cartes Associatives Métaphoriques"
 
 - id : methods-card4-modal_title
-  translation: "EMDR"
+  translation: "Cartes Associatives Métaphoriques - qu'est ce que c'est ?"
 
 - id : methods-card4-modal_body
-  translation: "L'EMDR utilise des cartes métaphoriques avec des images d'animaux, de personnes, de lieux, d'objets sur différents thèmes. En tirant une carte, une personne projette sur elle des sentiments et des expériences (in)conscientes. L'utilisation de cartes métaphoriques aide à formuler une demande, à mieux comprendre les problèmes, à trouver des ressources, et c'est un excellent lieu pour des insights."
-
-
-
+  translation: "Ce sont des cartes métaphoriques avec des images d'animaux, de personnes, de lieux, d'objets sur divers thèmes. En tirant une carte, une personne projette sur celle-ci des sentiments et expériences (in)conscients. <br><br> L'utilisation des cartes métaphoriques aide à formuler une demande, à mieux explorer une problématique, à trouver des ressources, et c'est un excellent moyen de susciter des prises de conscience.<br>Cette méthode est encore peu populaire en France mais est très développée en Europe de l'Est et en Amérique.<br><br><a href='https://www.moietheureuse.fr/2020/08/23/coaching-metaphorique-outils-de-coach-cartes-associatives/' class='gradient-text'>En apprendre plus sur les cartes associatives métaphoriques</a>"
 
 #####################################################
 ################       FAQ        ###################
 #####################################################
-
 - id : faq-heading
-  translation: "Foire aux questions"
+  translation: "Questions fréquentes"
 
 - id : faq-image_desc
-  translation: "Texte alternatif descriptif"
+  translation: "FAQ psychologie"
 
 - id : faq-question1-title
-  translation: "Je ne peux pas formuler ma demande..."
+  translation: "Je n'arrive pas à formuler ma demande..."
 - id : faq-question1-answer
-  translation: "Pas de souci, il est parfois difficile de formuler une demande seul. Nous pouvons le faire ensemble. Les pensées anxieuses peuvent s'emmêler et il faut parfois les démêler avec quelqu'un."
+  translation: "Ce n'est pas grave, il est parfois difficile de formuler une demande seul(e). Nous pouvons le faire ensemble. Parfois, les pensées se superposent et s'embrouillent, et il faut démêler ce fil avec l'aide de quelqu'un."
 
 - id : faq-question2-title
-  translation: "À quelle fréquence dois-je venir?"
+  translation: "À quelle fréquence dois-je venir ?"
 - id : faq-question2-answer
-  translation: "La thérapie est un processus profond et de longue durée. Des rendez-vous irréguliers ne permettent pas d'établir un climat de sécurité et de confiance, essentiel pour affronter les épreuves. C'est comme vouloir atteindre votre destination finale en sautant constamment du train. Habituellement, je recommande des séances hebdomadaires, mais c'est personnalisé. Il existe des sessions de soutien ou des formats de consultation. Mais d'abord, je vous invite à une première rencontre pour sentir si vous souhaitez continuer. Il n'y a aucune pression."
+  translation: "La thérapie est un processus profond et de longue durée. Des séances irrégulières ne permettent pas d'établir la sécurité et la confiance nécessaires pour aborder les expériences difficiles avec l'autre. En général, je recommande des séances hebdomadaires, mais tout dépend de vous. Je vous invite d'abord à une première rencontre pour que vous puissiez formuler votre demande et voir si cela vous convient. Aucun engagement."
 
 - id : faq-question3-title
-  translation: "Je n'ai jamais consulté de psychologue et j'ai peur de la rencontre."
+  translation: "Je n'ai jamais consulté un psychologue et j'ai peur de prendre une séance"
 - id : faq-question3-answer
-  translation: "La peur est une réaction normale face à l'inconnu. Cependant, sans prendre de risques, nous pourrions manquer une opportunité de développement personnel. Je suis également anxieuse à l'idée de rencontrer un nouveau client, mais je suis prête à vous accompagner dans cette expérience."
+  translation: "La peur est une réaction normale face à l'inconnu. Cependant, ne pas prendre de risque peut nous faire manquer une opportunité de développement personnel. Je ressens aussi une certaine appréhension avant de rencontrer un nouveau client, mais je suis prête à vous accompagner et à éteindre vos craintes."
 
 - id : faq-question4-title
-  translation: "Puis-je venir avec mon partenaire à une séance?"
+  translation: "Puis-je venir avec mon partenaire à une séance ?"
 - id : faq-question4-answer
-  translation: "Oui, vous pouvez si vous n'êtes pas déjà mon client en thérapie individuelle. Je propose des thérapies individuelles, de couple et familiales. Cependant, si cela concerne votre enfant, je peux proposer une consultation familiale unique où votre enfant et les membres de la famille peuvent participer."
+  translation: "Oui, c'est possible, si vous n'êtes pas mon client en thérapie individuelle. Je propose des thérapies individuelles et de couple/familiales. Cependant, si cela concerne votre enfant, je peux proposer des consultations familiales ponctuelles où votre enfant et les membres de la famille sont présents."
 
 - id : faq-question5-title
-  translation: "Je souhaite envoyer mon enfant (adolescent)."
+  translation: "Je souhaite vous envoyer mon enfant (adolescent)."
 - id : faq-question5-answer
-  translation: "Je serais heureuse de rencontrer votre enfant, mais il doit savoir où il va et venir à moi de son propre gré. Quoi qu'il en soit, nous pourrions d'abord essayer de nous rencontrer. Il n'y a aucune pression."
+  translation: "Je travaille avec des adolescents de plus de 12 ans. Si c'est une demande des parents, je propose une première consultation commune à laquelle l'enfant doit venir de son propre gré, en complète connaissance de cause."
 
 - id : faq-question6-title
-  translation: "Combien de temps dure une consultation?"
+  translation: "Combien de temps dure une consultation ?"
 - id : faq-question6-answer
-  translation: "La consultation dure 50 minutes. Cela suffit pour travailler sur la demande et permettre un retour ressourcé à la vie quotidienne."
+  translation: "Une consultation dure 50 minutes. Une durée qui permet de travailler assez profondément sans être trop lourde, pour permettre d'assimiler les frutis du travail dans sa vie quotidienne"
 
 - id : faq-question7-title
-  translation: "Quels sont les moyens de paiement?"
+  translation: "Quels sont les moyens de paiement ?"
 - id : faq-question7-answer
-  translation: "Vous pouvez payer les séances par virement via une banque ukrainienne, Stripe, PayPal ou sur une carte internationale. Je suis sûre que nous trouverons une option qui nous convienne à tous les deux."
+  translation: "Vous pouvez payer les séances par virement bancaire, Stripe, PayPal. Je suis certaine que nous trouverons une solution qui nous conviendra à tous les deux."
 
 
 
@@ -387,7 +421,7 @@
   translation: "Podcasts"
 
 - id: blogPostSwiper-podcast-subtitle
-  translation: "Aperçus et réflexions sélectionnés."
+  translation: "Réflexions et conseils"
 
 
 
@@ -401,7 +435,7 @@
 - id: testimonialSwiper-heading
   translation: "Témoignages de mes clients"
 - id: testimonialSwiper-subtitle
-  translation: "Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices."
+  translation: "Des captures d'écran (anonymisées) de la part de mes clients. En ukrainien."
 
 # Testimonial 1
 - id: testimonialSwiper-phone1-image_desc
@@ -428,16 +462,14 @@
         <p>Elle peut inclure plusieurs paragraphes, des <em>styles</em>, et des <a href='#'>liens</a>.</p>"
 
 
-
-
 #################################################
 ################     PRICING  ###################
 #################################################
 
 - id: pricing-heading
-  translation: "Formats de consultation"
+  translation: "Format des consultations"
 - id: pricing-subtitle
-  translation: "Explorez nos séances de thérapie individuelle et de couple, adaptées à vos besoins."
+  translation: "Choisissez le format de consultation qui vous convient."
 
 - id: pricing-button1
   translation: "Thérapie individuelle"
@@ -448,37 +480,35 @@
 - id: pricing-option1-image_desc
   translation: "Thérapie individuelle"
 - id: pricing-option1-description
-  translation: "La thérapie individuelle est une chance de changer pour le mieux. Le rôle du psychothérapeute est d'aider le patient à clarifier ses objectifs de vie et à trouver le chemin le plus court vers ce qu'il désire. L'intimité de l'atmosphère aide à établir une relation de confiance et à s'ouvrir."
+  translation: "La psychothérapie individuelle est un processus où le thérapeute travaille en tête-à-tête avec le client, permettant ainsi au thérapeute de se concentrer pleinement sur les besoins spécifiques de la personne et de choisir l'approche la plus adaptée. En contact avec le thérapeute, le client explore souvent sa manière d'interagir avec la société. C'est donc une excellente opportunité de recevoir un retour honnête et de prendre conscience de ses schémas comportementaux."
 
 - id: pricing-option1-heading
   translation: "Thérapie standard"
 - id: pricing-option1-session
-  translation: "/Par séance"
+  translation: "/Par session"
 - id: pricing-option1-description2
-  translation: "Chaque séance est un pas de plus vers une vie de qualité."
+  translation: "Chaque séance est une étape de plus vers une vie de qualité."
 - id: pricing-option1-button
   translation: "Réserver une séance"
 - id: pricing-option1-price
-  translation: "??? €"
+  translation: "25 €"
 
 ##OPTION 2 
 - id: pricing-option2-image_desc
   translation: "Thérapie de couple"
 - id: pricing-option2-description
-  translation: "La thérapie de couple devrait se faire bien avant que le couple ne ressente un besoin urgent. Consulter un psychologue avant une situation 'critique' aide les couples à prévenir de nombreux problèmes, des financiers aux sexuels, apprendre à communiquer dans le conflit et à mieux comprendre les besoins de chacun."
+  translation: "La thérapie de couple devrait être entreprise bien avant qu'un couple ne ressente un besoin urgent. Consulter un psychologue avant une situation 'critique' aide les couples à prévenir de nombreux problèmes, qu'ils soient financiers, sexuels, ou autres, à apprendre à communiquer en cas de conflit et à mieux comprendre les besoins de chacun."
 
 - id: pricing-option2-heading
   translation: "Thérapie standard"
 - id: pricing-option2-session
-  translation: "/Par séance"
+  translation: "/Par session"
 - id: pricing-option2-description2
-  translation: "Chaque séance est un pas de plus vers une relation saine."
+  translation: "Chaque séance est une étape de plus vers des relations saines."
 - id: pricing-option2-button
   translation: "Réserver une séance"
 - id: pricing-option2-price
-  translation: "??? €"
-
-
+  translation: "35 €"
 
 
 
