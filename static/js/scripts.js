@@ -313,58 +313,41 @@ var postsSwiper = new Swiper('.postsSwiper', {
 // Issues Swiper 1
 
 document.addEventListener('DOMContentLoaded', function() {
-  var issuesSwiper = new Swiper('.swiper-issues', {
-      loop: false,
+  var swipers = [
+    { 
+      selector: '.swiper-issues', 
+      pagination: '.swiper-issues-pagination',
+      initialSlide: 1 
+    },
+    { 
+      selector: '.swiper-issues1', 
+      pagination: '.swiper-issues-pagination1', 
+      initialSlide: 1 
+    },
+    { 
+      selector: '.swiper-issues2', 
+      pagination: '.swiper-issues-pagination2', 
+      initialSlide: 1 
+    }
+  ];
+
+  swipers.forEach(function(swiperConfig) {
+    var swiperInstance = new Swiper(swiperConfig.selector, {
+      loop: true,
       init: true,
-
       centeredSlides: true,
-      slidesPerView: 'auto', // or try 1.5, 2.5, etc., depending on the desired effect
-      loopedSlides: 3, // Specify the number of slides to duplicate for looping
-      loopAdditionalSlides: 2, // Additional slides to clone at the end
+      slidesPerView: 'auto',
       pagination: {
-          el: '.swiper-issues-pagination',
-          clickable: true, // Makes the dots clickable
-        },
-      spaceBetween: 0,
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  var issuesSwiper1 = new Swiper('.swiper-issues1', {
-      loop: false,
-      init: true,
-
-      centeredSlides: true,
-      slidesPerView: 'auto', // or try 1.5, 2.5, etc., depending on the desired effect
-      loopedSlides: 3, // Specify the number of slides to duplicate for looping
-      loopAdditionalSlides: 2, // Additional slides to clone at the end
-      pagination: {
-        el: '.swiper-issues-pagination1',
-        clickable: true, // Makes the dots clickable
+        el: swiperConfig.pagination,
+        clickable: true,
       },
       spaceBetween: 0,
+    });
+
+    // Simulate interaction to move to the initialSlide
+    swiperInstance.slideTo(swiperConfig.initialSlide, 0, false);
   });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-  var issuesSwiper2 = new Swiper('.swiper-issues2', {
-      loop: false,
-      init: true,
-
-      centeredSlides: true,
-      slidesPerView: 'auto', // or try 1.5, 2.5, etc., depending on the desired effect
-      loopedSlides: 3, // Specify the number of slides to duplicate for looping
-      loopAdditionalSlides: 2, // Additional slides to clone at the end
-      pagination: {
-          el: '.swiper-issues-pagination2',
-          clickable: true, // Makes the dots clickable
-        },
-      spaceBetween: 0,
-  });
-});
-
-
-
 
 
 function equalizeSwiperSlidesHeight(swiperSelector) {

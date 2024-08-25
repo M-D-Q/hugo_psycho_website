@@ -415,7 +415,7 @@ Et si par chance nous nous rencontrons alors c’est merveilleux. Mais sinon…n
 #####################################################
 
 - id: blogPostSwiper-article-heading
-  translation: "Articles"
+  translation: "Articles & Podcasts"
 
 - id: blogPostSwiper-podcast-heading
   translation: "Podcasts"
@@ -441,17 +441,19 @@ Et si par chance nous nous rencontrons alors c’est merveilleux. Mais sinon…n
 - id: testimonialSwiper-phone1-image_desc
   translation: "Témoignages de mes clients"
 - id: testimonialSwiper-phone1-description
-  translation: "<h2>Titre 1</h2>
-        <p>Voici la description pour <strong>l'Article 1</strong>.</p>
-        <p>Elle peut inclure plusieurs paragraphes, des <em>styles</em>, et des <a href='#'>liens</a>.</p>"
+  translation: "<h2>Anna* - phobie</h2>
+        <br><br>
+        <p>Anna* est venu evers moi pour une phobie handicapante des insectes, qui allait jusqu'à l'empêcher de mener sa vie (ne pas pouvoir rentrer chez soi, etc.).</p>
+        <p>J'ai utilisé les techniques de la gestalt-thérapie pour aider Anna* à surmonter sa phobie en 2 séances.</p>"
 
 # Testimonial 2
 - id: testimonialSwiper-phone2-image_desc
   translation: "Témoignages de mes clients"
 - id: testimonialSwiper-phone2-description
-  translation: "<h2>Titre 2</h2>
-        <p>Voici la description pour <strong>l'Article 2</strong>.</p>
-        <p>Elle peut inclure plusieurs paragraphes, des <em>styles</em>, et des <a href='#'>liens</a>.</p>"
+  translation: "<h2>Anna* - phobie (suite)</h2>
+        <br><br>
+        <p>Anna* est venu evers moi pour une phobie handicapante des insectes, qui allait jusqu'à l'empêcher de mener sa vie (ne pas pouvoir rentrer chez soi, etc.).</p>
+        <p>J'ai utilisé les techniques de la gestalt-thérapie pour aider Anna* à surmonter sa phobie en 2 séances.</p>"
 
 # Testimonial 3
 - id: testimonialSwiper-phone3-image_desc
