@@ -431,37 +431,36 @@
 ################ TESTIMONIALS ###################
 #################################################
 
-
 - id: testimonialSwiper-heading
   translation: "Відгуки моїх клієнтів"
 - id: testimonialSwiper-subtitle
-  translation: "Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices."
-
+  translation: "Скріншоти (анонімізовані) від моїх клієнтів."
 
 # Testimonial 1
 - id: testimonialSwiper-phone1-image_desc
   translation: "Відгуки моїх клієнтів"
 - id: testimonialSwiper-phone1-description
-  translation: "<h2>Title 1</h2>
-        <p>This is the description for <strong>Item 1</strong>.</p>
-        <p>It can include multiple paragraphs, <em>styles</em>, and <a href='#'>links</a>.</p>"
+  translation: "<h2>Анна* - фобія</h2>
+        <br><br>
+        <p>Анна* звернулася до мене через паралізуючу фобію комах, яка заважала їй вести нормальне життя (неможливість повернутися додому тощо).</p>
+        <p>Я використовувала техніки гештальт-терапії, щоб допомогти Анні* подолати її фобію за 2 сеанси.</p>"
 
 # Testimonial 2
 - id: testimonialSwiper-phone2-image_desc
   translation: "Відгуки моїх клієнтів"
 - id: testimonialSwiper-phone2-description
-  translation: "<h2>Title 2</h2>
-        <p>This is the description for <strong>Item 2</strong>.</p>
-        <p>It can include multiple paragraphs, <em>styles</em>, and <a href='#'>links</a>.</p>"
-
+  translation: "<h2>Анна* - фобія (продовження)</h2>
+        <br><br>
+        <p>Анна* звернулася до мене через паралізуючу фобію комах, яка заважала їй вести нормальне життя (неможливість повернутися додому тощо).</p>
+        <p>Я використовувала техніки гештальт-терапії, щоб допомогти Анні* подолати її фобію за 2 сеанси.</p>"
 
 # Testimonial 3
 - id: testimonialSwiper-phone3-image_desc
   translation: "Відгуки моїх клієнтів"
 - id: testimonialSwiper-phone3-description
-  translation: "<h2>Title 3</h2>
-        <p>This is the description for <strong>Item 3</strong>.</p>
-        <p>It can include multiple paragraphs, <em>styles</em>, and <a href='#'>links</a>.</p>"
+  translation: "<h2>Олександра - панічні атаки</h2>
+  <br><br>
+              Олександра страждала від панічних атак. Вона пояснює, що раніше не могла уявити собі, як вийти на вулицю сама, не відчуваючи постійного страху. <br><br>Однак, застосовуючи поради, отримані під час сеансів, вона навчилася більше не боятися і знову контролювати свої емоції. Цей прогрес став для неї величезним полегшенням."
 
 #################################################
 ################     PRICING  ###################
