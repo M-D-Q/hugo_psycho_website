@@ -20,7 +20,7 @@
                             <h1 class="banner-subtitle text-fading"> <span class="gradient-text">{{ i18n "banner-subtitle" }}</span></h1>
                         </div>
                         <p class="psychology-text">{{ i18n "moving-text" }} <span class="typed-text"></span><span class="cursor">|</span></p>
-                        <div class="text-center"><a class="btn btn-primary text-uppercase btn-small btn-pill" role="button" data-bss-hover-animate="pulse" href="#contact-me">{{ i18n "banner-button" }}</a></div>
+                        <div class="text-center"><a class="btn btn-primary text-uppercase btn-small btn-pill" role="button" data-bss-hover-animate="pulse" href="{{ "#contact-me" | relLangURL }}">{{ i18n "banner-button" }}</a></div>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
@@ -87,8 +87,8 @@
                 </div>
                 <div class="col-lg-8 kek" style="padding-left: 50px;padding-right: 50px">
                     <div data-aos="fade-left" data-aos-duration="2000" class="about-us-content" style="text-align: center;">
-                        <h2 class="display-4 text-secondary text-muted" style="text-align: center; padding-bottom:25px;">{{ i18n "about-me-title" }}</h2><q class="pb-3">{{ i18n "about-me-subtitle" }}</q>
-                        <p class="lead" style="text-align: justify">{{ i18n "about-me-body" }}</p>
+                        <h2 class="display-4 text-secondary text-muted" style="text-align: center; padding-bottom:25px;">{{ i18n "about-me-title" }}</h2><q class="pb-3">{{ i18n "about-me-subtitle" | safeHTML}}</q>
+                        <p class="lead" style="text-align: justify">{{ i18n "about-me-body" | safeHTML }}</p>
                         <a class="btn btn-primary text-uppercase btn-small btn-pill" role="button" data-bss-hover-animate="pulse" style="text-align: center; margin-top:25px" data-bs-target="#about-me-modal" data-bs-toggle="modal">{{ i18n "about-me-button" }}</a>
                     </div>
                 </div>
@@ -120,15 +120,17 @@
 
 
     
-{{ partial "faq.html" . }}
+    {{ partial "faq.html" . }}
 
-    <section class="transition-second-to-first"></section> <!-- Transition from second back to first background -->
-
-
-    {{ partial "swiper-blog-posts.html" . }}
+    <!--  <section class="transition-second-to-first"></section> -->
+ <!-- Transition from second back to first background -->
 
 
-    <section class="transition-first-to-second"></section> <!-- Transition from first to second background -->
+    <!-- {{ partial "swiper-blog-posts.html" . }} -->
+
+
+   <!-- <section class="transition-first-to-second"></section> --> <!-- Transition from first to second background -->
+
 
     {{ partial "testimonials-with-phone.html" . }}
 
