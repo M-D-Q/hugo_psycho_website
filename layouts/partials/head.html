@@ -1,8 +1,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ printf "%s | %s" .Title .Site.Title }}{{ end }}</title>
+
 <base href="{{ .Site.BaseURL }}">
 
+<!-- Open Graph Metadata -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ i18n "siteTitle" }}">
+<meta property="og:description" content="{{ i18n "siteDescription" }}">
+<meta property="og:image" content="/img/desktop/faq.webp">
+
+<!-- Twitter Card Metadata (Optional) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ i18n "siteTitle" }}">
+<meta name="twitter:description" content="{{ i18n "siteDescription" }}">
+<meta name="twitter:image" content="/img/desktop/faq.webp">
 
 <!-- Fichiers CSS externes -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
