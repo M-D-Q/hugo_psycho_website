@@ -8,14 +8,14 @@
 <!-- Open Graph Metadata -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:title" content="{{ i18n "siteTitle" }}">
-<meta property="og:description" content="{{ i18n "siteDescription" }}">
+<meta property="og:title" content="{{ .Site.Title }}">
+<meta property="og:description" content="{{ .Site.Params.subtitle }}">
 <meta property="og:image" content="/img/desktop/faq.webp">
 
 <!-- Twitter Card Metadata (Optional) -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ i18n "siteTitle" }}">
-<meta name="twitter:description" content="{{ i18n "siteDescription" }}">
+<meta name="twitter:title" content="{{ .Site.Title }}">
+<meta name="twitter:description" content="{{ .Site.Params.subtitle }}">
 <meta name="twitter:image" content="/img/desktop/faq.webp">
 
 <!-- Fichiers CSS externes -->
