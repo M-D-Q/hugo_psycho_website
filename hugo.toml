@@ -31,4 +31,4 @@ defaultContentLanguageInSubdir = true
     weight = 1
 
     [languages.fr.params]
-      subtitle = 'Vivez sans regrets'
+      subtitle = 'Le premier pas vers une vie plus sereine'
