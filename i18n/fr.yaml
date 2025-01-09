@@ -498,7 +498,7 @@ Et si par chance nous nous rencontrons alors c’est merveilleux. Mais sinon…n
 - id: pricing-option1-button
   translation: "Réserver une séance"
 - id: pricing-option1-price
-  translation: "25 €"
+  translation: "35 €"
 
 ##OPTION 2 
 - id: pricing-option2-image_desc
@@ -515,7 +515,7 @@ Et si par chance nous nous rencontrons alors c’est merveilleux. Mais sinon…n
 - id: pricing-option2-button
   translation: "Réserver une séance"
 - id: pricing-option2-price
-  translation: "35 €"
+  translation: "42 €"
 
 
 

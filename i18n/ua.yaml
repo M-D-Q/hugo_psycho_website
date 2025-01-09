@@ -495,7 +495,7 @@
 - id: pricing-option1-button
   translation: "Забронювати сеанс"
 - id: pricing-option1-price
-  translation: "1000 грн"
+  translation: "1300 грн"
 
 ##OPTION 2 
 - id: pricing-option2-image_desc
@@ -512,7 +512,7 @@
 - id: pricing-option2-button
   translation: "Забронювати сеанс"
 - id: pricing-option2-price
-  translation: "1600 грн"
+  translation: "1700 грн"
 
 
 
